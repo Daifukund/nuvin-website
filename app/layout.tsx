@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const title = 'Nuvin - Anxiety Relief'
 const description = 'Find calm in moments of anxiety. Instant relief through breathing, grounding, and reset exercises.'
@@ -85,28 +86,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // Add your Google Analytics 4 Measurement ID here
+  // Get it from: https://analytics.google.com/analytics/web/
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
+
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics 4 - Add your GA4 Measurement ID below */}
-        {/* Uncomment and replace G-XXXXXXXXXX with your actual GA4 Measurement ID
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        />
-        */}
-      </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
+        {children}
+      </body>
     </html>
   )
 }

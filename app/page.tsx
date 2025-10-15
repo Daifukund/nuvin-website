@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 import AppStoreButton from '@/components/AppStoreButton'
 import FeatureCard from '@/components/FeatureCard'
 import Footer from '@/components/Footer'
+import SocialProof from '@/components/SocialProof'
+import FeaturedBlogPosts from '@/components/FeaturedBlogPosts'
+import FAQ from '@/components/FAQ'
 import Image from 'next/image'
 
 const fadeInUp = {
@@ -57,6 +60,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Social Proof Section */}
+      <SocialProof />
 
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm">
@@ -163,6 +169,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Featured Blog Posts */}
+      <FeaturedBlogPosts />
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Final CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm">
