@@ -1,10 +1,17 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 const title = 'Nuvin - Anxiety Relief'
 const description = 'Find calm in moments of anxiety. Instant relief through breathing, grounding, and reset exercises.'
 const siteUrl = 'https://nuvin.app'
 const ogImageUrl = `${siteUrl}/og-image.png`
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#9b59b6',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -71,12 +78,6 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
-  themeColor: '#9b59b6',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
 }
 
 export default function RootLayout({
