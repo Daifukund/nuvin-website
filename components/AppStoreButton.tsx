@@ -15,12 +15,12 @@ export default function AppStoreButton({ href, className = '' }: AppStoreButtonP
       aria-label="Download Nuvin on the App Store"
     >
       <Image
-        src="/apple-app-store-badge.svg"
+        src="/app-store-badge.svg"
         alt="Download on the App Store"
-        width={200}
-        height={60}
+        width={135}
+        height={40}
         priority
-        className="h-auto w-[200px] sm:w-[220px]"
+        className="h-auto w-[135px] sm:w-[150px]"
       />
     </a>
   )
