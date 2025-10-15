@@ -11,6 +11,12 @@ export default function BlogPage() {
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
+        <Link
+          href="/"
+          className="inline-flex items-center text-white hover:text-white/80 transition-colors mb-8"
+        >
+          ← Back to Home
+        </Link>
         <div className="grid gap-8">
           {blogPosts.map((post) => (
             <article
