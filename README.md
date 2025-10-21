@@ -153,4 +153,4 @@ Private - All rights reserved
 
 ## Support
 
-For questions or issues, contact: support@nuvin.app
+For questions or issues, contact: nathan@nuvin.app

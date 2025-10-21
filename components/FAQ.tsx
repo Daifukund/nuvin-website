@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import Script from 'next/script'
 
 interface FAQItem {
   question: string
@@ -42,8 +43,28 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index)
   }
 
+  // Generate FAQ Schema for SEO
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -73,20 +94,26 @@ export default function FAQ() {
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-white transition-colors"
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 pr-8">
+                <h3 id={`faq-question-${index}`} className="text-lg sm:text-xl font-semibold text-gray-900 pr-8">
                   {faq.question}
                 </h3>
                 <span
                   className={`text-2xl text-nuvin-purple transition-transform duration-300 flex-shrink-0 ${
                     openIndex === index ? 'rotate-45' : ''
                   }`}
+                  aria-hidden="true"
                 >
                   +
                 </span>
               </button>
 
               <div
+                id={`faq-answer-${index}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
@@ -102,5 +129,6 @@ export default function FAQ() {
         </div>
       </div>
     </section>
+    </>
   )
 }

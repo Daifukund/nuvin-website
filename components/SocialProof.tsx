@@ -16,7 +16,7 @@ const Stat = ({ value, label, icon }: StatProps) => (
     viewport={{ once: true }}
     transition={{ duration: 0.5 }}
   >
-    <div className="text-5xl mb-2">{icon}</div>
+    <div className="text-5xl mb-2" aria-hidden="true">{icon}</div>
     <div className="text-3xl sm:text-4xl font-bold text-white drop-shadow-lg mb-1">
       {value}
     </div>

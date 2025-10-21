@@ -54,7 +54,7 @@ export default function NotFound() {
               Terms of Service
             </Link>
             <span className="text-white/50">•</span>
-            <a href="mailto:support@nuvin.app" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
+            <a href="mailto:nathan@nuvin.app" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
               Contact Support
             </a>
           </div>

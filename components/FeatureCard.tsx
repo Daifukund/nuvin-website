@@ -8,7 +8,7 @@ export default function FeatureCard({ icon, title, description }: FeatureCardPro
   return (
     <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-2xl">
       {/* Icon */}
-      <div className="text-6xl mb-4 transition-transform duration-300 group-hover:scale-110">
+      <div className="text-6xl mb-4 transition-transform duration-300 group-hover:scale-110" aria-hidden="true">
         {icon}
       </div>
 
