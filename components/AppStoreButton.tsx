@@ -17,10 +17,10 @@ export default function AppStoreButton({ href, className = '' }: AppStoreButtonP
       <Image
         src="/app-store-badge.svg"
         alt="Download on the App Store"
-        width={135}
-        height={40}
+        width={200}
+        height={60}
         priority
-        className="h-auto w-[135px] sm:w-[150px]"
+        className="h-auto w-[180px] sm:w-[220px] md:w-[240px]"
       />
     </a>
   )
