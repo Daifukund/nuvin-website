@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="text-sm text-gray-600 mb-8">
-            Last Updated: October 2025
+            Last Updated: January 2025
           </p>
 
           <div className="prose prose-lg max-w-none">
@@ -36,199 +36,369 @@ export default function PrivacyPage() {
             </p>
 
             <p className="text-gray-700 mb-8">
-              This Privacy Policy explains how Nuvin ("we", "us", or "our") collects, uses, and discloses information about you when you access or use our mobile application ("App"), and other online products and services (collectively, the "Service"), and when you contact our customer service team, engage with us on social media, or otherwise interact with us.
+              This Privacy Policy explains how Nuvin ("we", "us", or "our") collects, uses, and discloses information about you when you access or use our mobile application ("App"), and when you contact our customer service team or otherwise interact with us.
             </p>
 
             <p className="text-gray-700 mb-8">
-              Before using the Service or submitting any personal data to Nuvin, please review this Privacy Policy carefully and contact us if you have any questions. By using the Service, you agree to the practices described in this Privacy Policy. If you do not agree to this Privacy Policy, please do not access the App or otherwise use the Service.
+              Before using the App or submitting any data to Nuvin, please review this Privacy Policy carefully and contact us if you have any questions. By using the App, you agree to the practices described in this Privacy Policy. If you do not agree to this Privacy Policy, please do not access or use the App.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">1. What Data We Collect</h2>
-
             <p className="text-gray-700 mb-6">
-              We collect information that alone or in combination with other information in our possession could be used to identify you ("Personal Data") as follows:
+              Nuvin is designed with privacy at its core. We collect minimal data, and sensitive information like your mood logs are stored locally on your device, not on our servers.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Personal Data You Provide</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1.1 Data Stored Locally on Your Device</h3>
+
             <p className="text-gray-700 mb-4">
-              We collect the following categories of Personal Data from you when you create an account, use the Service, or communicate with us:
+              <strong>Mood Tracking Data:</strong> When you use our mood check-in feature, your mood ratings and associated session counts are stored securely in your device's encrypted Keychain. This data never leaves your device unless you explicitly choose to export it.
             </p>
 
-            <p className="text-gray-700 mb-2"><strong>Identification Data:</strong> We collect your email address (if provided), name or nickname you provide when creating your account, password you set, the telephone number and name of the emergency contact you provide (if any), and unique identifiers assigned by third party platforms (such as analytics or subscription management tools).</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Stats Page Data:</strong> We collect information relating to your account stats, such as the number of exercises completed, breathing sessions, grounding techniques used, and time spent using the app's various tools.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Communication Data:</strong> We may collect information when you contact us with questions or concerns and when you voluntarily respond to questionnaires, surveys, or requests for market research seeking your opinion and feedback. Providing this information is optional to you.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Social Media Data:</strong> We have pages on social media sites like Instagram, Facebook, Twitter, and LinkedIn ("Social Media Pages"). When you interact with our Social Media Pages, we may collect Personal Data that you elect to provide to us, such as your contact details. In addition, the companies that host our Social Media Pages may provide us with aggregate information and analytics regarding the use of our Social Media Pages.</p>
-
-            <p className="text-gray-700 mb-6 mt-4"><strong>Anxiety Check-In:</strong> The anxiety check-in and mood tracking features may help measure state of anxiety. All of the individual-level data you provide in connection with this feature will be processed by Nuvin solely for the purpose of providing you with the Check-In feature and is stored locally on your device.</p>
-
-            <p className="text-gray-700 mb-6">
-              Nuvin does not collect or process credit or debit card ("Payment Card") data. Apple and Google collect Payment Card data with respect to in-app purchases made through the App. Such payment processors generally provide us with some limited data related to you, such as a unique, anonymous token that enables you to make additional purchases using the data they've stored, and your card's type, expiration date, and the last four digits of your card number.
-            </p>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Internet Activity Data</h3>
             <p className="text-gray-700 mb-4">
-              When you visit, use, and interact with the Service, we may receive certain information about your visit, use, or interactions. For example, we may monitor the number of people that use the Service, peak hours of usage, which features are used, the domains our visitors come from, and which devices people use to access the Service, broad geographical information, and navigation patterns. In particular, the following information may be created and automatically logged in our systems:
+              <strong>User Statistics:</strong> We track your usage statistics locally on your device, including total relief sessions completed, current and longest streaks, and your favorite exercises. This data is stored in your device's Keychain and is only accessible by the App on your device.
             </p>
 
-            <p className="text-gray-700 mb-2"><strong>Log Data:</strong> Information that your device automatically sends whenever you use the App. Log Data includes your Internet Protocol address, device type and settings, the date and time of your request, and how you interacted with the App.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Cookies Data:</strong> While our mobile app does not use cookies, our website (if applicable) may use cookies as described in the "Cookies" section below.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Device Data:</strong> Includes name of the device, operating system, and browser you are using. Information collected may depend on the type of device you use and its settings.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Usage Data:</strong> We collect information about how you use our Service, such as the types of content that you view or engage with, the features you use, the actions you take, and the time, frequency, and duration of your activities.</p>
-
-            <p className="text-gray-700 mb-2 mt-4"><strong>Location Data:</strong> We may derive a rough estimate of your location from your IP address to understand your broad, non-specific geographic location to help us identify groups of users by general geographic market.</p>
-
-            <p className="text-gray-700 mb-6 mt-4"><strong>Email Open/Click Data:</strong> We use pixels in our email campaigns that allow us to collect your email and IP address as well as the date and time you open an email or click on any links in the email.</p>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Cookies</h3>
-            <p className="text-gray-700 mb-6">
-              Our website may use cookies to operate and administer our site, gather usage data, and improve your experience on it. A "cookie" is a piece of information sent to your browser by a website you visit. Cookies can be stored on your computer for different periods of time. Some cookies expire after a certain amount of time, or upon logging out (session cookies), others survive after your browser is closed until a defined expiration date set in the cookie (as determined by the third party placing it), and help recognize your computer when you open your browser and browse the Internet again (persistent cookies).
+            <p className="text-gray-700 mb-4">
+              <strong>App Preferences:</strong> Your settings preferences (such as notification times, haptic feedback preferences, and theme choices) are stored locally on your device using standard iOS UserDefaults.
             </p>
 
             <p className="text-gray-700 mb-6">
-              On most web browsers, you will find a "help" section on the toolbar. Please refer to this section for information on how to receive a notification when you are receiving a new cookie and how to turn cookies off.
+              <strong>Journal Entries:</strong> <strong>IMPORTANT: Journal entries are NOT saved.</strong> When you use the Quick Journal feature, your text is displayed temporarily during the 60-second session and is immediately deleted when you complete or exit the session. We do not store, transmit, or have any access to your journal content.
             </p>
 
-            <p className="text-gray-700 mb-2"><strong>Advertising:</strong> We partner with third parties, such as Facebook and Google, to manage our advertising of the Service on other sites or platforms as well as across your other devices based on your past visits to our App. Our third party partners may use technologies such as cookies to gather data about your activities within the Service to deliver such advertising to you, such as retargeting ads. We are not always able to respond to do-not-track signals. For more data about interest-based ads, including how to opt-out of having your web-browsing data used for behavioural advertising purposes, please visit www.aboutads.info/choices. Please note that this does not opt you out of being served ads. You may continue to receive generic ads on these third party platforms. You may also opt out of receiving ads across devices by adjusting your ad preference in your Google account.</p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.2 Analytics Data We Collect</h3>
+            <p className="text-gray-700 mb-4">
+              We use Mixpanel, a third-party analytics service, to understand how users interact with our App so we can improve the experience. Mixpanel collects:
+            </p>
 
-            <p className="text-gray-700 mb-8 mt-4"><strong>Analytics:</strong> We may use analytics services such as Google Analytics to help us analyze how users use the Service and enhance your experience when you use the Service.</p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">2. How We Use Data</h2>
-            <p className="text-gray-700 mb-4">We may use Personal Data for the following purposes:</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li>To provide the Service and help you track your journey managing anxiety and panic attacks and display your progress over time</li>
-              <li>To verify your ownership of your account</li>
-              <li>To authenticate your access to the Service</li>
-              <li>To respond to your inquiries, comments, feedback, or questions</li>
-              <li>To send administrative information to you, for example, information regarding the Service and changes to our terms, conditions, and policies</li>
-              <li>To analyze and better understand how you interact with our Service</li>
-              <li>To maintain and improve the Service</li>
-              <li>To develop new products and services</li>
-              <li>To prevent fraud, criminal activity, or misuses of our Service, and to ensure the security of our IT systems, architecture, and networks</li>
-              <li>To comply with legal obligations and legal process and to protect our rights, privacy, safety, or property, and/or that of our affiliates, you, or other third parties</li>
+              <li><strong>Usage Events:</strong> Actions you take in the App, such as completing a breathing exercise, starting the SOS flow, checking in on your mood, or completing onboarding steps.</li>
+              <li><strong>Session Information:</strong> How long you use the App, which features you access, and how frequently you use the App.</li>
+              <li><strong>Device Information:</strong> Device model (e.g., iPhone 14), operating system version (e.g., iOS 17.0), and App version.</li>
+              <li><strong>Anonymous Identifiers:</strong> A randomly generated device ID that does not identify you personally.</li>
             </ul>
 
-            <p className="text-gray-700 mb-6 mt-6"><strong>Aggregated Information:</strong> We may aggregate Personal Data and use the aggregated information to analyze the effectiveness of our Service, to improve and add features to our Service, and for other similar purposes. In addition, from time to time, we may analyze the general behaviour and characteristics of users of our Service and share aggregated information like general user statistics with prospective business partners. We may collect aggregated information through the Service, through cookies, and through other means described in this Privacy Policy.</p>
-
-            <p className="text-gray-700 mb-8"><strong>Marketing:</strong> We may use your Personal Data to contact you to tell you about products or services we believe may be of interest to you. For instance, if you elect to provide your email, we may use that information to send you special offers. You may opt out of receiving emails by following the instructions contained in each promotional email we send you. In addition, if at any time you do not wish to receive future marketing communications, you may contact us. If you unsubscribe from our marketing lists, you will no longer receive marketing communications but we may continue to contact you regarding management of your account, other administrative matters, and to respond to your requests.</p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">3. How We Share Data</h2>
-            <p className="text-gray-700 mb-6">
-              Nuvin does not sell your Personal Data. In certain circumstances we may share the categories of Personal Data described above without further notice to you, unless required by the law, with the following categories of third parties:
-            </p>
-
-            <p className="text-gray-700 mb-4"><strong>Vendors and Service Providers:</strong> To assist us in meeting business operations needs and to perform certain services and functions, we may share Personal Data with vendors and service providers, including providers of cloud hosting/computing services, database providers, email delivery and in-app/push messaging services, advertising and marketing services, payment processors, content monitoring services, and web, subscription, and app analytics services. Pursuant to our instructions, these parties will access, process, or store Personal Data in the course of performing their duties to us. We take commercially reasonable steps to ensure our service providers adhere to the security standards we apply to your Personal Data.</p>
-
-            <p className="text-gray-700 mb-4 mt-4"><strong>Business Transfers:</strong> If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy, receivership, sale of all or a portion of our assets, or transition of service to another provider (collectively a "Transaction"), your Personal Data and other information may be shared in the diligence process with counter-parties and others assisting with the Transaction and transferred to a successor or affiliate as part of that Transaction along with other assets.</p>
-
-            <p className="text-gray-700 mb-4 mt-4"><strong>Legal Requirements:</strong> If required to do so by law or in the good faith belief that such action is necessary to (i) comply with a legal obligation, including to meet national security or law enforcement requirements, (ii) protect and defend our rights or property, (iii) prevent fraud, (iv) act in urgent circumstances to protect the personal safety of users of the Service, or the public, or (v) protect against legal liability.</p>
-
-            <p className="text-gray-700 mb-8 mt-4"><strong>Advertisements:</strong> We may share data with third parties, such as Facebook and Google, in order to serve Nuvin advertisements on such third party platforms, to the extent that you have consented to such practices under applicable law.</p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">4. Children</h2>
-            <p className="text-gray-700 mb-6">
-              Our Service is not directed to children who are under the age of 18. If you are younger than 18 years of age, you must get consent from your parent or legal guardian before you provide any Personal Information to us.
-            </p>
-            <p className="text-gray-700 mb-8">
-              If you have reason to believe that a child under the age of 18 has provided Personal Data to Nuvin through the Service that was not provided with parental consent, please contact us as indicated below and we will endeavour to delete that information from our databases.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">5. Other Websites</h2>
-            <p className="text-gray-700 mb-8">
-              The Service may, from time to time, contain links to other websites not operated or controlled by Nuvin, including those of our partner networks, advertisers, and affiliates. If you follow a link to any of these external websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these websites or their policies. Please check these policies before you submit any personal data to these external websites.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Security</h2>
-            <p className="text-gray-700 mb-8">
-              You use the Service at your own risk. We implement commercially reasonable technical, administrative, and organizational measures to protect Personal Data both online and offline from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or e-mail transmission is ever fully secure or error free. In particular, e-mail sent to or from us may not be secure. Therefore, you should take special care in deciding what information you send to us via the Service or e-mail. Please keep this in mind when disclosing any Personal Data to Nuvin via the Internet. In addition, we are not responsible for circumvention of any privacy settings or security measures contained on the Service, or third party websites.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">7. International Users</h2>
-            <p className="text-gray-700 mb-8">
-              Nuvin processes information in the United States, which may not provide equivalent levels of data protection as your home jurisdiction.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">8. HealthKit</h2>
-            <p className="text-gray-700 mb-8">
-              Apple iOS users may opt-in to allow the App to provide data regarding the amount of time spent using Nuvin's tools and features to the Apple iOS "Health" application for display. This data will not be shared with third parties or used for marketing purposes.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">9. Your Choices</h2>
-            <p className="text-gray-700 mb-6">
-              <strong>Account Information:</strong> Please contact us at nathan.douziech@gmail.com if you need to change, correct, or delete your Personal Data. We will respond to your request in a reasonable timeframe. To reset your password, use the password reset feature in the App. If you wish to disable your account, please contact us, but note that we retain certain information when required or permitted by law. We also retain cached or archived copies of information about you for a certain period of time.
-            </p>
-            <p className="text-gray-700 mb-6">
-              <strong>Promotional Communications:</strong> You may opt out of receiving promotional emails from Nuvin by following the instructions in those emails. If you opt out, we may still send you non-promotional emails, such as those about your account or our ongoing business relations.
-            </p>
-            <p className="text-gray-700 mb-8">
-              <strong>Mobile Push Notifications/Alerts:</strong> With your consent, we send promotional and other push notifications to your mobile device. You can deactivate these messages at any time by changing the notification settings on your mobile device.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">10. Your Rights as a Data Subject</h2>
-            <p className="text-gray-700 mb-6">
-              The sections below apply to you if you use the Service while in Switzerland, the United Kingdom, or the European Economic Area (collectively, "Europe").
-            </p>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Legal Basis for Processing</h3>
-            <p className="text-gray-700 mb-4">When we process your personal data we will only do so in the following situations:</p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li>As necessary to perform our responsibilities under our contract with you (like providing the products or services you have requested)</li>
-              <li>When we have a legitimate interest in processing your personal data, including to communicate with you about changes to the Service, to help secure and improve the Service (including to prevent fraud), and to analyze use of the Service</li>
-              <li>As necessary to comply with our legal obligations</li>
-              <li>When we have your consent to do so</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Data Retention</h3>
-            <p className="text-gray-700 mb-6">
-              We keep Personal Data for as long as reasonably necessary for the purposes described in this Privacy Policy, while we have a business need to do so, or as required by law (e.g. for tax, legal, accounting, or other purposes), whichever is longer.
-            </p>
-
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Data Subject Requests</h3>
-            <p className="text-gray-700 mb-4">Subject to certain limits and conditions provided under law, you have the following rights:</p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li>You have the right to access personal data we hold about you and to ask that your personal data be corrected, erased, or made available in a portable form</li>
-              <li>You also have the right to object to certain processing (like receiving direct marketing), or request that we restrict processing in certain circumstances (like to retain but not further process pending resolution of a claim)</li>
-              <li>When we ask for your consent, you may withdraw that consent at any time</li>
-              <li>You have the right to lodge a complaint with a supervisory authority or other regulatory agency if you believe that we have violated any of the rights concerning personal data about you. We encourage you to first reach out to us at nathan.douziech@gmail.com so we have an opportunity to address your concerns directly before you do so</li>
-            </ul>
-            <p className="text-gray-700 mb-8">
-              If you would like to exercise any of these rights and can't do so directly via the Service or your device, you may contact us as indicated below.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">11. Your Rights as a Resident of California</h2>
-            <p className="text-gray-700 mb-6">
-              This section provides additional disclosures required by the California Consumer Privacy Act (or "CCPA").
-            </p>
-            <p className="text-gray-700 mb-6">
-              In the last 12 months, we collected the following categories of personal information: identifiers (such as name and contact information); internet or other electronic network activity information (such as browsing behaviour); and approximate geolocation data. For more details about the personal information we collect, including the categories of sources, please see the "What Data We Collect" section above. We collect this information for the business and commercial purposes described in the "How We Use Data" section above. We share this information with the categories of third parties described in the "How We Share Data" section above.
-            </p>
-            <p className="text-gray-700 mb-6">
-              Subject to certain limitations and exceptions, the CCPA provides California consumers the right to request to know more details about the categories and specific pieces of personal information, to delete their personal information, to opt out of any "sales" that may be occurring, and to not be discriminated against for exercising these rights.
-            </p>
-            <p className="text-gray-700 mb-6">
-              We do not "sell" the personal information we collect (and will not sell it in the future without providing a right to opt out).
-            </p>
-            <p className="text-gray-700 mb-8">
-              California consumers may make a rights request by contacting us as indicated below. We will verify your request by asking you to provide information that matches information we have on file about you. Consumers can also designate an authorized agent to exercise these rights on their behalf, but we will require proof that the person is authorized to act on your behalf and may also still ask you to verify your identity with us directly.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">12. Changes to This Privacy Policy</h2>
-            <p className="text-gray-700 mb-8">
-              We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy and, in some cases, we may provide you with additional notice (such as adding a statement to our app or sending you a notification). We encourage you to review the Privacy Policy whenever you access the Service or otherwise interact with us to stay informed about our information practices and the choices available to you.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">13. Contact</h2>
             <p className="text-gray-700 mb-4">
-              Questions, comments, and requests regarding this privacy policy are welcomed and should be addressed to nathan.douziech@gmail.com.
+              <strong>What we do NOT collect through analytics:</strong> We do not collect your name, email address, phone number, precise location, or any personally identifiable information through Mixpanel. Your mood values and journal entries are never sent to Mixpanel.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              You can learn more about Mixpanel's data practices at <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-nuvin-purple hover:text-nuvin-blue">https://mixpanel.com/legal/privacy-policy/</a>
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.3 Subscription Data</h3>
+            <p className="text-gray-700 mb-4">
+              We use RevenueCat, a third-party subscription management service, to process your in-app purchases. When you subscribe to Nuvin Premium, RevenueCat receives:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>An anonymous user identifier</li>
+              <li>Your purchase receipt from Apple</li>
+              <li>Your subscription status and type (monthly, annual, or lifetime)</li>
+              <li>Device type and platform (iOS)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Payment Information:</strong> Nuvin does not collect, process, or store any credit card or payment information. All payment processing is handled securely by Apple through the App Store. We never see your payment card details.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              You can learn more about RevenueCat's privacy practices at <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-nuvin-purple hover:text-nuvin-blue">https://www.revenuecat.com/privacy/</a>
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.4 Crash & Diagnostic Data</h3>
+            <p className="text-gray-700 mb-4">
+              If the App crashes or encounters an error, we save a crash log locally on your device. These logs include:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Date and time of the crash</li>
+              <li>App version and build number</li>
+              <li>iOS version and device model</li>
+              <li>Technical error information (call stack)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-6">
+              These crash logs are stored locally on your device and are NOT automatically sent to us. They are only used for debugging if you contact our support team and choose to share them.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.5 Information You Provide to Us</h3>
+            <p className="text-gray-700 mb-4">
+              <strong>Personalization Data:</strong> During onboarding, you may provide your first name (for in-app personalization), age range, primary reasons for using the App, symptoms you experience, and your wellness goals. This information is stored locally on your device in encrypted Keychain storage and is used solely to personalize your experience within the App.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              <strong>Support Communications:</strong> If you contact us for support via email at nathan.douziech@gmail.com, we will receive your email address and any information you choose to include in your message.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">2. How We Use Your Data</h2>
+            <p className="text-gray-700 mb-4">We use the information we collect for the following purposes:</p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>To Provide the App:</strong> To deliver relief techniques, track your progress, and personalize your experience based on your stated goals and preferences.</li>
+              <li><strong>To Process Subscriptions:</strong> To verify your subscription status and provide access to premium features.</li>
+              <li><strong>To Improve the App:</strong> To analyze usage patterns (via anonymized analytics) and understand which features are most helpful so we can make improvements.</li>
+              <li><strong>To Send Notifications:</strong> To deliver local notifications for mood check-in reminders and daily quotes, if you enable these features.</li>
+              <li><strong>To Provide Support:</strong> To respond to your inquiries and provide customer support.</li>
+              <li><strong>To Ensure Security:</strong> To detect and prevent technical issues, crashes, and potential security vulnerabilities.</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4 mt-6"><strong>We do NOT use your data for:</strong></p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
+              <li>Advertising or marketing to you based on your behavior</li>
+              <li>Tracking you across other apps or websites</li>
+              <li>Selling your information to third parties</li>
+              <li>Training AI models</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">3. How We Share Your Data</h2>
+            <p className="text-gray-700 mb-6">
+              <strong>We do NOT sell your personal data.</strong>
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              We may share limited data with the following third-party service providers, solely to operate the App:
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">3.1 Service Providers</h3>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Mixpanel (Analytics):</strong> We share anonymized usage data with Mixpanel to analyze App performance and feature usage. Mixpanel does not receive any personally identifiable information or your mood/journal data.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>RevenueCat (Subscription Management):</strong> We share an anonymous user identifier and subscription status with RevenueCat to manage your premium subscription. RevenueCat does not receive your mood data or journal entries.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              <strong>Apple (Payment Processing):</strong> When you make an in-app purchase, Apple processes your payment information according to their privacy policy. We do not have access to your payment details.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">3.2 Legal Requirements</h3>
+            <p className="text-gray-700 mb-4">
+              We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court order or subpoena), or to:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Comply with a legal obligation</li>
+              <li>Protect and defend our rights or property</li>
+              <li>Prevent or investigate possible wrongdoing</li>
+              <li>Protect the personal safety of users or the public</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">3.3 Business Transfers</h3>
+            <p className="text-gray-700 mb-8">
+              If Nuvin is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will provide notice before your information is transferred and becomes subject to a different privacy policy.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">4. Data Storage & Security</h2>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">4.1 Where Your Data is Stored</h3>
+
+            <p className="text-gray-700 mb-4">
+              <strong>On Your Device:</strong> Your mood logs, statistics, preferences, and personalization data are stored locally on your device using iOS Keychain (encrypted) and UserDefaults.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Third-Party Services:</strong> Anonymous analytics data is stored by Mixpanel in the United States. Subscription data is stored by RevenueCat in the United States.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              <strong>No Cloud Sync:</strong> Nuvin does not use iCloud or any other cloud service to sync your data. Your data stays on your device unless you explicitly export it.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">4.2 How We Protect Your Data</h3>
+            <p className="text-gray-700 mb-4">We implement commercially reasonable security measures to protect your information:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Sensitive data (mood logs, user stats) is stored in iOS Keychain with encryption</li>
+              <li>All network communications use HTTPS encryption</li>
+              <li>We use anonymous identifiers instead of personal identifiers wherever possible</li>
+              <li>Journal entries are never stored (immediately deleted)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-6">
+              However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">4.3 Data Retention</h3>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Local Data:</strong> Data stored on your device (mood logs, stats, preferences) remains on your device until you delete it manually or uninstall the App.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Analytics Data:</strong> Mixpanel retains analytics data according to their retention policy (typically 5 years, but anonymized).
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              <strong>Subscription Data:</strong> RevenueCat retains subscription data as long as necessary to provide the service and comply with legal obligations.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">5. Your Privacy Rights & Controls</h2>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.1 Access & Export Your Data</h3>
+            <p className="text-gray-700 mb-4">You can export all of your locally stored data at any time:</p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-4">
+              <li>Open the App and go to Settings</li>
+              <li>Tap "Data & Privacy"</li>
+              <li>Tap "Manage Your Data"</li>
+              <li>Tap "Export All Data"</li>
+            </ol>
+            <p className="text-gray-700 mb-6">
+              This will generate a JSON file containing your mood entries, session stats, and preferences, which you can save or email to yourself.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">5.2 Delete Your Data</h3>
+            <p className="text-gray-700 mb-4">You can delete all of your locally stored data at any time:</p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-4">
+              <li>Open the App and go to Settings</li>
+              <li>Tap "Data & Privacy"</li>
+              <li>Tap "Manage Your Data"</li>
+              <li>Tap "Delete All Data"</li>
+              <li>Confirm deletion</li>
+            </ol>
+            <p className="text-gray-700 mb-4">
+              <strong>This action is permanent and cannot be undone.</strong> After deletion, your mood logs, streaks, and preferences will be erased from your device.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Note: Deleting data from the App does not delete anonymized analytics data already sent to Mixpanel or subscription records stored by RevenueCat.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">5.3 Manage Notifications</h3>
+            <p className="text-gray-700 mb-6">
+              You can control notifications at any time in Settings. All notifications are local (generated by your device), not push notifications from our servers.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">5.4 Cancel Your Subscription</h3>
+            <p className="text-gray-700 mb-4">You can cancel your subscription at any time through the App Store:</p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-8">
+              <li>Open the Settings app on your iPhone</li>
+              <li>Tap your name at the top</li>
+              <li>Tap "Subscriptions"</li>
+              <li>Select Nuvin and tap "Cancel Subscription"</li>
+            </ol>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">5.5 Additional Rights for European Users (GDPR)</h3>
+            <p className="text-gray-700 mb-4">
+              If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have additional rights under the General Data Protection Regulation (GDPR):
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>Right to Access:</strong> You can request confirmation of what personal data we process about you and receive a copy (use the Export feature above).</li>
+              <li><strong>Right to Rectification:</strong> You can correct inaccurate data by updating it in the App settings.</li>
+              <li><strong>Right to Erasure:</strong> You can request deletion of your data (use the Delete feature above).</li>
+              <li><strong>Right to Restrict Processing:</strong> You can request that we limit how we use your data.</li>
+              <li><strong>Right to Data Portability:</strong> You can export your data in a machine-readable format (JSON).</li>
+              <li><strong>Right to Object:</strong> You can object to our processing of your data for certain purposes.</li>
+              <li><strong>Right to Withdraw Consent:</strong> If we process your data based on consent, you can withdraw that consent at any time.</li>
+            </ul>
+
+            <p className="text-gray-700 mb-8">
+              To exercise any of these rights, contact us at nathan.douziech@gmail.com.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">5.6 Additional Rights for California Users (CCPA)</h3>
+            <p className="text-gray-700 mb-4">
+              If you are a California resident, the California Consumer Privacy Act (CCPA) provides you with additional rights:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>Right to Know:</strong> You can request details about the personal information we collect, use, disclose, and sell.</li>
+              <li><strong>Right to Delete:</strong> You can request deletion of your personal information (use the Delete feature in Settings).</li>
+              <li><strong>Right to Opt-Out of Sales:</strong> We do NOT sell your personal information, so there is nothing to opt out of.</li>
+              <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights.</li>
+            </ul>
+
+            <p className="text-gray-700 mb-8">
+              To exercise your CCPA rights, contact us at nathan.douziech@gmail.com.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Children's Privacy</h2>
+            <p className="text-gray-700 mb-4">
+              Nuvin is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13 years of age.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              If you are between 13 and 17 years old, you must have permission from a parent or guardian to use the App.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              If we learn that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information as quickly as possible. If you believe we have collected information from a child under 13, please contact us at nathan.douziech@gmail.com.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">7. International Data Transfers</h2>
+            <p className="text-gray-700 mb-4">
+              Your information may be transferred to and processed in the United States, where our third-party service providers (Mixpanel and RevenueCat) are located. The United States may have data protection laws that are different from the laws of your country.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              By using the App, you consent to the transfer of your information to the United States. We take steps to ensure that your data receives adequate protection in accordance with applicable data protection laws.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">8. Do Not Track Signals</h2>
+            <p className="text-gray-700 mb-4">
+              The App does not track you across other apps or websites for advertising purposes. Our Privacy Manifest (PrivacyInfo.xcprivacy) explicitly declares that we do NOT engage in tracking as defined by Apple's App Tracking Transparency framework.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              We do not respond to web browser "Do Not Track" signals because the App does not use web-based tracking technologies.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">9. Third-Party Links</h2>
+            <p className="text-gray-700 mb-4">The App may contain links to external websites and resources, such as:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Crisis support hotlines (988 Suicide & Crisis Lifeline, Crisis Text Line)</li>
+              <li>Mental health organizations (NAMI, ADAA, Mental Health America)</li>
+              <li>Our Terms of Service and Privacy Policy (hosted on GitHub Pages)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-8">
+              These third-party sites have their own privacy policies. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies before providing any personal information.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">10. Changes to This Privacy Policy</h2>
+            <p className="text-gray-700 mb-4">
+              We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes, we will:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Update the "Last Updated" date at the top of this policy</li>
+              <li>Notify you through the App or via the email you provided (if applicable)</li>
+              <li>For material changes, we may provide more prominent notice</li>
+            </ul>
+
+            <p className="text-gray-700 mb-8">
+              We encourage you to review this Privacy Policy periodically. Your continued use of the App after changes are posted constitutes your acceptance of the updated Privacy Policy.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">11. Medical Disclaimer</h2>
+            <p className="text-gray-700 mb-4">
+              While this is a privacy policy, it's important to note: <strong>Nuvin is not a medical device and does not provide medical advice, diagnosis, or treatment.</strong> The App is designed to provide general wellness support for anxiety and stress management.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              We do not collect or process health data in a way that would classify the App as a medical device under applicable regulations. Your mood tracking data is for your personal use and self-reflection only.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              If you are experiencing a mental health crisis, please contact emergency services (911 in the US) or a crisis helpline immediately.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">12. Contact Us</h2>
+            <p className="text-gray-700 mb-4">
+              If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Email:</strong> nathan.douziech@gmail.com
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              We will respond to your inquiry within 30 days.
             </p>
 
             <div className="border-t border-gray-200 pt-8 mt-12">
-              <p className="text-lg text-gray-800 font-semibold text-center">
+              <p className="text-lg text-gray-800 font-semibold text-center italic">
                 Your mental health journey is personal. Your data should be too.
               </p>
             </div>
