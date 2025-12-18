@@ -23,7 +23,7 @@ export default function TermsPage() {
           </h1>
 
           <p className="text-sm text-gray-600 mb-8">
-            Last Updated: January 2025
+            Last Updated: December 2025
           </p>
 
           <div className="prose prose-lg max-w-none">
@@ -42,23 +42,39 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">2. DESCRIPTION OF SERVICE</h2>
             <p className="text-gray-700 mb-4">
-              Nuvin is a mental wellness mobile application designed for iOS devices. The App provides evidence-based tools and techniques to help manage anxiety and stress, including:
+              Nuvin is a mobile wellness companion app featuring a virtual Axolotl mascot, daily habit tracking across 8 wellness categories (Calm, Food, Focus, Exercise, Gratitude, Connection, Home, Sleep), mood tracking, gamification elements (friendship levels, streaks), and evidence-based anxiety relief tools, including:
             </p>
 
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li>Guided breathing exercises (e.g., box breathing)</li>
-              <li>Grounding techniques (e.g., 5-4-3-2-1 sensory method)</li>
+              <li>Guided breathing exercises</li>
+              <li>Grounding techniques (5-4-3-2-1 method)</li>
               <li>Physical reset exercises</li>
-              <li>Perspective shift and cognitive reframing tools</li>
+              <li>Emotion reset and cognitive reframing tools</li>
               <li>Quick journaling (notes are NOT saved - see Section 7)</li>
+              <li>Perspective shift exercises</li>
               <li>Mood tracking and progress visualization</li>
               <li>Daily affirmations and quotes</li>
-              <li>SOS crisis intervention flow</li>
+              <li>Customizable background environments</li>
+              <li>Home screen widget for quick SOS access</li>
             </ul>
 
-            <p className="text-gray-700 mb-8">
-              <strong>The Service is a premium, subscription-based offering. Access to the App requires an active subscription (see Section 4).</strong>
-            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Freemium Model</h3>
+            <p className="text-gray-700 mb-4"><strong>Free Features:</strong> All users have access to:</p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+              <li>2 background environments (Cozy Bedroom, Underwater)</li>
+              <li>Approximately 40% of predefined daily habits</li>
+              <li>All anxiety relief tools (breathing, grounding, physical reset, emotion reset, journaling, reframing, perspective shift)</li>
+              <li>Basic virtual Axolotl companion interactions</li>
+              <li>Mood tracking and streak calendar</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4"><strong>Premium Features (Subscription Required):</strong></p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>4 additional background environments (Forest, Japanese Zen Garden, Beach at Sunset, Mountain Field)</li>
+              <li>Approximately 60% of predefined daily habits (additional premium habits across all 8 categories)</li>
+              <li>Custom habit creation (unlimited)</li>
+              <li>Full mascot customization and advanced interactions</li>
+            </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">3. ELIGIBILITY</h2>
             <p className="text-gray-700 mb-4">
@@ -89,7 +105,7 @@ export default function TermsPage() {
             </p>
 
             <p className="text-gray-700 mb-6">
-              <strong>No Free Trial:</strong> Nuvin does not currently offer a free trial. Payment is required upfront to access the App.
+              <strong>3-Day Free Trial:</strong> New users are offered a 3-day free trial of Premium features. You may be required to enter your billing information to sign up for the free trial. If you enter your billing information, you will not be charged until the free trial has expired (after 3 days). On the last day of the free trial period, unless you cancel your subscription at least 24 hours before the trial expires, you will be automatically charged the applicable subscription fees. You can cancel your free trial at any time by managing your subscription in your Apple ID account settings.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">4.2 Payment Processing</h3>

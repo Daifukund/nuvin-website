@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="text-sm text-gray-600 mb-8">
-            Last Updated: January 2025
+            Last Updated: December 2025
           </p>
 
           <div className="prose prose-lg max-w-none">
@@ -106,7 +106,67 @@ export default function PrivacyPage() {
               You can learn more about RevenueCat's privacy practices at <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-nuvin-purple hover:text-nuvin-blue">https://www.revenuecat.com/privacy/</a>
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.4 Crash & Diagnostic Data</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.4 TikTok Business SDK (Advertising Attribution)</h3>
+            <p className="text-gray-700 mb-4">
+              <strong>IMPORTANT:</strong> We use the TikTok Business SDK to measure the effectiveness of our advertising campaigns and understand how users discover our app. The TikTok SDK automatically tracks:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>App installs:</strong> Tracked automatically on first launch</li>
+              <li><strong>App launches:</strong> Tracked automatically each time you open the app</li>
+              <li><strong>Registration events:</strong> When you complete onboarding</li>
+              <li><strong>Trial starts and subscription purchases:</strong> With subscription type, value, and currency</li>
+              <li><strong>Purchase events:</strong> With value and currency</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              The TikTok SDK receives: device identifiers, TikTok Access Token (if applicable), App Store ID, subscription types, and purchase amounts. <strong>The TikTok SDK does NOT receive your mood data, habits, journal content, or other health information.</strong>
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              TikTok may use this data to measure ad campaign performance and for their own business purposes as described in their privacy policy. Learn more: <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-nuvin-purple hover:text-nuvin-blue">https://www.tiktok.com/legal/privacy-policy</a>
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.5 App Tracking Transparency (ATT)</h3>
+            <p className="text-gray-700 mb-4">
+              We request App Tracking Transparency (ATT) permission to enable advertising attribution through the TikTok SDK. The permission prompt states: <em>"We use tracking to measure ad performance and deliver personalized content to improve your experience."</em>
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>If you grant ATT permission,</strong> the TikTok SDK can link your app activity to advertising data across apps and websites owned by other companies for advertising measurement purposes.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>If you deny permission,</strong> attribution will use privacy-preserving methods like SKAdNetwork (Apple's privacy-preserving ad attribution framework).
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              <strong>You can manage tracking permissions at any time</strong> by going to: iOS Settings → Privacy & Security → Tracking → Nuvin. You can disable tracking permission without affecting core app functionality.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.6 Onboarding Survey Data</h3>
+            <p className="text-gray-700 mb-4">
+              During onboarding, we collect personalization information to customize your experience, including:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Age range and gender</li>
+              <li>Sleep hours and daily routines</li>
+              <li>Mental health challenges (Anxiety, ADHD, OCD, Bipolar, Depression, PTSD - all optional)</li>
+              <li>Exercise and wellness habits</li>
+              <li>Overwhelm frequency and support network information</li>
+              <li><strong>Attribution source</strong> (where you heard about the app - e.g., TikTok, Instagram, therapist recommendation, etc.)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              This data is stored locally on your device and used solely for personalizing your experience within the app. <strong>Attribution source information may be shared with advertising partners (TikTok) for measuring ad campaign effectiveness.</strong>
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              All other onboarding data (mental health information, habits, routines) stays on your device and is never sent to advertising services or third parties.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-3">1.7 Crash & Diagnostic Data</h3>
             <p className="text-gray-700 mb-4">
               If the App crashes or encounters an error, we save a crash log locally on your device. These logs include:
             </p>
@@ -313,17 +373,34 @@ export default function PrivacyPage() {
               To exercise your CCPA rights, contact us at nathan.douziech@gmail.com.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Children's Privacy (COPPA Compliance)</h2>
             <p className="text-gray-700 mb-4">
-              Nuvin is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13 years of age.
+              <strong>Our app is intended for users aged 13 and older.</strong> We do not knowingly collect personal information from children under 13 years of age. If you are under 13, do not use this app or provide any information.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">For Users Aged 13-17</h3>
+            <p className="text-gray-700 mb-4">
+              If you are between 13 and 17 years old, you must have your parent or legal guardian's permission before using the app or providing any personal information to us. We collect limited data from users aged 13-17, including:
+            </p>
+
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+              <li>Onboarding survey responses (age range, gender, mental health information)</li>
+              <li>Mood tracking data (stored locally on device)</li>
+              <li>App usage analytics (sent to Mixpanel)</li>
+              <li>Subscription information (processed by RevenueCat)</li>
+              <li>Advertising attribution data (processed by TikTok SDK)</li>
+            </ul>
+
+            <p className="text-gray-700 mb-4">
+              <strong>Parents or legal guardians</strong> may request to review, delete, or stop the collection of their child's personal information by contacting us at nathan.douziech@gmail.com. We will verify the requester's identity as a parent or guardian before fulfilling such requests.
             </p>
 
             <p className="text-gray-700 mb-4">
-              If you are between 13 and 17 years old, you must have permission from a parent or guardian to use the App.
+              If you have reason to believe that a child under the age of 13 has provided Personal Data to Nuvin through the App, please contact us immediately at nathan.douziech@gmail.com and we will delete that information from our systems.
             </p>
 
             <p className="text-gray-700 mb-8">
-              If we learn that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information as quickly as possible. If you believe we have collected information from a child under 13, please contact us at nathan.douziech@gmail.com.
+              <strong>Note to Parents:</strong> The TikTok Business SDK collects advertising attribution data from all users, including minors aged 13-17 who use the app with parental consent. This data is used solely for measuring advertising campaign effectiveness and is subject to TikTok's privacy practices.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">7. International Data Transfers</h2>
@@ -335,9 +412,17 @@ export default function PrivacyPage() {
               By using the App, you consent to the transfer of your information to the United States. We take steps to ensure that your data receives adequate protection in accordance with applicable data protection laws.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">8. Do Not Track Signals</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">8. Do Not Track Signals & Tracking</h2>
             <p className="text-gray-700 mb-4">
-              The App does not track you across other apps or websites for advertising purposes. Our Privacy Manifest (PrivacyInfo.xcprivacy) explicitly declares that we do NOT engage in tracking as defined by Apple's App Tracking Transparency framework.
+              <strong>Important Update:</strong> We use the TikTok Business SDK for advertising attribution, which tracks app installs, launches, and purchase events to measure ad campaign effectiveness. This constitutes "tracking" as defined by Apple's App Tracking Transparency (ATT) framework.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              We request ATT permission to enable this tracking. If you deny ATT permission, we use privacy-preserving attribution methods (SKAdNetwork) instead, which do not track you across apps.
+            </p>
+
+            <p className="text-gray-700 mb-4">
+              <strong>You can manage tracking at any time:</strong> iOS Settings → Privacy & Security → Tracking → Nuvin.
             </p>
 
             <p className="text-gray-700 mb-8">
