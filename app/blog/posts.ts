@@ -1,3 +1,9 @@
+// Backwards-compatible shim. The real source of truth is lib/blog.ts.
+// The existing English blog index imports { blogPosts } from here; we keep
+// that working by re-exporting the English posts in the original shape.
+
+import { getPostsByLang, type BlogPost as FullBlogPost } from '@/lib/blog'
+
 export interface BlogPost {
   slug: string
   title: string
@@ -7,29 +13,13 @@ export interface BlogPost {
   category: string
 }
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: '5-minute-breathing-exercises',
-    title: '5-Minute Breathing Exercises for Instant Anxiety Relief',
-    excerpt: 'Learn powerful breathing techniques that can calm your nervous system in just five minutes. Perfect for moments when anxiety strikes.',
-    date: 'October 15, 2025',
-    readTime: '5 min read',
-    category: 'Techniques',
-  },
-  {
-    slug: 'understanding-5-4-3-2-1-grounding',
-    title: 'Understanding the 5-4-3-2-1 Grounding Technique',
-    excerpt: 'Discover how this simple sensory exercise can anchor you in the present moment and reduce overwhelming feelings of anxiety.',
-    date: 'October 12, 2025',
-    readTime: '4 min read',
-    category: 'Techniques',
-  },
-  {
-    slug: 'using-nuvin-during-panic-attack',
-    title: 'How to Use Nuvin During a Panic Attack',
-    excerpt: 'A step-by-step guide to using Nuvin when you need it most. Learn how to access immediate relief during moments of crisis.',
-    date: 'October 10, 2025',
-    readTime: '6 min read',
-    category: 'Guide',
-  },
-]
+export const blogPosts: BlogPost[] = getPostsByLang('en').map(
+  (p: FullBlogPost) => ({
+    slug: p.slug,
+    title: p.title,
+    excerpt: p.excerpt,
+    date: p.displayDate,
+    readTime: p.readTime,
+    category: p.category,
+  })
+)

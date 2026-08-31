@@ -1,0 +1,116 @@
+// Single source of truth for all blog posts, in every language.
+//
+// The content engine (generate.py) appends entries here. Everything else
+// derives from this file: the /blog and /fr/blog index pages, the sitemap
+// (with hreflang), and the internal link resolver. Never hand-edit the
+// ordering logic below; just add post objects to `blogPosts`.
+
+export type Locale = 'en' | 'fr'
+
+export const LOCALES: Locale[] = ['en', 'fr']
+export const DEFAULT_LOCALE: Locale = 'en'
+
+export interface BlogPost {
+  /** URL slug for this language (localized, not shared across languages). */
+  slug: string
+  /** Which language this post is written in. */
+  lang: Locale
+  title: string
+  excerpt: string
+  /** ISO date (YYYY-MM-DD) for machines. */
+  date: string
+  /** Human-facing display date, already localized. */
+  displayDate: string
+  readTime: string
+  category: string
+  /**
+   * Stable key shared by all language versions of the SAME article.
+   * Used to build hreflang alternates and to link translations together.
+   * e.g. both the EN and FR version of the breathing article use
+   * translationKey: '5-minute-breathing-exercises'.
+   */
+  translationKey: string
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: '5-minute-breathing-exercises',
+    lang: 'en',
+    title: '5-Minute Breathing Exercises for Instant Anxiety Relief',
+    excerpt:
+      'Learn powerful breathing techniques that can calm your nervous system in just five minutes. Perfect for moments when anxiety strikes.',
+    date: '2025-10-15',
+    displayDate: 'October 15, 2025',
+    readTime: '5 min read',
+    category: 'Techniques',
+    translationKey: '5-minute-breathing-exercises',
+  },
+  {
+    slug: 'understanding-5-4-3-2-1-grounding',
+    lang: 'en',
+    title: 'Understanding the 5-4-3-2-1 Grounding Technique',
+    excerpt:
+      'Discover how this simple sensory exercise can anchor you in the present moment and reduce overwhelming feelings of anxiety.',
+    date: '2025-10-12',
+    displayDate: 'October 12, 2025',
+    readTime: '4 min read',
+    category: 'Techniques',
+    translationKey: 'understanding-5-4-3-2-1-grounding',
+  },
+  {
+    slug: 'using-nuvin-during-panic-attack',
+    lang: 'en',
+    title: 'How to Use Nuvin During a Panic Attack',
+    excerpt:
+      'A step-by-step guide to using Nuvin when you need it most. Learn how to access immediate relief during moments of crisis.',
+    date: '2025-10-10',
+    displayDate: 'October 10, 2025',
+    readTime: '6 min read',
+    category: 'Guide',
+    translationKey: 'using-nuvin-during-panic-attack',
+  },
+]
+
+/** All posts for one language, newest first. */
+export function getPostsByLang(lang: Locale): BlogPost[] {
+  return blogPosts
+    .filter((p) => p.lang === lang)
+    .sort((a, b) => b.date.localeCompare(a.date))
+}
+
+/** Find one post by its (language-specific) slug within a language. */
+export function getPost(lang: Locale, slug: string): BlogPost | undefined {
+  return blogPosts.find((p) => p.lang === lang && p.slug === slug)
+}
+
+/**
+ * The public URL path for a post, e.g. '/blog/foo' (en) or '/fr/blog/foo' (fr).
+ * English (the default locale) is served without a language prefix.
+ */
+export function postPath(post: Pick<BlogPost, 'lang' | 'slug'>): string {
+  return post.lang === DEFAULT_LOCALE
+    ? `/blog/${post.slug}`
+    : `/${post.lang}/blog/${post.slug}`
+}
+
+/** The blog index path for a language: '/blog' (en) or '/fr/blog' (fr). */
+export function blogIndexPath(lang: Locale): string {
+  return lang === DEFAULT_LOCALE ? '/blog' : `/${lang}/blog`
+}
+
+/**
+ * hreflang alternates for a given article, keyed by language code, mapping to
+ * absolute URLs. Includes every language version that exists for the article.
+ */
+export function getAlternates(
+  translationKey: string,
+  baseUrl = 'https://nuvin.app'
+): Record<string, string> {
+  const alternates: Record<string, string> = {}
+  for (const post of blogPosts) {
+    if (post.translationKey === translationKey) {
+      alternates[post.lang] = `${baseUrl}${postPath(post)}`
+    }
+  }
+  return alternates
+}

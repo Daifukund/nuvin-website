@@ -1,51 +1,41 @@
 import { MetadataRoute } from 'next'
+import {
+  blogPosts,
+  getAlternates,
+  postPath,
+  blogIndexPath,
+  LOCALES,
+} from '@/lib/blog'
 
+const baseUrl = 'https://nuvin.app'
+
+// Auto-generated from lib/blog.ts. New posts appear here automatically the
+// moment the content engine adds them to blogPosts, with hreflang alternates.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://nuvin.app'
-  const currentDate = new Date().toISOString()
+  const now = new Date().toISOString()
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/5-minute-breathing-exercises`,
-      lastModified: '2025-01-08',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/understanding-5-4-3-2-1-grounding`,
-      lastModified: '2025-01-12',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/using-nuvin-during-panic-attack`,
-      lastModified: '2025-01-10',
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: '2025-10-15',
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: '2025-10-15',
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: now, changeFrequency: 'monthly', priority: 1.0 },
+    { url: `${baseUrl}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ]
+
+  const blogIndexes: MetadataRoute.Sitemap = LOCALES.map((lang) => ({
+    url: `${baseUrl}${blogIndexPath(lang)}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
+
+  const postPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}${postPath(post)}`,
+    lastModified: `${post.date}T00:00:00.000Z`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+    alternates: {
+      languages: getAlternates(post.translationKey, baseUrl),
+    },
+  }))
+
+  return [...staticPages, ...blogIndexes, ...postPages]
 }

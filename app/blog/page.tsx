@@ -5,6 +5,13 @@ import { blogPosts } from './posts'
 export const metadata: Metadata = {
   title: 'Blog - Anxiety Relief Tips & Techniques',
   description: 'Learn effective techniques and strategies for managing anxiety with insights from the Nuvin team.',
+  alternates: {
+    canonical: 'https://nuvin.app/blog',
+    languages: {
+      en: 'https://nuvin.app/blog',
+      fr: 'https://nuvin.app/fr/blog',
+    },
+  },
 }
 
 export default function BlogPage() {
