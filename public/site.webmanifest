@@ -1,14 +1,19 @@
 {
   "name": "Nuvin - Anxiety Relief",
   "short_name": "Nuvin",
-  "description": "Find calm in moments of anxiety. Instant relief through breathing, grounding, and reset exercises.",
+  "description": "Calm your mind in 2 minutes with instant, science-backed anxiety relief.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#9b59b6",
-  "theme_color": "#9b59b6",
+  "background_color": "#9747ff",
+  "theme_color": "#9747ff",
   "icons": [
     {
       "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/nuvin-icon.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }

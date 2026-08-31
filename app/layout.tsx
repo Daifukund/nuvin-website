@@ -82,11 +82,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
+  // Icons are auto-detected from app/icon.png + app/apple-icon.png (the axolotl).
   manifest: '/site.webmanifest',
 }
 
