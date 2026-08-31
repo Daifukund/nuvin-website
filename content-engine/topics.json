@@ -1,0 +1,1608 @@
+{
+  "_meta": {
+    "project": "Nuvin Content Engine",
+    "version": "1.0",
+    "created": "2026-08-31",
+    "description": "SEO/GEO topic bank for the Nuvin anxiety-relief blog. Author once in English, localize-translate to French. Encodes the deep-research brief: honest evidence footing per technique, per-topic safety flags, and staged publishing.",
+    "total_topics": 49,
+    "site": "https://nuvin.app",
+    "blog_base": "/blog",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "generation_rules": {
+      "voice": "Calm, direct, permission-giving. Technique above the fold, minimal intro (readers are anxious NOW). Coach ONE technique deeply rather than listing many.",
+      "NO_EM_DASH": true,
+      "core_differentiator": "Hyper-situational, in-the-moment 'do this right now' coaching backed by Nuvin's offline instant-relief product. Own the specific moment (panic at work, 3am, highway driving), not generic listicles.",
+      "honesty_guardrails": [
+        "Cite real evidence where it exists (Stanford/Balban 2023 RCT for breathing/physiological sigh; Fincham 2023 meta-analysis; Manzoni 2008 for PMR; Ensari 2015 for single-bout exercise).",
+        "Be honest where evidence is weak: grounding is clinically endorsed but under-tested standalone; shake/stretch is only preliminarily evidenced, NEVER claim 'trauma release', frame as movement/tension-release.",
+        "Quote the hype-vs-evidence caution from breathwork research; do not oversell.",
+        "Nuvin is a self-help tool for everyday, situational anxiety. NOT a medical device, diagnosis, therapy, or crisis service."
+      ],
+      "citations": "Prefer primary sources with DOIs. Verify Stanford RCT N (111-114) and 2026 PMR effect size against full text before citing exact figures.",
+      "seo_structure": "TL;DR / direct answer first, question-format H2s, FAQPage schema from the topic's faq array, inverted pyramid, internal links to related topics and always to the safety hub (when-to-see-a-professional)."
+    },
+    "safety": {
+      "crisis_disclaimer_levels": {
+        "standard": "The baked-in per-language CrisisDisclaimer component (US 988 / France 3114) at the article foot.",
+        "elevated": "Standard disclaimer PLUS an in-body caution specific to the topic (e.g., rule out medical causes, pull over when driving, recurrent symptoms warrant a professional).",
+        "strict": "Health-anxiety editorial rules: NO symptom reassurance, NO diagnostic symptom lists, always route to professional support. Reassurance-seeking is a documented maintaining factor."
+      },
+      "safety_hub": "when-to-see-a-professional",
+      "out_of_scope": "Crisis triage, self-harm counseling, diagnosis, medication advice. These are deliberately excluded."
+    },
+    "localization": {
+      "strategy": "write-once-then-localize-translate",
+      "source_lang": "en",
+      "target_langs": [
+        "fr"
+      ],
+      "url_structure": "subdirectories: /blog/<slug> (en), /fr/blog/<localized-slug> (fr)",
+      "tone_brief_fr": "France is more skeptical of American positive-thinking wellness. Be more evidence-forward, understated, less hype. Adapt crisis resources to France (3114 national suicide prevention line, 15 SAMU, 112 EU emergency), NOT US 988. Adapt examples and idioms, keep every citation and caveat intact.",
+      "no_em_dash_all_langs": true
+    },
+    "staging": {
+      "stage_1": "Launch (first ~60 days): own urgent situational moments. Clusters 1, 2, 3 + the safety hub (when-to-see-a-professional) FIRST.",
+      "stage_2": "60-150 days: credibility layer (Cluster 5 science explainers) + Cluster 4 (driving/flying/social, where offline is a differentiator).",
+      "stage_3": "150+ days: worry-cycle (Cluster 6, strict editorial) + lifestyle (Cluster 7) + meta/trust (Cluster 8)."
+    },
+    "clusters": {
+      "1": "Panic attacks & acute surges",
+      "2": "Night-time & sleep anxiety",
+      "3": "Work & performance anxiety",
+      "4": "Situational & phobia-adjacent anxiety",
+      "5": "The techniques, explained credibly (science / E-E-A-T)",
+      "6": "Health anxiety & the worry cycle",
+      "7": "Everyday triggers & lifestyle",
+      "8": "Understanding & self-help meta (trust-builders)"
+    },
+    "app": {
+      "name": "Nuvin",
+      "app_store_id": "6753338724",
+      "app_store_url": "https://apps.apple.com/us/app/nuvin-anxiety-relief/id6753338724",
+      "techniques": [
+        "breathing (box, 4-7-8, physiological sigh)",
+        "grounding (5-4-3-2-1)",
+        "physical reset (movement/stretch, PMR)",
+        "mood logging"
+      ]
+    }
+  },
+  "topics": [
+    {
+      "slug": "how-to-stop-a-panic-attack",
+      "title": "How to Stop a Panic Attack: A Step-by-Step Script for Right Now",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 1,
+      "type": "pillar",
+      "search_intent": "how-to",
+      "primary_keyword": "how to stop a panic attack",
+      "secondary_keywords": [
+        "stop panic attack now",
+        "panic attack help",
+        "calm a panic attack"
+      ],
+      "angle": "One calm, numbered walk-through (not a list of 15 options), built around box breathing + 5-4-3-2-1, mirroring Nuvin's panic flow. Technique above the fold, minimal intro.",
+      "differentiator": "Incumbents list 20 techniques; this coaches ONE sequence in the moment.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Panic attacks aren't dangerous, but first-time symptoms or chest pain warrant a medical checkup. Link crisis resources.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Are panic attacks dangerous?",
+        "How long does a panic attack last?",
+        "What should I do first during a panic attack?",
+        "When should I see a doctor about panic attacks?"
+      ],
+      "internal_links": [
+        "you-dont-have-to-calm-down-instantly",
+        "54321-grounding-when-panicking",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "you-dont-have-to-calm-down-instantly",
+      "title": "You Don't Have to Calm Down Instantly: Why Panic Ends on Its Own",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 1,
+      "type": "situational",
+      "search_intent": "informational",
+      "primary_keyword": "panic attack ends on its own",
+      "secondary_keywords": [
+        "panic attack will pass",
+        "trying to calm down makes it worse",
+        "panic self-limiting"
+      ],
+      "angle": "Counter-intuitive, honest reframe echoing real user sentiment that trying to force calm makes it worse. Panic is self-limiting biology.",
+      "differentiator": "Permission-giving reframe most brands avoid; matches lived-experience voice.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Will a panic attack stop on its own?",
+        "Why does trying to calm down make panic worse?",
+        "How long until panic peaks and fades?"
+      ],
+      "internal_links": [
+        "how-to-stop-a-panic-attack",
+        "what-happens-in-your-body-during-anxiety"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "54321-grounding-when-panicking",
+      "title": "The 5-4-3-2-1 Grounding Technique: How to Actually Do It When You're Panicking",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 1,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "5-4-3-2-1 grounding technique",
+      "secondary_keywords": [
+        "54321 method",
+        "grounding technique anxiety",
+        "5 senses grounding"
+      ],
+      "angle": "The definitive practical version, including what to do when you can't find 5 things. Coaches the technique deeply.",
+      "differentiator": "Handles the real failure mode (blanking mid-panic) other guides ignore.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How does the 5-4-3-2-1 technique work?",
+        "What if I can't find five things to see?",
+        "Why does grounding help with panic?",
+        "Can I do 5-4-3-2-1 silently in public?"
+      ],
+      "internal_links": [
+        "how-to-stop-a-panic-attack",
+        "does-54321-actually-work"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "panic-attack-vs-anxiety-attack",
+      "title": "Panic Attack vs. Anxiety Attack: What's the Difference?",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 1,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "panic attack vs anxiety attack",
+      "secondary_keywords": [
+        "difference panic anxiety attack",
+        "is it a panic or anxiety attack"
+      ],
+      "angle": "Describe the experiences plainly; defer diagnosis to professionals.",
+      "differentiator": "Non-diagnostic, honest about where the line blurs.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "Avoid diagnostic language; describe experiences, defer diagnosis to professionals.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Is there a difference between a panic attack and an anxiety attack?",
+        "What are the symptoms of each?",
+        "Which one comes on faster?"
+      ],
+      "internal_links": [
+        "how-to-stop-a-panic-attack",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "nocturnal-panic-attacks",
+      "title": "Nocturnal Panic Attacks: Waking Up in a Panic and How to Get Back to Sleep",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 1,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "nocturnal panic attacks",
+      "secondary_keywords": [
+        "waking up in a panic",
+        "panic attack in sleep",
+        "night panic attack"
+      ],
+      "angle": "Bedside, lights-off steps to settle a middle-of-the-night surge and return to sleep.",
+      "differentiator": "Bridges panic + sleep clusters with in-bed specifics.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Recurrent nocturnal panic warrants seeing a professional.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Why do I wake up having a panic attack?",
+        "How do I get back to sleep after a night panic attack?",
+        "Are nocturnal panic attacks a sign of something serious?"
+      ],
+      "internal_links": [
+        "quiet-racing-thoughts-at-night",
+        "how-to-stop-a-panic-attack",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "panic-attack-symptoms-explained",
+      "title": "Panic Attack Symptoms: Why Your Body Reacts That Way",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 2,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "panic attack symptoms",
+      "secondary_keywords": [
+        "what does a panic attack feel like",
+        "panic attack physical symptoms"
+      ],
+      "angle": "Explain each symptom (racing heart, tingling, unreality) as fight-or-flight, to defuse the fear-of-symptoms loop.",
+      "differentiator": "Explains the 'why' behind each scary sensation instead of just listing them.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "Tell readers to rule out medical causes for new or severe symptoms with a doctor.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "What are the physical symptoms of a panic attack?",
+        "Why do I feel like I can't breathe during panic?",
+        "Why do my hands tingle during a panic attack?",
+        "Can a panic attack feel like a heart attack?"
+      ],
+      "internal_links": [
+        "anxiety-chest-tightness-symptoms",
+        "how-to-stop-a-panic-attack"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "how-to-help-someone-having-a-panic-attack",
+      "title": "How to Help Someone Having a Panic Attack",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 2,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "how to help someone having a panic attack",
+      "secondary_keywords": [
+        "what to say during a panic attack",
+        "help partner panic attack"
+      ],
+      "angle": "Calm, concrete script for a bystander: what to say, what not to say, how to co-regulate breathing.",
+      "differentiator": "Serves the supporter, an underserved high-intent searcher.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Advise calling emergency services if symptoms are unusual or the person asks.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "What should I say to someone having a panic attack?",
+        "What should I avoid saying?",
+        "Should I call for help?",
+        "How can I help them breathe?"
+      ],
+      "internal_links": [
+        "how-to-stop-a-panic-attack",
+        "you-dont-have-to-calm-down-instantly"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "fear-of-having-another-panic-attack",
+      "title": "The Fear of Having Another Panic Attack (and How to Break the Cycle)",
+      "cluster": 1,
+      "cluster_name": "Panic attacks & acute surges",
+      "stage": 3,
+      "type": "situational",
+      "search_intent": "informational",
+      "primary_keyword": "fear of having another panic attack",
+      "secondary_keywords": [
+        "anticipatory anxiety panic",
+        "scared of panic attacks",
+        "panic about panic"
+      ],
+      "angle": "Explain the panic-about-panic loop and how avoidance feeds it; gentle acceptance-based reframe.",
+      "differentiator": "Names the meta-fear cycle most 'stop panic' articles skip.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "If fear of panic is restricting daily life, this may be panic disorder, route to a professional.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Why am I scared of having another panic attack?",
+        "What is anticipatory anxiety?",
+        "Does avoiding situations make panic worse?",
+        "How do I stop fearing panic attacks?"
+      ],
+      "internal_links": [
+        "you-dont-have-to-calm-down-instantly",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "quiet-racing-thoughts-at-night",
+      "title": "Can't Sleep Because Your Mind Won't Stop? How to Quiet Racing Thoughts at Night",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 1,
+      "type": "pillar",
+      "search_intent": "how-to",
+      "primary_keyword": "how to quiet racing thoughts at night",
+      "secondary_keywords": [
+        "racing thoughts at night",
+        "can't sleep anxiety",
+        "mind won't stop at night"
+      ],
+      "angle": "Bedside, lights-off techniques (grounding, slow breathing, 'file it away'). Extremely common query.",
+      "differentiator": "Designed for lights-off, phone-down use; offline-friendly like Nuvin.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why do my thoughts race when I try to sleep?",
+        "How do I stop overthinking at night?",
+        "What breathing helps me fall asleep?",
+        "Should I get out of bed if I can't sleep?"
+      ],
+      "internal_links": [
+        "why-do-i-wake-up-at-3am",
+        "nighttime-breathing-to-fall-asleep",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "why-do-i-wake-up-at-3am",
+      "title": "Why Do I Wake Up at 3am With Anxiety?",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 1,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "why do i wake up at 3am with anxiety",
+      "secondary_keywords": [
+        "3am anxiety",
+        "waking up at 3am",
+        "early morning waking anxiety"
+      ],
+      "angle": "Explains cortisol / blood-sugar / quiet-darkness mechanism without alarm.",
+      "differentiator": "Reassuring, mechanism-first, no fear-mongering.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why do I wake up at 3am every night?",
+        "Is waking at 3am a sign of anxiety?",
+        "How do I stop waking up anxious at night?"
+      ],
+      "internal_links": [
+        "quiet-racing-thoughts-at-night",
+        "morning-anxiety-first-10-minutes"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "morning-anxiety-first-10-minutes",
+      "title": "Morning Anxiety: Why You Wake Up Anxious and What to Do in the First 10 Minutes",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 1,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "morning anxiety",
+      "secondary_keywords": [
+        "wake up anxious",
+        "anxiety in the morning",
+        "why am i anxious when i wake up"
+      ],
+      "angle": "The cortisol awakening response (cortisol spikes 30-45 min after waking), plus a concrete before-you-get-out-of-bed routine.",
+      "differentiator": "Ties a real mechanism to a minute-by-minute morning routine.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why do I wake up anxious every morning?",
+        "What is the cortisol awakening response?",
+        "What should I do in the first 10 minutes after waking?"
+      ],
+      "internal_links": [
+        "why-do-i-wake-up-at-3am",
+        "nighttime-breathing-to-fall-asleep"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "nighttime-breathing-to-fall-asleep",
+      "title": "Nighttime Breathing Exercises to Fall Back Asleep",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 1,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "breathing exercises to fall asleep",
+      "secondary_keywords": [
+        "breathing to fall back asleep",
+        "4-7-8 breathing sleep",
+        "sleep breathing anxiety"
+      ],
+      "angle": "Technique-first, offline-friendly. Slow-breathing sequences you can do in the dark.",
+      "differentiator": "No screen needed; pairs with Nuvin's offline breathing tool.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Note 4-7-8 dizziness caution; skip long breath-holds if pregnant or with heart conditions.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What breathing technique helps you fall asleep?",
+        "How does 4-7-8 breathing work for sleep?",
+        "Is it safe to do breathing exercises in bed?"
+      ],
+      "internal_links": [
+        "quiet-racing-thoughts-at-night",
+        "478-vs-box-vs-sigh"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "anxiety-wont-let-me-sleep-tonight",
+      "title": "Anxiety Won't Let You Sleep Tonight? A 15-Minute Wind-Down That Works Offline",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "how-to",
+      "primary_keyword": "anxiety won't let me sleep",
+      "secondary_keywords": [
+        "too anxious to sleep",
+        "anxiety keeping me awake"
+      ],
+      "angle": "A single guided wind-down sequence for tonight, not general sleep-hygiene tips.",
+      "differentiator": "Actionable tonight vs. long-term hygiene lists.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Distinguish everyday sleeplessness from chronic insomnia (3+ nights/week for 3+ months, consider CBT-I).",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What do I do when anxiety won't let me sleep?",
+        "Should I stay in bed or get up?",
+        "What's a quick wind-down for anxious nights?"
+      ],
+      "internal_links": [
+        "quiet-racing-thoughts-at-night",
+        "nighttime-breathing-to-fall-asleep"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "sunday-night-insomnia-anxiety",
+      "title": "Sunday Night Insomnia: Calming the Anxiety Before the Week Starts",
+      "cluster": 2,
+      "cluster_name": "Night-time & sleep anxiety",
+      "stage": 3,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "sunday night insomnia",
+      "secondary_keywords": [
+        "can't sleep sunday night",
+        "sunday scaries can't sleep"
+      ],
+      "angle": "Bridges Sunday-scaries (work anxiety) with sleep; a pre-week wind-down.",
+      "differentiator": "Specific to the Sunday-night pattern searchers name exactly.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why can't I sleep on Sunday nights?",
+        "How do I calm work anxiety before bed?",
+        "What helps Sunday night dread?"
+      ],
+      "internal_links": [
+        "sunday-scaries-anticipatory-anxiety",
+        "quiet-racing-thoughts-at-night"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "calm-down-before-a-presentation",
+      "title": "How to Calm Down Before a Big Meeting or Presentation",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 1,
+      "type": "pillar",
+      "search_intent": "how-to",
+      "primary_keyword": "how to calm down before a presentation",
+      "secondary_keywords": [
+        "calm nerves before meeting",
+        "presentation anxiety",
+        "calm down before public speaking"
+      ],
+      "angle": "Discreet techniques you can do at your desk or in the bathroom in the minutes before.",
+      "differentiator": "Time-boxed to the 5 minutes before you walk in.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I calm nerves right before a presentation?",
+        "What breathing works before public speaking?",
+        "How do I stop my voice from shaking?"
+      ],
+      "internal_links": [
+        "discreet-grounding-at-your-desk",
+        "speaking-up-in-meetings-anxiety"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "discreet-grounding-at-your-desk",
+      "title": "Grounding Techniques You Can Do at Your Desk Without Anyone Noticing",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 1,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "discreet grounding techniques",
+      "secondary_keywords": [
+        "grounding at work",
+        "calm anxiety at work discreetly",
+        "grounding without anyone noticing"
+      ],
+      "angle": "Directly answers the real user desire for discreet, in-public tools.",
+      "differentiator": "Everything works seated, silent, eyes-open.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How can I ground myself discreetly at work?",
+        "What grounding techniques are invisible to others?",
+        "How do I calm down at my desk?"
+      ],
+      "internal_links": [
+        "calm-down-before-a-presentation",
+        "calm-down-in-public-when-you-cant-leave"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "speaking-up-in-meetings-anxiety",
+      "title": "Anxiety About Speaking Up in Meetings: In-the-Moment Tactics",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 1,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "anxiety speaking up in meetings",
+      "secondary_keywords": [
+        "afraid to speak in meetings",
+        "meeting anxiety",
+        "scared to talk in meetings"
+      ],
+      "angle": "Serves the very common Blind/Reddit complaint; tactics for the seconds before you speak.",
+      "differentiator": "Targets the exact moment of raising your hand / unmuting.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why am I anxious about speaking in meetings?",
+        "How do I calm down before speaking up?",
+        "How do I stop overthinking after I speak?"
+      ],
+      "internal_links": [
+        "scared-to-turn-camera-on",
+        "calm-down-before-a-presentation"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "60-second-reset-between-tasks",
+      "title": "How to Reset Between Back-to-Back Stressful Tasks (a 60-Second Physical Reset)",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 1,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "60 second reset stress",
+      "secondary_keywords": [
+        "reset between meetings",
+        "quick stress reset",
+        "physical reset anxiety"
+      ],
+      "angle": "Showcases Nuvin's shake/stretch reset as a between-meetings tool, framed as movement / tension-release.",
+      "differentiator": "Physical, fast, framed honestly (movement, not 'trauma release').",
+      "evidence_footing": "WEAK evidence for TRE/'shaking'. Lean on PMR (d~0.57) + single-bout exercise (Ensari 2015, g~0.16). NEVER claim 'trauma release'; frame as movement/tension-release only.",
+      "safety_flag": "Frame as movement/tension-release, not validated trauma treatment.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I reset between stressful meetings?",
+        "Does shaking or stretching relieve stress?",
+        "What's a fast physical way to calm down?"
+      ],
+      "internal_links": [
+        "shaking-stretching-release-tension",
+        "progressive-muscle-relaxation-routine"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "sunday-scaries-anticipatory-anxiety",
+      "title": "Sunday Scaries: How to Handle Anticipatory Work Anxiety",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 1,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "sunday scaries",
+      "secondary_keywords": [
+        "sunday night anxiety",
+        "anticipatory work anxiety",
+        "dreading monday"
+      ],
+      "angle": "Name the pattern and give a Sunday-evening routine that reduces Monday dread.",
+      "differentiator": "Pattern-specific; pairs with the Sunday-insomnia piece.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What are the Sunday scaries?",
+        "Why do I get anxious on Sunday nights?",
+        "How do I stop dreading Monday?"
+      ],
+      "internal_links": [
+        "sunday-night-insomnia-anxiety",
+        "calm-down-before-a-presentation"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "scared-to-turn-camera-on",
+      "title": "Scared to Turn Your Camera On? Calming Video-Call Anxiety",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "camera anxiety video call",
+      "secondary_keywords": [
+        "scared to turn camera on",
+        "video call anxiety",
+        "zoom anxiety"
+      ],
+      "angle": "Directly quotes a real user pain point; quick pre-call and on-call tactics.",
+      "differentiator": "Hyper-specific to the remote-work camera moment.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why am I anxious about turning my camera on?",
+        "How do I calm down before a video call?",
+        "What helps camera anxiety in meetings?"
+      ],
+      "internal_links": [
+        "speaking-up-in-meetings-anxiety",
+        "calm-down-before-a-presentation"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "anxiety-before-a-job-interview",
+      "title": "Interview Anxiety: How to Calm Down in the Waiting Room",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "job interview anxiety",
+      "secondary_keywords": [
+        "calm down before interview",
+        "interview nerves",
+        "anxiety before interview"
+      ],
+      "angle": "Minutes-before tactics for the waiting room and the first 60 seconds.",
+      "differentiator": "Scoped to the waiting-room moment, offline-usable.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I calm interview nerves?",
+        "What do I do in the waiting room before an interview?",
+        "How do I stop shaking before an interview?"
+      ],
+      "internal_links": [
+        "calm-down-before-a-presentation",
+        "physiological-sigh-fastest-technique"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "burnout-vs-anxiety",
+      "title": "Burnout vs. Anxiety: How to Tell What You're Feeling",
+      "cluster": 3,
+      "cluster_name": "Work & performance anxiety",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "burnout vs anxiety",
+      "secondary_keywords": [
+        "is it burnout or anxiety",
+        "work burnout anxiety"
+      ],
+      "angle": "Distinguish the two experiences without diagnosing; when each points to professional help.",
+      "differentiator": "Clarifies an overlap searchers are confused by.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "Non-diagnostic; route persistent burnout/anxiety to a professional.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What's the difference between burnout and anxiety?",
+        "Can you have both at once?",
+        "When should I get help for burnout?"
+      ],
+      "internal_links": [
+        "stress-vs-anxiety",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "panic-attack-while-driving",
+      "title": "Panic Attack While Driving: How to Stay Safe and Calm Down",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 2,
+      "type": "pillar",
+      "search_intent": "situational",
+      "primary_keyword": "panic attack while driving",
+      "secondary_keywords": [
+        "panic attack driving",
+        "anxiety attack while driving",
+        "calm down driving panic"
+      ],
+      "angle": "Safety-first messaging (pull over when you can), then a calm-down sequence.",
+      "differentiator": "Leads with physical safety, then technique.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Safety-first: pull over safely. Persistent driving phobia, professional/exposure therapy.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "What do I do if I have a panic attack while driving?",
+        "Should I pull over?",
+        "How do I calm down enough to keep driving?",
+        "Is it safe to drive with panic attacks?"
+      ],
+      "internal_links": [
+        "highway-driving-anxiety",
+        "how-to-stop-a-panic-attack",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "highway-driving-anxiety",
+      "title": "Highway Driving Anxiety: Why It Happens and How to Cope in the Moment",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "highway driving anxiety",
+      "secondary_keywords": [
+        "freeway anxiety",
+        "fear of highway driving",
+        "anxiety driving on highway"
+      ],
+      "angle": "The 'I feel trapped / there are always exits' reframe; in-the-moment coping.",
+      "differentiator": "Addresses the specific trapped-feeling cognition.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "Persistent driving phobia, consider exposure therapy with a professional.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why do I get anxious on the highway?",
+        "How do I cope with freeway anxiety while driving?",
+        "Why do I feel trapped on the highway?"
+      ],
+      "internal_links": [
+        "panic-attack-while-driving",
+        "fear-of-flying-before-during"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "fear-of-flying-before-during",
+      "title": "Fear of Flying: What to Do Before and During the Flight",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "fear of flying",
+      "secondary_keywords": [
+        "flight anxiety",
+        "scared of flying",
+        "how to calm down on a plane"
+      ],
+      "angle": "Offline works on a plane in airplane mode, a genuine Nuvin advantage.",
+      "differentiator": "Explicitly usable in airplane mode, offline.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Severe flight phobia, consider professional support/exposure therapy.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I calm down before a flight?",
+        "What can I do during turbulence?",
+        "Do breathing exercises help fear of flying?",
+        "Can I use calming techniques in airplane mode?"
+      ],
+      "internal_links": [
+        "highway-driving-anxiety",
+        "calm-down-in-public-when-you-cant-leave"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "social-anxiety-getting-through-an-event",
+      "title": "Social Anxiety in the Moment: How to Get Through a Party or Event",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 2,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "social anxiety at a party",
+      "secondary_keywords": [
+        "get through a party social anxiety",
+        "event anxiety",
+        "social anxiety in the moment"
+      ],
+      "angle": "Discreet, in-the-room tactics and permission to take breaks.",
+      "differentiator": "Focus on surviving the event, not curing social anxiety.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "Distinguish everyday social nerves from social anxiety disorder; avoid diagnosis.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I get through a party with social anxiety?",
+        "What do I do if I feel overwhelmed at an event?",
+        "How do I take a discreet break to calm down?"
+      ],
+      "internal_links": [
+        "calm-down-in-public-when-you-cant-leave",
+        "discreet-grounding-at-your-desk"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "calm-down-in-public-when-you-cant-leave",
+      "title": "How to Calm Down in Public When You Can't Leave",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 2,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "how to calm down in public",
+      "secondary_keywords": [
+        "calm anxiety in public",
+        "can't leave anxiety",
+        "discreet calming in public"
+      ],
+      "angle": "Discreet, seated techniques for when walking out isn't an option.",
+      "differentiator": "Built for the trapped-in-public constraint.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I calm down in public without drawing attention?",
+        "What can I do if I can't leave the room?",
+        "What grounding works while seated?"
+      ],
+      "internal_links": [
+        "discreet-grounding-at-your-desk",
+        "social-anxiety-getting-through-an-event"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "anxiety-at-the-grocery-store",
+      "title": "Anxiety at the Grocery Store or Crowded Places: A Quick In-Aisle Reset",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 3,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "anxiety in crowded places",
+      "secondary_keywords": [
+        "grocery store anxiety",
+        "anxiety in crowds",
+        "overwhelmed in stores"
+      ],
+      "angle": "In-aisle grounding for sensory overload in busy stores.",
+      "differentiator": "Specific to the crowded-store trigger.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "If avoidance of public places is growing, this may be agoraphobia, route to a professional.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Why do I get anxious in the grocery store?",
+        "How do I calm down in a crowded place?",
+        "What do I do when I feel overwhelmed shopping?"
+      ],
+      "internal_links": [
+        "calm-down-in-public-when-you-cant-leave",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "fear-of-the-dentist-or-doctor",
+      "title": "Dentist and Doctor Anxiety: Calming Down in the Waiting Room",
+      "cluster": 4,
+      "cluster_name": "Situational & phobia-adjacent anxiety",
+      "stage": 3,
+      "type": "situational",
+      "search_intent": "situational",
+      "primary_keyword": "dentist anxiety",
+      "secondary_keywords": [
+        "doctor anxiety",
+        "medical appointment anxiety",
+        "waiting room anxiety"
+      ],
+      "angle": "Waiting-room and in-chair techniques; permission to tell staff you're anxious.",
+      "differentiator": "Covers the specific clinical-appointment fear.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I calm down before a dentist appointment?",
+        "What do I do in the waiting room?",
+        "Can I tell the dentist I'm anxious?"
+      ],
+      "internal_links": [
+        "calm-down-in-public-when-you-cant-leave",
+        "physiological-sigh-fastest-technique"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "box-breathing-science",
+      "title": "Box Breathing: How to Do It and What the Science Really Says",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "pillar",
+      "search_intent": "informational",
+      "primary_keyword": "box breathing",
+      "secondary_keywords": [
+        "box breathing benefits",
+        "4-4-4-4 breathing",
+        "square breathing"
+      ],
+      "angle": "Honest evidence review (cite Stanford 2023, Fincham 2023 hype-vs-evidence caution), builds the credibility Google's YMYL bar rewards.",
+      "differentiator": "Cites primary research AND its limits, unlike hype pieces.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Note: stop if dizzy; avoid forceful breathing.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What is box breathing?",
+        "Does box breathing actually work?",
+        "How long should I do box breathing?",
+        "Is box breathing backed by science?"
+      ],
+      "internal_links": [
+        "physiological-sigh-fastest-technique",
+        "478-vs-box-vs-sigh"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "physiological-sigh-fastest-technique",
+      "title": "The Physiological Sigh: The Fastest Breathing Technique to Calm Down (Stanford-Backed)",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "physiological sigh",
+      "secondary_keywords": [
+        "double inhale breathing",
+        "cyclic sighing",
+        "fastest way to calm down breathing"
+      ],
+      "angle": "The single most defensible 'instant' technique, minute-for-minute; cite the Stanford RCT.",
+      "differentiator": "The best-evidenced instant technique, with the citation to prove it.",
+      "evidence_footing": "strongest 'instant' technique. Stanford RCT (Balban 2023): cyclic sighing beat mindfulness on mood + respiratory rate (p<0.05).",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What is the physiological sigh?",
+        "Why does the physiological sigh calm you down so fast?",
+        "How many physiological sighs should I take?",
+        "Is the physiological sigh backed by research?"
+      ],
+      "internal_links": [
+        "box-breathing-science",
+        "478-vs-box-vs-sigh"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "does-54321-actually-work",
+      "title": "Does the 5-4-3-2-1 Technique Actually Work? What the Evidence Shows",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "does 5-4-3-2-1 work",
+      "secondary_keywords": [
+        "is grounding effective",
+        "54321 evidence",
+        "grounding technique science"
+      ],
+      "angle": "Honest: strong clinical use, limited standalone trials.",
+      "differentiator": "Refuses to overstate; rare honest take.",
+      "evidence_footing": "clinically endorsed, strong consensus, but limited standalone RCT evidence. Frame as widely-used clinical tool, not lab-proven.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Is the 5-4-3-2-1 technique scientifically proven?",
+        "Why do clinicians use grounding if trials are limited?",
+        "When does grounding help most?"
+      ],
+      "internal_links": [
+        "54321-grounding-when-panicking",
+        "box-breathing-science"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "shaking-stretching-release-tension",
+      "title": "Why Shaking and Stretching Can Release Tension (and What It Can't Do)",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "shaking to release tension",
+      "secondary_keywords": [
+        "does shaking release stress",
+        "tension release movement",
+        "tre technique"
+      ],
+      "angle": "Honest: lean on PMR (d~0.57) + exercise science (g~0.16); explicitly caveat that 'trauma release' claims outrun the evidence.",
+      "differentiator": "Only honest treatment of the shake/reset pillar; protects credibility.",
+      "evidence_footing": "WEAK evidence for TRE/'shaking'. Lean on PMR (d~0.57) + single-bout exercise (Ensari 2015, g~0.16). NEVER claim 'trauma release'; frame as movement/tension-release only.",
+      "safety_flag": "Avoid trauma-treatment claims. Frame as movement/tension-release only.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Does shaking really release stress?",
+        "Is 'trauma release exercise' scientifically proven?",
+        "How is movement different from PMR?",
+        "What can shaking and stretching NOT do?"
+      ],
+      "internal_links": [
+        "progressive-muscle-relaxation-routine",
+        "60-second-reset-between-tasks"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "478-vs-box-vs-sigh",
+      "title": "4-7-8 vs. Box Breathing vs. Physiological Sigh: Which to Use When",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "4-7-8 vs box breathing",
+      "secondary_keywords": [
+        "best breathing technique for anxiety",
+        "which breathing exercise",
+        "breathing technique comparison"
+      ],
+      "angle": "A decision guide (practice vs. rescue tool).",
+      "differentiator": "Comparative decision guide, not another single-technique post.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "Note 4-7-8 dizziness cautions; skip breath-holds if pregnant or with heart conditions.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What's the difference between 4-7-8 and box breathing?",
+        "Which breathing technique is fastest for panic?",
+        "Which technique is best for sleep?",
+        "Which should I practice daily vs. use in a crisis?"
+      ],
+      "internal_links": [
+        "box-breathing-science",
+        "physiological-sigh-fastest-technique"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "what-happens-in-your-body-during-anxiety",
+      "title": "What's Happening in Your Body During Anxiety (Fight-or-Flight, Explained Simply)",
+      "cluster": 5,
+      "cluster_name": "The techniques, explained credibly (science / E-E-A-T)",
+      "stage": 2,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "fight or flight response anxiety",
+      "secondary_keywords": [
+        "what happens in the body during anxiety",
+        "anxiety physiology",
+        "fight or flight explained"
+      ],
+      "angle": "Plain-English tour of the stress response so symptoms feel less frightening.",
+      "differentiator": "Simple, defusing, links symptoms to biology.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What is the fight-or-flight response?",
+        "Why does anxiety cause physical symptoms?",
+        "Why does my heart race when I'm anxious?"
+      ],
+      "internal_links": [
+        "panic-attack-symptoms-explained",
+        "anxiety-chest-tightness-symptoms"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "health-anxiety-googling-symptoms",
+      "title": "Health Anxiety: Why Googling Symptoms Makes It Worse",
+      "cluster": 6,
+      "cluster_name": "Health anxiety & the worry cycle",
+      "stage": 3,
+      "type": "pillar",
+      "search_intent": "informational",
+      "primary_keyword": "health anxiety googling symptoms",
+      "secondary_keywords": [
+        "cyberchondria",
+        "health anxiety reassurance",
+        "stop googling symptoms"
+      ],
+      "angle": "Explain the reassurance-seeking loop compassionately.",
+      "differentiator": "Compassionate, mechanism-based, strictly non-diagnostic.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "STRICT: do NOT provide symptom reassurance; steer toward professional support; non-diagnostic.",
+      "crisis_disclaimer_level": "strict",
+      "faq": [
+        "Why does Googling symptoms make health anxiety worse?",
+        "What is cyberchondria?",
+        "How do I stop checking my symptoms online?"
+      ],
+      "internal_links": [
+        "reassurance-seeking-trap",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "reassurance-seeking-trap",
+      "title": "The Reassurance-Seeking Trap: Why 'Checking' Feeds Anxiety",
+      "cluster": 6,
+      "cluster_name": "Health anxiety & the worry cycle",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "reassurance seeking anxiety",
+      "secondary_keywords": [
+        "checking behavior anxiety",
+        "reassurance trap",
+        "why reassurance makes anxiety worse"
+      ],
+      "angle": "Explain how checking and reassurance maintain anxiety (Salkovskis).",
+      "differentiator": "Names a maintaining factor most content accidentally feeds.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "STRICT: no reassurance; route to professional support.",
+      "crisis_disclaimer_level": "strict",
+      "faq": [
+        "Why does seeking reassurance make anxiety worse?",
+        "What is a checking behavior?",
+        "How do I break the reassurance cycle?"
+      ],
+      "internal_links": [
+        "health-anxiety-googling-symptoms",
+        "sit-with-uncertainty"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "sit-with-uncertainty",
+      "title": "How to Sit With Uncertainty When Your Brain Wants an Answer",
+      "cluster": 6,
+      "cluster_name": "Health anxiety & the worry cycle",
+      "stage": 3,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "how to sit with uncertainty",
+      "secondary_keywords": [
+        "tolerate uncertainty anxiety",
+        "intolerance of uncertainty",
+        "accepting not knowing"
+      ],
+      "angle": "Acceptance-based practice for tolerating not-knowing.",
+      "differentiator": "Actionable acceptance skill, not just theory.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "How do I cope with uncertainty and anxiety?",
+        "Why does my brain demand certainty?",
+        "What is intolerance of uncertainty?"
+      ],
+      "internal_links": [
+        "reassurance-seeking-trap",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "caffeine-and-anxiety",
+      "title": "Caffeine and Anxiety: How Coffee Can Trigger the Jitters",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "pillar",
+      "search_intent": "informational",
+      "primary_keyword": "caffeine and anxiety",
+      "secondary_keywords": [
+        "does caffeine cause anxiety",
+        "coffee anxiety",
+        "caffeine jitters"
+      ],
+      "angle": "Explain the mechanism and practical cutbacks without preaching.",
+      "differentiator": "Practical, non-preachy, mechanism-first.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Can caffeine cause anxiety?",
+        "Why does coffee give me the jitters?",
+        "How much caffeine is too much for anxiety?",
+        "How do I cut back without withdrawal?"
+      ],
+      "internal_links": [
+        "how-to-calm-down-fast-ranked",
+        "anxiety-chest-tightness-symptoms"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "how-to-calm-down-fast-ranked",
+      "title": "How to Calm Down Fast: Techniques Ranked by How Quickly They Work",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "how to calm down fast",
+      "secondary_keywords": [
+        "fastest way to calm anxiety",
+        "quick anxiety relief",
+        "calm down quickly"
+      ],
+      "angle": "Honest ranking, physiological sigh first.",
+      "differentiator": "Ranked by speed with evidence, not an unordered list.",
+      "evidence_footing": "well-supported: Stanford RCT (Balban 2023, Cell Reports Medicine, DOI 10.1016/j.xcrm.2022.100895) + Fincham 2023 meta-analysis (Sci Reports, 12 RCTs/785 adults, stress g=-0.35). Cite honestly; note hype-vs-evidence caution.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What's the fastest way to calm down?",
+        "Which technique works quickest for panic?",
+        "How fast can breathing calm you?"
+      ],
+      "internal_links": [
+        "physiological-sigh-fastest-technique",
+        "cold-water-vagus-nerve"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "anxiety-chest-tightness-symptoms",
+      "title": "Anxiety Chest Tightness and Other Physical Symptoms: What They Are",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "anxiety chest tightness",
+      "secondary_keywords": [
+        "chest tight anxiety",
+        "anxiety physical symptoms",
+        "tight chest anxiety"
+      ],
+      "angle": "Explain common physical symptoms while insisting on medical rule-out.",
+      "differentiator": "Balances reassurance with a firm see-a-doctor boundary.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "ELEVATED: explicitly tell readers to rule out medical causes with a doctor; never claim symptoms are 'just anxiety.'",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "Why does anxiety cause chest tightness?",
+        "Is chest tightness always anxiety?",
+        "When should I see a doctor about chest tightness?",
+        "What other physical symptoms does anxiety cause?"
+      ],
+      "internal_links": [
+        "what-happens-in-your-body-during-anxiety",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "mood-logging-for-anxiety",
+      "title": "Mood Logging for Anxiety: How Tracking Helps You Spot Triggers",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "mood tracking for anxiety",
+      "secondary_keywords": [
+        "mood logging",
+        "anxiety journal triggers",
+        "tracking anxiety triggers"
+      ],
+      "angle": "Showcases Nuvin's mood-logging; self-monitoring builds emotional self-awareness.",
+      "differentiator": "Ties a habit to a Nuvin feature, honestly.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Does mood tracking help anxiety?",
+        "How do I log my mood to find triggers?",
+        "What should I write in an anxiety journal?"
+      ],
+      "internal_links": [
+        "caffeine-and-anxiety",
+        "do-anxiety-apps-actually-work"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "progressive-muscle-relaxation-routine",
+      "title": "Progressive Muscle Relaxation: A 5-Minute Tension-Release Routine",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "how-to",
+      "search_intent": "how-to",
+      "primary_keyword": "progressive muscle relaxation",
+      "secondary_keywords": [
+        "pmr technique",
+        "muscle relaxation anxiety",
+        "tension release routine"
+      ],
+      "angle": "Nuvin's best-evidenced 'physical reset' content (Manzoni 2008, d~0.57).",
+      "differentiator": "Well-evidenced, step-by-step, offline-friendly.",
+      "evidence_footing": "well-supported. Manzoni 2008 (BMC Psychiatry, 27 studies) Cohen's d ~0.57 for anxiety.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What is progressive muscle relaxation?",
+        "How do I do a PMR routine?",
+        "Does PMR help anxiety?",
+        "How long does PMR take to work?"
+      ],
+      "internal_links": [
+        "shaking-stretching-release-tension",
+        "60-second-reset-between-tasks"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "cold-water-vagus-nerve",
+      "title": "Cold Water and the Vagus Nerve: Does Splashing Your Face Really Calm You?",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "how-to",
+      "search_intent": "informational",
+      "primary_keyword": "cold water anxiety vagus nerve",
+      "secondary_keywords": [
+        "splash cold water face anxiety",
+        "dive reflex anxiety",
+        "cold water calm down"
+      ],
+      "angle": "Explain the dive reflex honestly; when it helps and its limits.",
+      "differentiator": "Mechanism + honest limits on a popular hack.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "Note cold-exposure cautions for heart conditions.",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Does cold water calm anxiety?",
+        "What is the dive reflex?",
+        "How does cold water affect the vagus nerve?"
+      ],
+      "internal_links": [
+        "how-to-calm-down-fast-ranked",
+        "physiological-sigh-fastest-technique"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "alcohol-and-anxiety-hangxiety",
+      "title": "Hangxiety: Why You Feel Anxious the Day After Drinking",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "hangxiety",
+      "secondary_keywords": [
+        "anxiety after drinking",
+        "hangover anxiety",
+        "alcohol and anxiety"
+      ],
+      "angle": "Explain the rebound mechanism without moralizing.",
+      "differentiator": "Non-judgmental, mechanism-first on a highly-searched term.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Why do I feel anxious after drinking?",
+        "What is hangxiety?",
+        "How long does hangover anxiety last?",
+        "How do I ease anxiety the day after drinking?"
+      ],
+      "internal_links": [
+        "caffeine-and-anxiety",
+        "how-to-calm-down-fast-ranked"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "exercise-for-anxiety-relief",
+      "title": "Does Exercise Really Help Anxiety? What a Single Walk Can Do",
+      "cluster": 7,
+      "cluster_name": "Everyday triggers & lifestyle",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "exercise for anxiety",
+      "secondary_keywords": [
+        "does exercise help anxiety",
+        "walking for anxiety",
+        "movement and anxiety"
+      ],
+      "angle": "Honest: single-bout exercise gives a small reliable state-anxiety drop (Ensari 2015, g~0.16).",
+      "differentiator": "Cites the real (modest) effect size instead of overselling.",
+      "evidence_footing": "WEAK evidence for TRE/'shaking'. Lean on PMR (d~0.57) + single-bout exercise (Ensari 2015, g~0.16). NEVER claim 'trauma release'; frame as movement/tension-release only.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Does exercise help with anxiety?",
+        "How much exercise reduces anxiety?",
+        "Does a single walk help anxiety?"
+      ],
+      "internal_links": [
+        "shaking-stretching-release-tension",
+        "progressive-muscle-relaxation-routine"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "stress-vs-anxiety",
+      "title": "Stress vs. Anxiety: How to Tell the Difference",
+      "cluster": 8,
+      "cluster_name": "Understanding & self-help meta (trust-builders)",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "stress vs anxiety",
+      "secondary_keywords": [
+        "difference between stress and anxiety",
+        "is it stress or anxiety"
+      ],
+      "angle": "Clarify the distinction plainly; when anxiety points to professional help.",
+      "differentiator": "Clear, non-diagnostic comparison.",
+      "evidence_footing": "explanatory (fight-or-flight, cortisol awakening response). Educational, low-risk.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "What's the difference between stress and anxiety?",
+        "Can stress turn into anxiety?",
+        "When is anxiety more than stress?"
+      ],
+      "internal_links": [
+        "burnout-vs-anxiety",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "do-anxiety-apps-actually-work",
+      "title": "Do Anxiety Apps Actually Work? An Honest Look",
+      "cluster": 8,
+      "cluster_name": "Understanding & self-help meta (trust-builders)",
+      "stage": 3,
+      "type": "informational",
+      "search_intent": "informational",
+      "primary_keyword": "do anxiety apps work",
+      "secondary_keywords": [
+        "anxiety app effectiveness",
+        "best anxiety apps honest",
+        "do calming apps work"
+      ],
+      "angle": "Candid, including 'app as toolbox not judge' and streak-guilt critique real users voice, builds trust.",
+      "differentiator": "Self-aware and honest about app limits; earns trust.",
+      "evidence_footing": "CBT/ACT-based reframes. Acceptance angle (Dare method) is evidence-aligned.",
+      "safety_flag": "",
+      "crisis_disclaimer_level": "standard",
+      "faq": [
+        "Do anxiety apps actually work?",
+        "What should a good anxiety app do?",
+        "Can an app replace therapy?"
+      ],
+      "internal_links": [
+        "mood-logging-for-anxiety",
+        "when-to-see-a-professional"
+      ],
+      "locale": "en",
+      "status": "pending"
+    },
+    {
+      "slug": "when-to-see-a-professional",
+      "title": "When Everyday Anxiety Becomes Something More: Signs It's Time to See a Professional",
+      "cluster": 8,
+      "cluster_name": "Understanding & self-help meta (trust-builders)",
+      "stage": 1,
+      "type": "pillar",
+      "search_intent": "informational",
+      "primary_keyword": "when to see a professional for anxiety",
+      "secondary_keywords": [
+        "signs you need therapy anxiety",
+        "when is anxiety a disorder",
+        "should i see a therapist anxiety"
+      ],
+      "angle": "THE cornerstone safety article every other piece links to. The boundary-setting hub.",
+      "differentiator": "The safety hub of the whole site; built first.",
+      "evidence_footing": "no specific technique claim.",
+      "safety_flag": "Boundary-setting hub. Clear, compassionate signposting to professional and crisis help.",
+      "crisis_disclaimer_level": "elevated",
+      "faq": [
+        "When should I see a professional about anxiety?",
+        "What are signs anxiety is a disorder?",
+        "How do I find a therapist?",
+        "What if I'm in crisis right now?"
+      ],
+      "internal_links": [
+        "stress-vs-anxiety",
+        "do-anxiety-apps-actually-work"
+      ],
+      "locale": "en",
+      "status": "pending"
+    }
+  ]
+}
