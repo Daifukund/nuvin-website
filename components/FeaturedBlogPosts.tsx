@@ -9,7 +9,7 @@ export default function FeaturedBlogPosts() {
   const featuredPosts = blogPosts.slice(0, 2)
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm">
+    <section className="bg-nuvin-soft py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -18,11 +18,11 @@ export default function FeaturedBlogPosts() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg mb-4">
-            Latest from Our Blog
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-nuvin-navy mb-4">
+            Learn to manage anxiety
           </h2>
-          <p className="text-xl text-white/90 drop-shadow">
-            Evidence-based tips and techniques for managing anxiety
+          <p className="text-xl text-nuvin-navy/70">
+            Honest, evidence-based tips and techniques from the Nuvin team
           </p>
         </motion.div>
 
@@ -34,16 +34,16 @@ export default function FeaturedBlogPosts() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-2xl shadow-nuvin-card ring-1 ring-nuvin-navy/5 p-8 hover:shadow-nuvin-card-lg transition-all duration-300"
             >
-              <div className="flex items-center gap-3 text-sm text-gray-600 mb-4">
-                <span className="bg-nuvin-purple/10 text-nuvin-purple px-3 py-1 rounded-full font-medium">
+              <div className="flex items-center gap-3 text-sm text-nuvin-navy/60 mb-4">
+                <span className="bg-nuvin-purple/10 text-nuvin-purple px-3 py-1 rounded-full font-bold">
                   {post.category}
                 </span>
                 <span>{post.readTime}</span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-nuvin-navy mb-4 leading-tight">
                 <Link
                   href={`/blog/${post.slug}`}
                   className="hover:text-nuvin-purple transition-colors"
@@ -52,13 +52,13 @@ export default function FeaturedBlogPosts() {
                 </Link>
               </h3>
 
-              <p className="text-gray-700 mb-6 leading-relaxed line-clamp-3">
+              <p className="text-nuvin-navy/70 mb-6 leading-relaxed line-clamp-3">
                 {post.excerpt}
               </p>
 
               <Link
                 href={`/blog/${post.slug}`}
-                className="inline-flex items-center text-nuvin-purple hover:text-nuvin-blue font-semibold transition-colors group"
+                className="inline-flex items-center text-nuvin-purple hover:text-nuvin-purple-pressed font-bold transition-colors group"
               >
                 Read full article
                 <span className="ml-2 transition-transform group-hover:translate-x-1">
@@ -78,9 +78,9 @@ export default function FeaturedBlogPosts() {
         >
           <Link
             href="/blog"
-            className="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            className="inline-flex items-center px-8 py-4 bg-nuvin-purple hover:bg-nuvin-purple-pressed text-white font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-nuvin-purple"
           >
-            View All Blog Posts
+            View all articles
             <span className="ml-2">→</span>
           </Link>
         </motion.div>

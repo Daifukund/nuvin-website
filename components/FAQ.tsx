@@ -64,7 +64,7 @@ export default function FAQ() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-nuvin-soft py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -73,10 +73,10 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg mb-4">
-            Frequently Asked Questions
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-nuvin-navy mb-4">
+            Frequently asked questions
           </h2>
-          <p className="text-xl text-white/90 drop-shadow">
+          <p className="text-xl text-nuvin-navy/70">
             Everything you need to know about Nuvin
           </p>
         </motion.div>
@@ -89,15 +89,15 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden"
+              className="bg-white rounded-2xl shadow-nuvin-card ring-1 ring-nuvin-navy/5 overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-white transition-colors"
+                className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-nuvin-blush/40 transition-colors"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
-                <h3 id={`faq-question-${index}`} className="text-lg sm:text-xl font-semibold text-gray-900 pr-8">
+                <h3 id={`faq-question-${index}`} className="text-lg sm:text-xl font-bold text-nuvin-navy pr-8">
                   {faq.question}
                 </h3>
                 <span
@@ -119,7 +119,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="px-6 pb-5">
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-nuvin-navy/70 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

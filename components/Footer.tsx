@@ -1,50 +1,34 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="w-full py-12 mt-auto">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <div className="space-y-6">
-          {/* Navigation Links */}
-          <nav className="flex flex-wrap justify-center items-center gap-6 text-sm text-white/90">
-            <Link
-              href="/blog"
-              className="hover:text-white transition-colors underline decoration-white/50 hover:decoration-white"
-            >
-              Blog
-            </Link>
-            <span className="text-white/50">•</span>
-            <Link
-              href="/privacy"
-              className="hover:text-white transition-colors underline decoration-white/50 hover:decoration-white"
-            >
-              Privacy Policy
-            </Link>
-            <span className="text-white/50">•</span>
-            <Link
-              href="/terms"
-              className="hover:text-white transition-colors underline decoration-white/50 hover:decoration-white"
-            >
-              Terms of Service
-            </Link>
-            <span className="text-white/50">•</span>
-            <a
-              href="mailto:nathan@nuvin.app"
-              className="hover:text-white transition-colors underline decoration-white/50 hover:decoration-white"
-            >
-              Support
-            </a>
+    <footer className="w-full mt-auto bg-nuvin-navy text-white">
+      <div className="max-w-5xl mx-auto px-4 py-14">
+        <div className="flex flex-col items-center text-center gap-6">
+          <div className="flex items-center gap-3">
+            <Image src="/nuvin-icon.png" alt="" width={36} height={36} className="rounded-lg" />
+            <span className="text-xl font-extrabold">Nuvin</span>
+          </div>
+
+          <nav className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm text-white/80">
+            <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
+            <span className="text-white/30" aria-hidden>•</span>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <span className="text-white/30" aria-hidden>•</span>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <span className="text-white/30" aria-hidden>•</span>
+            <a href="mailto:nathan@nuvin.app" className="hover:text-white transition-colors">Support</a>
           </nav>
 
-          {/* Copyright */}
-          <p className="text-sm text-white/80">
+          <p className="text-sm text-white/60">
             © {new Date().getFullYear()} Nuvin. All rights reserved.
           </p>
 
-          {/* Medical Disclaimer */}
-          <p className="text-xs text-white/70 max-w-2xl mx-auto">
-            Not a substitute for professional medical care. If you're experiencing a mental health crisis,
-            call 911 or the National Suicide Prevention Lifeline at 988.
+          <p className="text-xs text-white/50 max-w-2xl leading-relaxed">
+            Nuvin helps with everyday, situational anxiety and is not a substitute
+            for professional medical care. If you are experiencing a mental health
+            crisis, call 911 or the Suicide &amp; Crisis Lifeline at 988 (US).
           </p>
         </div>
       </div>

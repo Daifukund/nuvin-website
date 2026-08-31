@@ -1,62 +1,51 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import AppStoreButton from '@/components/AppStoreButton'
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl w-full text-center space-y-8">
-        {/* Large 404 */}
-        <h1 className="text-9xl sm:text-[12rem] font-bold text-white/20 drop-shadow-2xl">
-          404
-        </h1>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-nuvin-purple-gradient text-center">
+      <div className="max-w-2xl w-full space-y-8">
+        <Image
+          src="/nuvin-mascot-tired.png"
+          alt=""
+          width={160}
+          height={160}
+          className="mx-auto w-32 h-auto"
+        />
 
-        {/* Error Message */}
-        <div className="space-y-4">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg">
-            Page Not Found
+        <div className="space-y-3">
+          <h1 className="text-7xl sm:text-8xl font-extrabold text-white/90">404</h1>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+            Page not found
           </h2>
-          <p className="text-xl sm:text-2xl text-white/90 drop-shadow">
-            Oops! The page you're looking for doesn't exist.
-          </p>
-          <p className="text-lg text-white/80 drop-shadow">
-            But don't worry—finding calm is just a tap away.
+          <p className="text-lg sm:text-xl text-white/90">
+            This page does not exist, but your calm is still just a tap away.
           </p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Link
             href="/"
-            className="px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            className="px-8 py-4 bg-white text-nuvin-purple font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
           >
-            ← Back to Home
+            ← Back to home
           </Link>
-
           <AppStoreButton
             href="https://apps.apple.com/us/app/nuvin-anxiety-relief/id6753338724"
-            className="drop-shadow-2xl"
+            className="drop-shadow-xl"
           />
         </div>
 
-        {/* Helpful Links */}
-        <div className="pt-12">
-          <p className="text-white/70 mb-4">Looking for something specific?</p>
-          <div className="flex flex-wrap justify-center gap-4 text-white/90">
-            <Link href="/blog" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
-              Blog
-            </Link>
-            <span className="text-white/50">•</span>
-            <Link href="/privacy" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
-              Privacy Policy
-            </Link>
-            <span className="text-white/50">•</span>
-            <Link href="/terms" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
-              Terms of Service
-            </Link>
-            <span className="text-white/50">•</span>
-            <a href="mailto:nathan@nuvin.app" className="hover:text-white underline decoration-white/50 hover:decoration-white transition-colors">
-              Contact Support
-            </a>
+        <div className="pt-8">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-white/85 text-sm">
+            <Link href="/blog" className="hover:text-white underline decoration-white/40">Blog</Link>
+            <span className="text-white/40" aria-hidden>•</span>
+            <Link href="/privacy" className="hover:text-white underline decoration-white/40">Privacy Policy</Link>
+            <span className="text-white/40" aria-hidden>•</span>
+            <Link href="/terms" className="hover:text-white underline decoration-white/40">Terms of Service</Link>
+            <span className="text-white/40" aria-hidden>•</span>
+            <a href="mailto:nathan@nuvin.app" className="hover:text-white underline decoration-white/40">Support</a>
           </div>
         </div>
       </div>

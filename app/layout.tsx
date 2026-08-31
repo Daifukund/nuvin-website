@@ -1,9 +1,18 @@
 import type { Metadata, Viewport } from 'next'
+import { Nunito } from 'next/font/google'
 import './globals.css'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
+// Nunito: rounded, friendly sans that matches the app's bold rounded UI type.
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800', '900'],
+  variable: '--font-nunito',
+  display: 'swap',
+})
+
 const title = 'Nuvin - Anxiety Relief'
-const description = 'Find calm in moments of anxiety. Instant relief through breathing, grounding, and reset exercises.'
+const description = 'Calm your mind in 2 minutes. Nuvin gives you instant, science-backed relief through breathing, grounding, and reset exercises, with a cute companion who grows as you build calmer habits.'
 const siteUrl = 'https://nuvin.app'
 const ogImageUrl = `${siteUrl}/og-image.png`
 
@@ -11,7 +20,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#9b59b6',
+  themeColor: '#9747ff',
 }
 
 export const metadata: Metadata = {
@@ -91,8 +100,8 @@ export default function RootLayout({
   const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={nunito.variable}>
+      <body className="antialiased font-sans">
         {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
         {children}
       </body>

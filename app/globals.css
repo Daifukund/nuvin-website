@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Brand palette, taken straight from the Nuvin app design system
+   (anxietyapp/Resources/Colors.swift). */
 :root {
-  --nuvin-blue: #6c8ef5;
-  --nuvin-purple: #9b59b6;
-  --nuvin-pink: #e685c3;
+  --nuvin-purple: #9747ff;
+  --nuvin-purple-pressed: #8537e8;
+  --nuvin-navy: #2c2a60;
+  --nuvin-pink: #ff73a9;
+  --nuvin-pink-soft: #ffb6d9;
+  --nuvin-blush: #fff0f5;
+  --nuvin-red: #ff3b30;
+  --nuvin-gold: #ffb800;
+  --nuvin-orange: #ff9500;
+  --nuvin-bg-top: #f8f6ff;
+  --nuvin-bg-bottom: #ffffff;
+  --nuvin-text: #1c1c1e;
+  --nuvin-text-muted: #6b6b74;
+  --nuvin-border: #e9e6f2;
 }
 
 * {
@@ -17,37 +30,44 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--nuvin-blue) 0%, var(--nuvin-purple) 50%, var(--nuvin-pink) 100%);
-  background-attachment: fixed;
-  color: #1a1a1a;
-}
-
-/* Custom smooth scroll */
-html {
-  scroll-behavior: smooth;
+  /* Soft, calm off-white the app itself uses, not a loud full-bleed gradient */
+  background: var(--nuvin-bg-bottom);
+  color: var(--nuvin-text);
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline: 2px solid var(--nuvin-purple);
   outline-offset: 2px;
+  border-radius: 4px;
 }
 
-/* App Store button hover effects */
 @layer utilities {
   .transition-transform-smooth {
     transition: transform 0.2s ease-in-out;
   }
-
   .hover-lift:hover {
     transform: translateY(-2px);
   }
-
   .hover-lift:active {
     transform: translateY(0);
   }
+  /* Gentle floating animation for the mascot */
+  .animate-float {
+    animation: nuvin-float 5s ease-in-out infinite;
+  }
+  @keyframes nuvin-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+  .text-balance { text-wrap: balance; }
 }

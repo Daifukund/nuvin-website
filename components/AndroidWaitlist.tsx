@@ -29,19 +29,20 @@ export default function AndroidWaitlist() {
   }
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm">
+    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <motion.div
-        className="max-w-3xl mx-auto text-center"
+        className="max-w-3xl mx-auto text-center rounded-3xl bg-nuvin-blush/60 px-6 py-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white drop-shadow-lg mb-4">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-nuvin-navy mb-4">
           Want Nuvin on Android?
         </h2>
-        <p className="text-lg sm:text-xl text-white/90 drop-shadow mb-8">
-          We're working on it! Join the waitlist to be notified when we launch on Android.
+        <p className="text-lg sm:text-xl text-nuvin-navy/70 mb-8">
+          We&apos;re working on it. Join the waitlist to be the first to know when
+          Nuvin launches on Android.
         </p>
 
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
@@ -51,14 +52,14 @@ export default function AndroidWaitlist() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-full bg-white/95 backdrop-blur-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-lg"
+              className="flex-1 px-6 py-4 rounded-full bg-white text-nuvin-navy placeholder-nuvin-navy/40 ring-1 ring-nuvin-navy/10 focus:outline-none focus:ring-2 focus:ring-nuvin-purple shadow-sm"
               disabled={status === 'loading' || status === 'success'}
               required
             />
             <button
               type="submit"
               disabled={status === 'loading' || status === 'success'}
-              className="px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+              className="px-8 py-4 bg-nuvin-purple hover:bg-nuvin-purple-pressed text-white font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-nuvin-purple disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               {status === 'loading' ? 'Joining...' : status === 'success' ? 'Joined!' : 'Join Waitlist'}
             </button>
@@ -68,16 +69,16 @@ export default function AndroidWaitlist() {
             <motion.p
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`mt-4 text-sm ${
-                status === 'success' ? 'text-green-200' : 'text-red-200'
-              } drop-shadow`}
+              className={`mt-4 text-sm font-semibold ${
+                status === 'success' ? 'text-green-600' : 'text-nuvin-red'
+              }`}
             >
               {message}
             </motion.p>
           )}
         </form>
 
-        <p className="text-sm text-white/70 mt-6">
+        <p className="text-sm text-nuvin-navy/50 mt-6">
           We respect your privacy. Unsubscribe anytime.
         </p>
       </motion.div>

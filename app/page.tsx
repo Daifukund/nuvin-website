@@ -2,6 +2,7 @@ import HeroSection from '@/components/HeroSection'
 import SocialProof from '@/components/SocialProof'
 import FeaturesSection from '@/components/FeaturesSection'
 import AppShowcaseSection from '@/components/AppShowcaseSection'
+import ScreenshotGallery from '@/components/ScreenshotGallery'
 import FeaturedBlogPosts from '@/components/FeaturedBlogPosts'
 import FAQ from '@/components/FAQ'
 import AndroidWaitlist from '@/components/AndroidWaitlist'
@@ -10,11 +11,12 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <HeroSection />
       <SocialProof />
       <FeaturesSection />
       <AppShowcaseSection />
+      <ScreenshotGallery />
       <FeaturedBlogPosts />
       <FAQ />
       <AndroidWaitlist />

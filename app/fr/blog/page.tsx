@@ -22,7 +22,7 @@ export default function FrBlogPage() {
     <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {posts.length === 0 ? (
-          <p className="text-white/90 text-lg">
+          <p className="text-nuvin-navy/70 text-lg">
             Les premiers articles arrivent bientôt.
           </p>
         ) : (
