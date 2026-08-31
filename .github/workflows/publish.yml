@@ -1,0 +1,119 @@
+name: Nuvin Content Engine
+
+# Publishes the next pending topic (EN + FR) to the site by generating MDX
+# files, registering them in lib/blog.ts, and committing to the repo. The
+# commit to main triggers Vercel to build and deploy automatically.
+#
+# Cadence is controlled by RUN_EVERY_N_DAYS (default 2 = every other day).
+# The only secret is the OpenAI key; everything else is plain repo config.
+
+on:
+  schedule:
+    # 08:00 UTC daily. The job itself decides whether today is a publish day,
+    # so cadence stays correct across month boundaries.
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Publish now even if today is not a scheduled day"
+        type: boolean
+        default: false
+      limit:
+        description: "How many topics to process this run"
+        default: "1"
+      dry_run:
+        description: "Generate but do not write/commit (test the model)"
+        type: boolean
+        default: false
+
+concurrency:
+  # Never let two runs overlap; they would fight over topics.json + lib/blog.ts.
+  group: nuvin-publish
+  cancel-in-progress: false
+
+# The job commits generated files back to the repo, so it needs write access.
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      RUN_EVERY_N_DAYS: "2" # cadence: publish every 2nd day
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Decide whether today is a publish day
+        id: gate
+        run: |
+          FORCE="${{ github.event.inputs.force }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "$FORCE" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Manual force: running."
+            exit 0
+          fi
+          DOY=$(date -u +%j)
+          DOY=$((10#$DOY))
+          if [ $((DOY % RUN_EVERY_N_DAYS)) -eq 0 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Day $DOY is a publish day (every $RUN_EVERY_N_DAYS days)."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Day $DOY is NOT a publish day. Skipping."
+          fi
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build .env from secrets and repo config
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          cat > content-engine/.env <<EOF
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL=${{ vars.OPENAI_MODEL || 'gpt-5.6-terra' }}
+          OPENAI_TRANSLATE_MODEL=${{ vars.OPENAI_TRANSLATE_MODEL || 'gpt-5.6-luna' }}
+          PUBLISH_MODE=${{ vars.PUBLISH_MODE || 'live' }}
+          GIT_AUTHOR_NAME=Nuvin Bot
+          GIT_AUTHOR_EMAIL=bot@nuvin.app
+          EOF
+          echo "Wrote content-engine/.env (values hidden)."
+
+      - name: Generate and publish
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          LIMIT="${LIMIT:-1}"
+          ARGS="--limit $LIMIT"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "Running: python generate.py $ARGS"
+          cd content-engine
+          SKIP_GIT_PUSH=1 python generate.py $ARGS | tee run.log
+
+      - name: Push generated commit
+        if: steps.gate.outputs.run == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          # generate.py already committed locally (PUBLISH_MODE=live also pushes,
+          # but in CI the push may need the checkout token, so ensure it lands).
+          rm -f content-engine/.env
+          if git log origin/main..HEAD --oneline | grep -q .; then
+            git push origin HEAD:main
+            echo "Pushed generated commit(s)."
+          else
+            echo "Nothing new to push."
+          fi
+
+      - name: Upload run log
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-log
+          path: content-engine/run.log
+          retention-days: 30

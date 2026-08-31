@@ -469,9 +469,13 @@ def commit_and_push(slugs, live):
     subprocess.run(["git", "-C", REPO_ROOT, "commit", "-m", msg],
                    check=True, env=env)
     print(f"  committed: {msg}")
-    if live:
+    # In CI the push is handled by the workflow (using the checkout token), so
+    # we skip pushing here when SKIP_GIT_PUSH is set. Locally, live mode pushes.
+    if live and os.environ.get("SKIP_GIT_PUSH", "").lower() not in ("1", "true"):
         subprocess.run(["git", "-C", REPO_ROOT, "push"], check=True)
         print("  pushed (Vercel will deploy)")
+    elif live:
+        print("  live mode: committed; push deferred to CI.")
     else:
         print("  draft mode: committed locally, not pushed.")
 
