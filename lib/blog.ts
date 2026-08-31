@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-stop-a-panic-attack",
+    lang: 'en',
+    title: "How to Stop a Panic Attack: A Step-by-Step Script for Right Now",
+    excerpt: "A gentle, step-by-step box breathing and 5-4-3-2-1 grounding script to calm a panic attack now, plus clear guidance on when to seek care during sudden anxiety.",
+    date: '2026-08-31',
+    displayDate: "August 31, 2026",
+    readTime: "9 min read",
+    category: "Panic",
+    translationKey: "how-to-stop-a-panic-attack",
+  },
+  {
+    slug: "comment-arreter-une-attaque-de-panique-un-guide-etape-par-etape-a-suivre-maintenant",
+    lang: 'fr',
+    title: "Comment arrêter une attaque de panique : un guide étape par étape à suivre maintenant",
+    excerpt: "Un guide doux, étape par étape, combinant la respiration en carré et l’ancrage 5-4-3-2-1 pour apaiser une attaque de panique maintenant, avec des indications claires sur les situations qui nécessitent des soins face à une anxiété soudaine.",
+    date: '2026-08-31',
+    displayDate: "31 août 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "how-to-stop-a-panic-attack",
+  },
+  {
     slug: '5-minute-breathing-exercises',
     lang: 'en',
     title: '5-Minute Breathing Exercises for Instant Anxiety Relief',

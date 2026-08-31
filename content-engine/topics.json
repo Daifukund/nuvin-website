@@ -102,7 +102,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-arreter-une-attaque-de-panique-un-guide-etape-par-etape-a-suivre-maintenant"
+      },
+      "generated_at": "2026-08-31 14:03:42"
     },
     {
       "slug": "you-dont-have-to-calm-down-instantly",
