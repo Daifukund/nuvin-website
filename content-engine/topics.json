@@ -137,7 +137,11 @@
         "what-happens-in-your-body-during-anxiety"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "une-attaque-de-panique-s-arrete-d-elle-meme-cessez-de-forcer-le-calme-et-laissez-la-vague-passer"
+      },
+      "generated_at": "2026-09-01 08:19:51"
     },
     {
       "slug": "54321-grounding-when-panicking",

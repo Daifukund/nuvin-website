@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "you-dont-have-to-calm-down-instantly",
+    lang: 'en',
+    title: "A Panic Attack Ends on Its Own: Stop Forcing Calm and Let the Wave Pass",
+    excerpt: "Panic feels urgent, but it is self-limiting. Learn a gentle way to stop fighting the wave, let it peak, and know when to seek support if needed.",
+    date: '2026-09-01',
+    displayDate: "September 1, 2026",
+    readTime: "7 min read",
+    category: "Panic",
+    translationKey: "you-dont-have-to-calm-down-instantly",
+  },
+  {
+    slug: "une-attaque-de-panique-s-arrete-d-elle-meme-cessez-de-forcer-le-calme-et-laissez-la-vague-passer",
+    lang: 'fr',
+    title: "Une attaque de panique s’arrête d’elle-même : cessez de forcer le calme et laissez la vague passer",
+    excerpt: "La panique donne un sentiment d’urgence, mais elle est limitée dans le temps. Découvrez une manière douce de cesser de lutter contre la vague, de la laisser atteindre son pic et de savoir quand demander de l’aide si nécessaire.",
+    date: '2026-09-01',
+    displayDate: "1 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "you-dont-have-to-calm-down-instantly",
+  },
+  {
     slug: "how-to-stop-a-panic-attack",
     lang: 'en',
     title: "How to Stop a Panic Attack: A Step-by-Step Script for Right Now",
