@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "54321-grounding-when-panicking",
+    lang: 'en',
+    title: "The 5-4-3-2-1 Grounding Technique: How to Do It When You’re Panicking",
+    excerpt: "Learn the 5-4-3-2-1 grounding technique for panic, with simple fallback steps for when your mind goes blank or your surroundings feel limited right now.",
+    date: '2026-09-01',
+    displayDate: "September 1, 2026",
+    readTime: "7 min read",
+    category: "Panic",
+    translationKey: "54321-grounding-when-panicking",
+  },
+  {
+    slug: "la-technique-d-ancrage-5-4-3-2-1-comment-l-utiliser-en-cas-de-panique",
+    lang: 'fr',
+    title: "La technique d’ancrage 5-4-3-2-1 : comment l’utiliser en cas de panique",
+    excerpt: "Découvrez la technique d’ancrage 5-4-3-2-1 pour faire face à la panique, avec des solutions simples si votre esprit se vide ou si vos possibilités d’observation sont limitées sur le moment.",
+    date: '2026-09-01',
+    displayDate: "1 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "54321-grounding-when-panicking",
+  },
+  {
     slug: "you-dont-have-to-calm-down-instantly",
     lang: 'en',
     title: "A Panic Attack Ends on Its Own: Stop Forcing Calm and Let the Wave Pass",

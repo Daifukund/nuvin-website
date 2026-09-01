@@ -173,7 +173,11 @@
         "does-54321-actually-work"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "la-technique-d-ancrage-5-4-3-2-1-comment-l-utiliser-en-cas-de-panique"
+      },
+      "generated_at": "2026-09-01 13:06:55"
     },
     {
       "slug": "panic-attack-vs-anxiety-attack",
