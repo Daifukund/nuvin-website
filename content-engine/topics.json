@@ -207,7 +207,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "crise-de-panique-ou-crise-d-anxiete-les-principales-differences"
+      },
+      "generated_at": "2026-09-03 12:37:43"
     },
     {
       "slug": "nocturnal-panic-attacks",

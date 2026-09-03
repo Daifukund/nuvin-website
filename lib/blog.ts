@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "panic-attack-vs-anxiety-attack",
+    lang: 'en',
+    title: "Panic Attack vs. Anxiety Attack: Key Differences",
+    excerpt: "Learn the practical difference between panic attacks and anxiety attacks, why the line can blur, and what to do when intense symptoms hit feel overwhelming.",
+    date: '2026-09-03',
+    displayDate: "September 3, 2026",
+    readTime: "8 min read",
+    category: "Understanding",
+    translationKey: "panic-attack-vs-anxiety-attack",
+  },
+  {
+    slug: "crise-de-panique-ou-crise-d-anxiete-les-principales-differences",
+    lang: 'fr',
+    title: "Crise de panique ou crise d’anxiété : les principales différences",
+    excerpt: "Comprenez la différence concrète entre une crise de panique et une crise d’anxiété, pourquoi la frontière peut être floue et que faire lorsque l’intensité des symptômes devient difficile à gérer.",
+    date: '2026-09-03',
+    displayDate: "3 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "panic-attack-vs-anxiety-attack",
+  },
+  {
     slug: "54321-grounding-when-panicking",
     lang: 'en',
     title: "The 5-4-3-2-1 Grounding Technique: How to Do It When You’re Panicking",
