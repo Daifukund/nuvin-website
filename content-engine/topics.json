@@ -243,7 +243,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "crises-de-panique-nocturnes-que-faire-lorsque-vous-vous-reveillez-en-pleine-panique"
+      },
+      "generated_at": "2026-09-05 11:39:15"
     },
     {
       "slug": "panic-attack-symptoms-explained",

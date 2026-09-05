@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nocturnal-panic-attacks",
+    lang: 'en',
+    title: "Nocturnal Panic Attacks: What to Do When You Wake Up in Panic",
+    excerpt: "Woke up in a panic? Try a quiet, in-bed longer-exhale breathing routine to settle a night panic attack, then use a gentle plan to return to sleep tonight.",
+    date: '2026-09-05',
+    displayDate: "September 5, 2026",
+    readTime: "7 min read",
+    category: "Panic",
+    translationKey: "nocturnal-panic-attacks",
+  },
+  {
+    slug: "crises-de-panique-nocturnes-que-faire-lorsque-vous-vous-reveillez-en-pleine-panique",
+    lang: 'fr',
+    title: "Crises de panique nocturnes : que faire lorsque vous vous réveillez en pleine panique",
+    excerpt: "Vous vous êtes réveillé en pleine panique ? Essayez une respiration calme, au lit, avec une expiration plus longue pour apaiser la crise, puis suivez un plan simple pour vous rendormir ce soir.",
+    date: '2026-09-05',
+    displayDate: "5 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "nocturnal-panic-attacks",
+  },
+  {
     slug: "panic-attack-vs-anxiety-attack",
     lang: 'en',
     title: "Panic Attack vs. Anxiety Attack: Key Differences",
