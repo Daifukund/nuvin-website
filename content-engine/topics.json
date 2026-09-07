@@ -374,7 +374,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-calmer-les-pensees-qui-s-emballent-la-nuit-une-routine-dans-le-noir-pour-dormir"
+      },
+      "generated_at": "2026-09-07 14:00:20"
     },
     {
       "slug": "why-do-i-wake-up-at-3am",

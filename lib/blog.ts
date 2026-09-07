@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "quiet-racing-thoughts-at-night",
+    lang: 'en',
+    title: "How to Quiet Racing Thoughts at Night: A Lights-Off Routine for Sleep",
+    excerpt: "Learn a lights-off routine using grounding, slower breathing, and a mental “file it away” step to quiet racing thoughts at night and settle calmly for sleep.",
+    date: '2026-09-07',
+    displayDate: "September 7, 2026",
+    readTime: "9 min read",
+    category: "Sleep",
+    translationKey: "quiet-racing-thoughts-at-night",
+  },
+  {
+    slug: "comment-calmer-les-pensees-qui-s-emballent-la-nuit-une-routine-dans-le-noir-pour-dormir",
+    lang: 'fr',
+    title: "Comment calmer les pensées qui s’emballent la nuit : une routine dans le noir pour dormir",
+    excerpt: "Découvrez une routine à pratiquer dans le noir, fondée sur l’ancrage, une respiration plus lente et une étape pour « mettre de côté » les pensées, afin de calmer le flot mental le soir et de vous préparer sereinement au sommeil.",
+    date: '2026-09-07',
+    displayDate: "7 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Sommeil",
+    translationKey: "quiet-racing-thoughts-at-night",
+  },
+  {
     slug: "nocturnal-panic-attacks",
     lang: 'en',
     title: "Nocturnal Panic Attacks: What to Do When You Wake Up in Panic",
