@@ -409,7 +409,11 @@
         "morning-anxiety-first-10-minutes"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "pourquoi-est-ce-que-je-me-reveille-a-3-h-avec-de-l-anxiete-que-faire-sur-le-moment"
+      },
+      "generated_at": "2026-09-09 12:45:21"
     },
     {
       "slug": "morning-anxiety-first-10-minutes",

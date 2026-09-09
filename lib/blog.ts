@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "why-do-i-wake-up-at-3am",
+    lang: 'en',
+    title: "Why Do I Wake Up at 3am With Anxiety? What to Do in the Moment",
+    excerpt: "Waking at 3am with anxiety can feel alarming. Learn why it happens, how body rhythms may play a role, and a calm reset to try tonight.",
+    date: '2026-09-09',
+    displayDate: "September 9, 2026",
+    readTime: "8 min read",
+    category: "Sleep",
+    translationKey: "why-do-i-wake-up-at-3am",
+  },
+  {
+    slug: "pourquoi-est-ce-que-je-me-reveille-a-3-h-avec-de-l-anxiete-que-faire-sur-le-moment",
+    lang: 'fr',
+    title: "Pourquoi est-ce que je me réveille à 3 h avec de l’anxiété ? Que faire sur le moment",
+    excerpt: "Se réveiller à 3 h avec de l’anxiété peut être angoissant. Découvrez pourquoi cela peut arriver, quel rôle les rythmes de l’organisme peuvent jouer et comment retrouver son calme dès ce soir.",
+    date: '2026-09-09',
+    displayDate: "9 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Sommeil",
+    translationKey: "why-do-i-wake-up-at-3am",
+  },
+  {
     slug: "quiet-racing-thoughts-at-night",
     lang: 'en',
     title: "How to Quiet Racing Thoughts at Night: A Lights-Off Routine for Sleep",
