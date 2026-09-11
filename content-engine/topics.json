@@ -444,7 +444,11 @@
         "nighttime-breathing-to-fall-asleep"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-au-reveil-pourquoi-vous-vous-reveillez-anxieux-et-un-reset-de-10-minutes"
+      },
+      "generated_at": "2026-09-11 12:37:43"
     },
     {
       "slug": "nighttime-breathing-to-fall-asleep",

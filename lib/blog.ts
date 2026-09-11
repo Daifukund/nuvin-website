@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "morning-anxiety-first-10-minutes",
+    lang: 'en',
+    title: "Morning Anxiety: Why You Wake Up Anxious and a 10-Minute Reset",
+    excerpt: "Morning anxiety can feel immediate. Learn why waking may amplify stress and follow a gentle, minute-by-minute routine for your first 10 minutes right now.",
+    date: '2026-09-11',
+    displayDate: "September 11, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "morning-anxiety-first-10-minutes",
+  },
+  {
+    slug: "anxiete-au-reveil-pourquoi-vous-vous-reveillez-anxieux-et-un-reset-de-10-minutes",
+    lang: 'fr',
+    title: "Anxiété au réveil : pourquoi vous vous réveillez anxieux et un reset de 10 minutes",
+    excerpt: "L’anxiété au réveil peut s’imposer immédiatement. Découvrez pourquoi le réveil peut amplifier le stress et suivez une routine douce, minute par minute, pour vos 10 premières minutes, dès maintenant.",
+    date: '2026-09-11',
+    displayDate: "11 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "morning-anxiety-first-10-minutes",
+  },
+  {
     slug: "why-do-i-wake-up-at-3am",
     lang: 'en',
     title: "Why Do I Wake Up at 3am With Anxiety? What to Do in the Moment",
