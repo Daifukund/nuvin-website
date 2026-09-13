@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nighttime-breathing-to-fall-asleep",
+    lang: 'en',
+    title: "Breathing Exercises to Fall Back Asleep: A Gentle Slow-Exhale Method",
+    excerpt: "Try a gentle, screen-free breathing exercise to fall back asleep. Learn a slow-exhale rhythm, what to do if thoughts return, and 4-7-8 safety.",
+    date: '2026-09-13',
+    displayDate: "September 13, 2026",
+    readTime: "7 min read",
+    category: "Sleep",
+    translationKey: "nighttime-breathing-to-fall-asleep",
+  },
+  {
+    slug: "exercices-de-respiration-pour-se-rendormir-une-methode-douce-a-expiration-lente",
+    lang: 'fr',
+    title: "Exercices de respiration pour se rendormir : une méthode douce à expiration lente",
+    excerpt: "Essayez un exercice de respiration doux, sans écran, pour vous rendormir. Découvrez un rythme à expiration lente, que faire si les pensées reviennent et les précautions liées à la méthode 4-7-8.",
+    date: '2026-09-13',
+    displayDate: "13 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Sommeil",
+    translationKey: "nighttime-breathing-to-fall-asleep",
+  },
+  {
     slug: "morning-anxiety-first-10-minutes",
     lang: 'en',
     title: "Morning Anxiety: Why You Wake Up Anxious and a 10-Minute Reset",

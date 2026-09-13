@@ -479,7 +479,11 @@
         "478-vs-box-vs-sigh"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "exercices-de-respiration-pour-se-rendormir-une-methode-douce-a-expiration-lente"
+      },
+      "generated_at": "2026-09-13 13:07:16"
     },
     {
       "slug": "anxiety-wont-let-me-sleep-tonight",
