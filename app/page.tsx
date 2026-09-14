@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import HeroSection from '@/components/HeroSection'
 import SocialProof from '@/components/SocialProof'
 import FeaturesSection from '@/components/FeaturesSection'
@@ -8,6 +9,10 @@ import FAQ from '@/components/FAQ'
 import AndroidWaitlist from '@/components/AndroidWaitlist'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function Home() {
   return (

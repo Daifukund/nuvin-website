@@ -24,6 +24,7 @@ Environment (content-engine/.env):
 import argparse
 import json
 import os
+import glob
 import re
 import subprocess
 import sys
@@ -295,22 +296,72 @@ def translate(article_en, lang):
 # --------------------------------------------------------------------------- #
 # Internal link resolution
 # --------------------------------------------------------------------------- #
+PENDING_SPAN_RE = re.compile(r'<span data-internal="([a-z0-9-]+)">(.*?)</span>', re.S)
+
+
+def pending_span(anchor, en_slug):
+    """Placeholder for a link whose target article is not published yet. It
+    renders as plain text; backfill_pending_links() turns it into a real link
+    once the target goes live."""
+    return f'<span data-internal="{en_slug}">{anchor}</span>'
+
+
 def resolve_internal_links(markdown, lang, slug_map):
     """Replace [text](INTERNAL:slug) with the real path for that language.
     slug_map: {en_slug: {"en": path, "fr": path}}. If a translation for the
-    target language does not exist yet, fall back to the English path so links
-    never 404 (they self-heal once the translation is published)."""
+    target language does not exist yet, fall back to the English path.
+    If the target topic is not published at all yet, do NOT link to the blog
+    index (that reads as a link "to nothing"): leave a pending span instead,
+    which self-heals once the target is published."""
     def repl(m):
         anchor, en_slug = m.group(1), m.group(2)
         entry = slug_map.get(en_slug)
         if not entry:
-            # Unknown slug (not yet generated). Point at the blog index so it
-            # is never a dead link.
-            idx = "/blog" if lang == "en" else "/fr/blog"
-            return f"[{anchor}]({idx})"
+            print(f"    (link target '{en_slug}' not published yet, left as pending span)")
+            return pending_span(anchor, en_slug)
         path = entry.get(lang) or entry.get("en")
         return f"[{anchor}]({path})"
     return re.sub(r"\[([^\]]+)\]\(INTERNAL:([a-z0-9-]+)\)", repl, markdown)
+
+
+def build_slug_map(topics):
+    """{en_slug: {"en": path, "fr": path}} for every published topic."""
+    m = {}
+    for t in topics:
+        if t.get("status") == "publish":
+            e = {"en": f"/blog/{t['slug']}"}
+            for lg, ls in (t.get("localized_slugs") or {}).items():
+                e[lg] = f"/{lg}/blog/{ls}"
+            m[t["slug"]] = e
+    return m
+
+
+def backfill_pending_links(topics, dry_run=False):
+    """Self-heal: scan every published MDX file and turn pending spans whose
+    target is now published into real links (per language). Returns the list
+    of files changed."""
+    slug_map = build_slug_map(topics)
+    changed = []
+    for lang, base in (("en", BLOG_DIR_EN), ("fr", BLOG_DIR_FR)):
+        for path in sorted(glob.glob(os.path.join(base, "*", "page.mdx"))):
+            with open(path) as f:
+                content = f.read()
+
+            def repl(m):
+                en_slug, anchor = m.group(1), m.group(2)
+                entry = slug_map.get(en_slug)
+                if not entry:
+                    return m.group(0)
+                return f"[{anchor}]({entry.get(lang) or entry['en']})"
+            new = PENDING_SPAN_RE.sub(repl, content)
+            if new != content:
+                changed.append(os.path.relpath(path, REPO_ROOT))
+                if not dry_run:
+                    with open(path, "w") as f:
+                        f.write(new)
+    for rel in changed:
+        print(f"    {'[dry-run] would heal' if dry_run else 'healed'} links in {rel}")
+    return changed
 
 
 # --------------------------------------------------------------------------- #
@@ -503,6 +554,9 @@ def main():
                     help="Call the model but write no files, no commit.")
     ap.add_argument("--publish", action="store_true",
                     help="Force live (commit + push) regardless of PUBLISH_MODE.")
+    ap.add_argument("--heal", action="store_true",
+                    help="Only upgrade pending internal links whose target is now "
+                         "published (no model calls, no commit).")
     args = ap.parse_args()
 
     live = args.publish or PUBLISH_MODE == "live"
@@ -512,6 +566,11 @@ def main():
 
     doc = load_topics()
     topics = doc["topics"]
+
+    if args.heal:
+        changed = backfill_pending_links(topics, dry_run=args.dry_run)
+        print(f"Heal: {len(changed)} file(s) {'would be ' if args.dry_run else ''}updated.")
+        return
 
     # Select topics to process
     if args.slug:
@@ -531,13 +590,7 @@ def main():
 
     # Build a slug map for internal-link resolution across everything already
     # published plus what we produce this run.
-    slug_map = {}
-    for t in topics:
-        if t.get("status") == "publish":
-            entry = {"en": f"/blog/{t['slug']}"}
-            for lg, ls in (t.get("localized_slugs") or {}).items():
-                entry[lg] = f"/{lg}/blog/{ls}"
-            slug_map[t["slug"]] = entry
+    slug_map = build_slug_map(topics)
 
     already = existing_slugs_in_lib()
     had_failures = False
@@ -615,6 +668,8 @@ def main():
             save_topics(doc)
             print(f"  OK: {topic['slug']} published to "
                   f"{['en'] + list(translations)}")
+            # older posts that were waiting on this topic get their link now
+            backfill_pending_links(topics)
 
         except Exception as e:
             had_failures = True

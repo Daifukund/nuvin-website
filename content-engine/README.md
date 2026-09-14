@@ -66,3 +66,14 @@ shared article layout, so every post carries it automatically. Topics flagged
 `elevated` or `strict` get extra in-body cautions and stricter editorial rules
 (no reassurance, non-diagnostic). Nuvin is a self-help tool, never positioned
 as medical care, therapy, or a crisis service.
+
+## Link safety (no links "to nothing")
+
+Topics cross-link to each other, but most targets are still in the queue when an
+article ships. The engine never links to the blog index as a stand-in anymore:
+
+- An unpublished target is written as `<span data-internal="slug">anchor</span>`
+  (renders as plain text).
+- When that topic is published later, the run backfills every older post that was
+  waiting on it and turns the span into a real link, per language.
+- `python3 generate.py --heal` re-runs that backfill by hand (no model calls, no commit).

@@ -85,6 +85,7 @@ jobs:
           echo "Wrote content-engine/.env (values hidden)."
 
       - name: Generate and publish
+        id: engine
         if: steps.gate.outputs.run == 'true'
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
@@ -95,10 +96,16 @@ jobs:
           fi
           echo "Running: python generate.py $ARGS"
           cd content-engine
-          SKIP_GIT_PUSH=1 python generate.py $ARGS | tee run.log
+          # Do not let `tee` hide the engine's exit code: still push whatever
+          # was committed, then fail the job at the end if the engine failed.
+          set +e
+          SKIP_GIT_PUSH=1 python generate.py $ARGS 2>&1 | tee run.log
+          RC=${PIPESTATUS[0]}
+          echo "rc=$RC" >> "$GITHUB_OUTPUT"
+          echo "Engine exit code: $RC"
 
       - name: Push generated commit
-        if: steps.gate.outputs.run == 'true' && github.event.inputs.dry_run != 'true'
+        if: always() && steps.gate.outputs.run == 'true' && github.event.inputs.dry_run != 'true'
         run: |
           # generate.py already committed locally (PUBLISH_MODE=live also pushes,
           # but in CI the push may need the checkout token, so ensure it lands).
@@ -111,9 +118,15 @@ jobs:
           fi
 
       - name: Upload run log
-        if: steps.gate.outputs.run == 'true'
+        if: always() && steps.gate.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: run-log
           path: content-engine/run.log
           retention-days: 30
+
+      - name: Fail the job if the engine failed
+        if: always() && steps.gate.outputs.run == 'true' && steps.engine.outputs.rc != '0'
+        run: |
+          echo "generate.py exited with code ${{ steps.engine.outputs.rc }} (see run.log above)."
+          exit 1
