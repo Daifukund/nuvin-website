@@ -574,7 +574,11 @@
         "speaking-up-in-meetings-anxiety"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-se-calmer-avant-une-presentation-une-routine-de-respiration-de-5-minutes"
+      },
+      "generated_at": "2026-09-15 13:09:40"
     },
     {
       "slug": "discreet-grounding-at-your-desk",

@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "calm-down-before-a-presentation",
+    lang: 'en',
+    title: "How to Calm Down Before a Presentation: A 5-Minute Breathing Routine",
+    excerpt: "Learn a discreet, five-minute breathing routine to settle presentation anxiety, steady your voice, and enter your meeting with focus just before you speak.",
+    date: '2026-09-15',
+    displayDate: "September 15, 2026",
+    readTime: "8 min read",
+    category: "Situational",
+    translationKey: "calm-down-before-a-presentation",
+  },
+  {
+    slug: "comment-se-calmer-avant-une-presentation-une-routine-de-respiration-de-5-minutes",
+    lang: 'fr',
+    title: "Comment se calmer avant une présentation : une routine de respiration de 5 minutes",
+    excerpt: "Découvrez une routine de respiration discrète de cinq minutes pour apaiser l’anxiété liée à une présentation, stabiliser votre voix et commencer votre réunion avec concentration, juste avant de prendre la parole.",
+    date: '2026-09-15',
+    displayDate: "15 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "calm-down-before-a-presentation",
+  },
+  {
     slug: "nighttime-breathing-to-fall-asleep",
     lang: 'en',
     title: "Breathing Exercises to Fall Back Asleep: A Gentle Slow-Exhale Method",
