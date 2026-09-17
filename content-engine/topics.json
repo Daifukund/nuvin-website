@@ -609,7 +609,11 @@
         "calm-down-in-public-when-you-cant-leave"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "techniques-d-ancrage-discretes-au-bureau-un-recentrage-silencieux-les-yeux-ouverts"
+      },
+      "generated_at": "2026-09-17 13:03:50"
     },
     {
       "slug": "speaking-up-in-meetings-anxiety",

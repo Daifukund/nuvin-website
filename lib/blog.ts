@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "discreet-grounding-at-your-desk",
+    lang: 'en',
+    title: "Discreet Grounding Techniques at Your Desk: A Silent, Eyes-Open Reset",
+    excerpt: "Try a silent, eyes-open desk grounding exercise to steady anxious moments at work, in meetings, or in public, without drawing attention to yourself today.",
+    date: '2026-09-17',
+    displayDate: "September 17, 2026",
+    readTime: "6 min read",
+    category: "Work",
+    translationKey: "discreet-grounding-at-your-desk",
+  },
+  {
+    slug: "techniques-d-ancrage-discretes-au-bureau-un-recentrage-silencieux-les-yeux-ouverts",
+    lang: 'fr',
+    title: "Techniques d’ancrage discrètes au bureau : un recentrage silencieux, les yeux ouverts",
+    excerpt: "Essayez un exercice d’ancrage silencieux, les yeux ouverts, pour traverser un moment d’anxiété au travail, en réunion ou dans un lieu public sans attirer l’attention aujourd’hui.",
+    date: '2026-09-17',
+    displayDate: "17 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Travail",
+    translationKey: "discreet-grounding-at-your-desk",
+  },
+  {
     slug: "calm-down-before-a-presentation",
     lang: 'en',
     title: "How to Calm Down Before a Presentation: A 5-Minute Breathing Routine",
