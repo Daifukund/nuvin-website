@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "speaking-up-in-meetings-anxiety",
+    lang: 'en',
+    title: "Anxiety About Speaking Up in Meetings: A 30-Second Reset",
+    excerpt: "Anxious about speaking up in meetings? Use a discreet 30-second breath-and-action reset to unmute, share one point, and stop the spiral with less pressure.",
+    date: '2026-09-19',
+    displayDate: "September 19, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "speaking-up-in-meetings-anxiety",
+  },
+  {
+    slug: "l-anxiete-a-l-idee-de-prendre-la-parole-en-reunion-une-remise-a-zero-en-30-secondes",
+    lang: 'fr',
+    title: "L’anxiété à l’idée de prendre la parole en réunion : une remise à zéro en 30 secondes",
+    excerpt: "Vous appréhendez l’idée de prendre la parole en réunion ? Essayez une remise à zéro discrète de 30 secondes, fondée sur la respiration et l’action, pour réactiver votre micro, partager une idée et interrompre l’emballement avec moins de pression.",
+    date: '2026-09-19',
+    displayDate: "19 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "speaking-up-in-meetings-anxiety",
+  },
+  {
     slug: "discreet-grounding-at-your-desk",
     lang: 'en',
     title: "Discreet Grounding Techniques at Your Desk: A Silent, Eyes-Open Reset",

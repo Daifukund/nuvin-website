@@ -644,7 +644,11 @@
         "calm-down-before-a-presentation"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "l-anxiete-a-l-idee-de-prendre-la-parole-en-reunion-une-remise-a-zero-en-30-secondes"
+      },
+      "generated_at": "2026-09-19 12:17:35"
     },
     {
       "slug": "60-second-reset-between-tasks",
