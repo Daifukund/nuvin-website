@@ -679,7 +679,11 @@
         "progressive-muscle-relaxation-routine"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "reinitialiser-le-stress-en-60-secondes-entre-deux-reunions-une-routine-de-mouvements-et-d-etirements"
+      },
+      "generated_at": "2026-09-21 14:51:43"
     },
     {
       "slug": "sunday-scaries-anticipatory-anxiety",

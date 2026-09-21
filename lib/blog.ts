@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "60-second-reset-between-tasks",
+    lang: 'en',
+    title: "60-Second Reset for Stress Between Meetings: A Shake-and-Stretch Routine",
+    excerpt: "Try a 60-second physical reset between stressful tasks. A simple shake-and-stretch routine to release tension and refocus before your next meeting at work.",
+    date: '2026-09-21',
+    displayDate: "September 21, 2026",
+    readTime: "6 min read",
+    category: "Techniques",
+    translationKey: "60-second-reset-between-tasks",
+  },
+  {
+    slug: "reinitialiser-le-stress-en-60-secondes-entre-deux-reunions-une-routine-de-mouvements-et-d-etirements",
+    lang: 'fr',
+    title: "Réinitialiser le stress en 60 secondes entre deux réunions : une routine de mouvements et d’étirements",
+    excerpt: "Essayez une pause physique de 60 secondes entre deux tâches stressantes. Une routine simple de mouvements et d’étirements pour relâcher les tensions et retrouver votre concentration avant votre prochaine réunion au travail.",
+    date: '2026-09-21',
+    displayDate: "21 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "60-second-reset-between-tasks",
+  },
+  {
     slug: "speaking-up-in-meetings-anxiety",
     lang: 'en',
     title: "Anxiety About Speaking Up in Meetings: A 30-Second Reset",
