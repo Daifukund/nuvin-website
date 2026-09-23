@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sunday-scaries-anticipatory-anxiety",
+    lang: 'en',
+    title: "Sunday Scaries: A Sunday Evening Routine for Monday Anxiety",
+    excerpt: "Feeling Sunday scaries or dreading Monday? Use a practical Sunday evening routine to contain work worries and ease anticipatory anxiety before bed tonight.",
+    date: '2026-09-23',
+    displayDate: "September 23, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "sunday-scaries-anticipatory-anxiety",
+  },
+  {
+    slug: "le-blues-du-dimanche-soir-une-routine-pour-apaiser-l-anxiete-du-lundi",
+    lang: 'fr',
+    title: "Le blues du dimanche soir : une routine pour apaiser l’anxiété du lundi",
+    excerpt: "Le dimanche soir vous inquiète ou le lundi vous pèse déjà ? Essayez une routine concrète pour contenir les préoccupations professionnelles et apaiser l’anxiété anticipatoire avant de vous coucher ce soir.",
+    date: '2026-09-23',
+    displayDate: "23 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "sunday-scaries-anticipatory-anxiety",
+  },
+  {
     slug: "60-second-reset-between-tasks",
     lang: 'en',
     title: "60-Second Reset for Stress Between Meetings: A Shake-and-Stretch Routine",
