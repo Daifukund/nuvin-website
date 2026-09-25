@@ -1658,7 +1658,11 @@
         "do-anxiety-apps-actually-work"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "quand-consulter-un-professionnel-pour-l-anxiete-les-signes-qu-il-est-temps-de-demander-de-l-aide"
+      },
+      "generated_at": "2026-09-25 13:16:39"
     }
   ]
 }

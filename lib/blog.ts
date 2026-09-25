@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "when-to-see-a-professional",
+    lang: 'en',
+    title: "When to See a Professional for Anxiety: Signs It’s Time to Get Support",
+    excerpt: "Learn when to see a professional for anxiety, how to recognize when it disrupts life, and how to find support, including urgent help in a crisis today.",
+    date: '2026-09-25',
+    displayDate: "September 25, 2026",
+    readTime: "9 min read",
+    category: "Understanding",
+    translationKey: "when-to-see-a-professional",
+  },
+  {
+    slug: "quand-consulter-un-professionnel-pour-l-anxiete-les-signes-qu-il-est-temps-de-demander-de-l-aide",
+    lang: 'fr',
+    title: "Quand consulter un professionnel pour l’anxiété : les signes qu’il est temps de demander de l’aide",
+    excerpt: "Découvrez quand consulter un professionnel pour l’anxiété, comment reconnaître lorsqu’elle perturbe votre vie et comment trouver du soutien, notamment une aide urgente en cas de crise.",
+    date: '2026-09-25',
+    displayDate: "25 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "when-to-see-a-professional",
+  },
+  {
     slug: "sunday-scaries-anticipatory-anxiety",
     lang: 'en',
     title: "Sunday Scaries: A Sunday Evening Routine for Monday Anxiety",
