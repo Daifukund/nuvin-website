@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "panic-attack-symptoms-explained",
+    lang: 'en',
+    title: "Panic Attack Symptoms: Why Your Body Reacts This Way",
+    excerpt: "Learn why panic attack symptoms, including a racing heart, tingling, breathlessness, and unreality, happen, and try a gentle in-the-moment reset safely.",
+    date: '2026-09-27',
+    displayDate: "September 27, 2026",
+    readTime: "7 min read",
+    category: "Panic",
+    translationKey: "panic-attack-symptoms-explained",
+  },
+  {
+    slug: "symptomes-d-une-attaque-de-panique-pourquoi-votre-corps-reagit-ainsi",
+    lang: 'fr',
+    title: "Symptômes d’une attaque de panique : pourquoi votre corps réagit ainsi",
+    excerpt: "Découvrez pourquoi les symptômes d’une attaque de panique, notamment le cœur qui s’emballe, les fourmillements, l’essoufflement et le sentiment d’irréalité, surviennent, et essayez une technique douce pour retrouver votre calme sur le moment, en toute sécurité.",
+    date: '2026-09-27',
+    displayDate: "27 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "panic-attack-symptoms-explained",
+  },
+  {
     slug: "when-to-see-a-professional",
     lang: 'en',
     title: "When to See a Professional for Anxiety: Signs It’s Time to Get Support",

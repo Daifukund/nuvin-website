@@ -278,7 +278,11 @@
         "how-to-stop-a-panic-attack"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "symptomes-d-une-attaque-de-panique-pourquoi-votre-corps-reagit-ainsi"
+      },
+      "generated_at": "2026-09-27 13:32:53"
     },
     {
       "slug": "how-to-help-someone-having-a-panic-attack",
