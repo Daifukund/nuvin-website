@@ -313,7 +313,11 @@
         "you-dont-have-to-calm-down-instantly"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-aider-une-personne-en-pleine-crise-de-panique-quoi-dire-et-quoi-faire"
+      },
+      "generated_at": "2026-09-29 14:38:07"
     },
     {
       "slug": "fear-of-having-another-panic-attack",

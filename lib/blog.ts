@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-help-someone-having-a-panic-attack",
+    lang: 'en',
+    title: "How to Help Someone Having a Panic Attack: What to Say and Do",
+    excerpt: "Learn how to help someone having a panic attack with calm words, simple choices, and a paced breathing script, plus when to call emergency services now.",
+    date: '2026-09-29',
+    displayDate: "September 29, 2026",
+    readTime: "7 min read",
+    category: "Panic",
+    translationKey: "how-to-help-someone-having-a-panic-attack",
+  },
+  {
+    slug: "comment-aider-une-personne-en-pleine-crise-de-panique-quoi-dire-et-quoi-faire",
+    lang: 'fr',
+    title: "Comment aider une personne en pleine crise de panique : quoi dire et quoi faire",
+    excerpt: "Découvrez comment aider une personne en pleine crise de panique avec des paroles calmes, des choix simples et une respiration guidée, et sachez quand appeler immédiatement les secours.",
+    date: '2026-09-29',
+    displayDate: "29 septembre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "how-to-help-someone-having-a-panic-attack",
+  },
+  {
     slug: "panic-attack-symptoms-explained",
     lang: 'en',
     title: "Panic Attack Symptoms: Why Your Body Reacts This Way",
