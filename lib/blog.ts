@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "anxiety-wont-let-me-sleep-tonight",
+    lang: 'en',
+    title: "Anxiety Won’t Let You Sleep Tonight? Try This 15-Minute Offline Wind-Down",
+    excerpt: "Too anxious to sleep? Try this calm, offline 15-minute wind-down with slower breathing, grounding, and a simple plan for getting out of bed if needed tonight.",
+    date: '2026-10-01',
+    displayDate: "October 1, 2026",
+    readTime: "7 min read",
+    category: "Sleep",
+    translationKey: "anxiety-wont-let-me-sleep-tonight",
+  },
+  {
+    slug: "l-anxiete-vous-empeche-de-dormir-ce-soir-essayez-cette-routine-de-deconnexion-de-15-minutes-sans-ecran",
+    lang: 'fr',
+    title: "L’anxiété vous empêche de dormir ce soir ? Essayez cette routine de déconnexion de 15 minutes, sans écran",
+    excerpt: "Trop anxieux pour dormir ? Essayez cette routine apaisante de 15 minutes, sans écran, avec une respiration plus lente, un ancrage sensoriel et un plan simple pour vous lever si nécessaire cette nuit.",
+    date: '2026-10-01',
+    displayDate: "1 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Sommeil",
+    translationKey: "anxiety-wont-let-me-sleep-tonight",
+  },
+  {
     slug: "how-to-help-someone-having-a-panic-attack",
     lang: 'en',
     title: "How to Help Someone Having a Panic Attack: What to Say and Do",

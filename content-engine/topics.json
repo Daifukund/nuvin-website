@@ -521,7 +521,11 @@
         "nighttime-breathing-to-fall-asleep"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "l-anxiete-vous-empeche-de-dormir-ce-soir-essayez-cette-routine-de-deconnexion-de-15-minutes-sans-ecran"
+      },
+      "generated_at": "2026-10-01 15:07:00"
     },
     {
       "slug": "sunday-night-insomnia-anxiety",
