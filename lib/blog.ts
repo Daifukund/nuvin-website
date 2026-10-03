@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "scared-to-turn-camera-on",
+    lang: 'en',
+    title: "Camera Anxiety on Video Calls: A Fast Calm-Down Routine",
+    excerpt: "Scared to turn your camera on? Use a brief, practical breathing reset before and during video calls to ease camera anxiety and refocus.",
+    date: '2026-10-03',
+    displayDate: "October 3, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "scared-to-turn-camera-on",
+  },
+  {
+    slug: "anxiete-face-a-la-camera-en-visioconference-une-routine-rapide-pour-se-calmer",
+    lang: 'fr',
+    title: "Anxiété face à la caméra en visioconférence : une routine rapide pour se calmer",
+    excerpt: "Vous appréhendez d’allumer votre caméra ? Essayez un bref exercice de respiration, avant et pendant la visioconférence, pour apaiser cette anxiété et vous recentrer.",
+    date: '2026-10-03',
+    displayDate: "3 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "scared-to-turn-camera-on",
+  },
+  {
     slug: "anxiety-wont-let-me-sleep-tonight",
     lang: 'en',
     title: "Anxiety Won’t Let You Sleep Tonight? Try This 15-Minute Offline Wind-Down",
