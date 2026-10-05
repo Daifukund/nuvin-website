@@ -796,7 +796,11 @@
         "physiological-sigh-fastest-technique"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-avant-un-entretien-d-embauche-comment-se-calmer-dans-la-salle-d-attente"
+      },
+      "generated_at": "2026-10-05 16:48:44"
     },
     {
       "slug": "burnout-vs-anxiety",

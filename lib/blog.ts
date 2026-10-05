@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "anxiety-before-a-job-interview",
+    lang: 'en',
+    title: "Job Interview Anxiety: How to Calm Down in the Waiting Room",
+    excerpt: "Job interview anxiety can peak in the waiting room. Use a discreet breathing reset to settle interview nerves before you walk in and begin steadily.",
+    date: '2026-10-05',
+    displayDate: "October 5, 2026",
+    readTime: "6 min read",
+    category: "Situational",
+    translationKey: "anxiety-before-a-job-interview",
+  },
+  {
+    slug: "anxiete-avant-un-entretien-d-embauche-comment-se-calmer-dans-la-salle-d-attente",
+    lang: 'fr',
+    title: "Anxiété avant un entretien d’embauche : comment se calmer dans la salle d’attente",
+    excerpt: "L’anxiété liée à un entretien d’embauche peut atteindre son maximum dans la salle d’attente. Utilisez une brève technique respiratoire discrète pour apaiser votre nervosité avant d’entrer et commencer avec plus de stabilité.",
+    date: '2026-10-05',
+    displayDate: "5 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "anxiety-before-a-job-interview",
+  },
+  {
     slug: "scared-to-turn-camera-on",
     lang: 'en',
     title: "Camera Anxiety on Video Calls: A Fast Calm-Down Routine",
