@@ -863,7 +863,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "crise-de-panique-au-volant-garez-vous-en-securite-et-retrouvez-votre-calme"
+      },
+      "generated_at": "2026-10-07 15:06:06"
     },
     {
       "slug": "highway-driving-anxiety",

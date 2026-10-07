@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "panic-attack-while-driving",
+    lang: 'en',
+    title: "Panic Attack While Driving: Pull Over Safely and Calm Down",
+    excerpt: "A safety-first guide to a panic attack while driving: pull over safely, use a simple breathing reset, and know when to get more support from a clinician if needed.",
+    date: '2026-10-07',
+    displayDate: "October 7, 2026",
+    readTime: "8 min read",
+    category: "Situational",
+    translationKey: "panic-attack-while-driving",
+  },
+  {
+    slug: "crise-de-panique-au-volant-garez-vous-en-securite-et-retrouvez-votre-calme",
+    lang: 'fr',
+    title: "Crise de panique au volant : garez-vous en sécurité et retrouvez votre calme",
+    excerpt: "Un guide axé sur la sécurité en cas de crise de panique au volant : garez-vous sans danger, essayez un exercice respiratoire simple et sachez quand demander l’aide d’un professionnel de santé si nécessaire.",
+    date: '2026-10-07',
+    displayDate: "7 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "panic-attack-while-driving",
+  },
+  {
     slug: "anxiety-before-a-job-interview",
     lang: 'en',
     title: "Job Interview Anxiety: How to Calm Down in the Waiting Room",
