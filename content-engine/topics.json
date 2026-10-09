@@ -898,7 +898,11 @@
         "fear-of-flying-before-during"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-au-volant-sur-l-autoroute-retrouver-ses-reperes-sortie-apres-sortie-quand-on-se-sent-piege"
+      },
+      "generated_at": "2026-10-09 14:59:26"
     },
     {
       "slug": "fear-of-flying-before-during",

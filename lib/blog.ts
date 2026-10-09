@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "highway-driving-anxiety",
+    lang: 'en',
+    title: "Highway Driving Anxiety: An Exit-by-Exit Reset for Feeling Trapped",
+    excerpt: "Highway driving anxiety can feel trapping. Use an exit-by-exit reset to stay safe, make room for fear, and choose your next step calmly on the road today.",
+    date: '2026-10-09',
+    displayDate: "October 9, 2026",
+    readTime: "8 min read",
+    category: "Situational",
+    translationKey: "highway-driving-anxiety",
+  },
+  {
+    slug: "anxiete-au-volant-sur-l-autoroute-retrouver-ses-reperes-sortie-apres-sortie-quand-on-se-sent-piege",
+    lang: 'fr',
+    title: "Anxiété au volant sur l’autoroute : retrouver ses repères, sortie après sortie, quand on se sent piégé",
+    excerpt: "L’anxiété au volant sur l’autoroute peut donner l’impression d’être piégé. Utilisez un repère sortie après sortie pour rester en sécurité, laisser une place à la peur et choisir calmement la prochaine étape dès aujourd’hui.",
+    date: '2026-10-09',
+    displayDate: "9 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "highway-driving-anxiety",
+  },
+  {
     slug: "panic-attack-while-driving",
     lang: 'en',
     title: "Panic Attack While Driving: Pull Over Safely and Calm Down",
