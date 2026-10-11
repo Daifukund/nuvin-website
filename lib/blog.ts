@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fear-of-flying-before-during",
+    lang: 'en',
+    title: "Fear of Flying: A Breathing Technique to Use Before and During Your Flight",
+    excerpt: "Fear of flying can spike before takeoff or in turbulence. Use a quiet, offline breathing routine to steady yourself on the plane, even in airplane mode onboard.",
+    date: '2026-10-11',
+    displayDate: "October 11, 2026",
+    readTime: "8 min read",
+    category: "Situational",
+    translationKey: "fear-of-flying-before-during",
+  },
+  {
+    slug: "peur-de-l-avion-une-technique-de-respiration-a-utiliser-avant-et-pendant-le-vol",
+    lang: 'fr',
+    title: "Peur de l’avion : une technique de respiration à utiliser avant et pendant le vol",
+    excerpt: "La peur de l’avion peut s’intensifier avant le décollage ou en cas de turbulences. Utilisez une routine respiratoire discrète, disponible hors ligne, pour vous stabiliser dans l’avion, même en mode avion.",
+    date: '2026-10-11',
+    displayDate: "11 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "fear-of-flying-before-during",
+  },
+  {
     slug: "highway-driving-anxiety",
     lang: 'en',
     title: "Highway Driving Anxiety: An Exit-by-Exit Reset for Feeling Trapped",

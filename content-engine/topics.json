@@ -934,7 +934,11 @@
         "calm-down-in-public-when-you-cant-leave"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "peur-de-l-avion-une-technique-de-respiration-a-utiliser-avant-et-pendant-le-vol"
+      },
+      "generated_at": "2026-10-11 14:39:13"
     },
     {
       "slug": "social-anxiety-getting-through-an-event",
