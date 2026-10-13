@@ -969,7 +969,11 @@
         "discreet-grounding-at-your-desk"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-sociale-en-soiree-un-plan-discret-pour-faire-une-pause-et-revenir"
+      },
+      "generated_at": "2026-10-13 15:35:37"
     },
     {
       "slug": "calm-down-in-public-when-you-cant-leave",

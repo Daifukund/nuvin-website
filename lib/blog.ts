@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "social-anxiety-getting-through-an-event",
+    lang: 'en',
+    title: "Social Anxiety at a Party: A Discreet Reset-and-Return Plan",
+    excerpt: "Social anxiety at a party can feel intense. Use a discreet reset-and-return plan, take a planned break, and choose one small next move at any event today.",
+    date: '2026-10-13',
+    displayDate: "October 13, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "social-anxiety-getting-through-an-event",
+  },
+  {
+    slug: "anxiete-sociale-en-soiree-un-plan-discret-pour-faire-une-pause-et-revenir",
+    lang: 'fr',
+    title: "Anxiété sociale en soirée : un plan discret pour faire une pause et revenir",
+    excerpt: "L’anxiété sociale en soirée peut être intense. Utilisez un plan discret pour faire une pause et revenir, accordez-vous une pause prévue et choisissez une petite prochaine étape lors de n’importe quel événement aujourd’hui.",
+    date: '2026-10-13',
+    displayDate: "13 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "social-anxiety-getting-through-an-event",
+  },
+  {
     slug: "fear-of-flying-before-during",
     lang: 'en',
     title: "Fear of Flying: A Breathing Technique to Use Before and During Your Flight",
