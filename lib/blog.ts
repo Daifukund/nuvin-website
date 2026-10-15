@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "calm-down-in-public-when-you-cant-leave",
+    lang: 'en',
+    title: "How to Calm Down in Public When You Can’t Leave: A Discreet Seated Grounding Routine",
+    excerpt: "Calm anxiety in public with a discreet seated grounding routine for meetings, classes, appointments, and other times you cannot step outside right now.",
+    date: '2026-10-15',
+    displayDate: "October 15, 2026",
+    readTime: "7 min read",
+    category: "Situational",
+    translationKey: "calm-down-in-public-when-you-cant-leave",
+  },
+  {
+    slug: "comment-se-calmer-en-public-quand-on-ne-peut-pas-partir-une-routine-discrete-d-ancrage-sensoriel-assis",
+    lang: 'fr',
+    title: "Comment se calmer en public quand on ne peut pas partir : une routine discrète d’ancrage sensoriel assis",
+    excerpt: "Apaisez votre anxiété en public grâce à une routine discrète d’ancrage sensoriel assis, lors de réunions, de cours, de rendez-vous ou dans toute situation où vous ne pouvez pas sortir immédiatement.",
+    date: '2026-10-15',
+    displayDate: "15 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "calm-down-in-public-when-you-cant-leave",
+  },
+  {
     slug: "social-anxiety-getting-through-an-event",
     lang: 'en',
     title: "Social Anxiety at a Party: A Discreet Reset-and-Return Plan",

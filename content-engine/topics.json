@@ -1004,7 +1004,11 @@
         "social-anxiety-getting-through-an-event"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-se-calmer-en-public-quand-on-ne-peut-pas-partir-une-routine-discrete-d-ancrage-sensoriel-assis"
+      },
+      "generated_at": "2026-10-15 13:05:16"
     },
     {
       "slug": "anxiety-at-the-grocery-store",
