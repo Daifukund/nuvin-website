@@ -1102,7 +1102,11 @@
         "478-vs-box-vs-sigh"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "la-respiration-en-carre-comment-pratiquer-la-respiration-4-4-4-4-et-ce-que-dit-la-science"
+      },
+      "generated_at": "2026-10-17 11:59:30"
     },
     {
       "slug": "physiological-sigh-fastest-technique",

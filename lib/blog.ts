@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "box-breathing-science",
+    lang: 'en',
+    title: "Box Breathing: How to Do 4-4-4-4 Breathing and What Science Says",
+    excerpt: "Learn box breathing, the 4-4-4-4 pattern, with clear steps, safety tips, and an honest look at what research can and cannot show for everyday stress right now.",
+    date: '2026-10-17',
+    displayDate: "October 17, 2026",
+    readTime: "9 min read",
+    category: "Techniques",
+    translationKey: "box-breathing-science",
+  },
+  {
+    slug: "la-respiration-en-carre-comment-pratiquer-la-respiration-4-4-4-4-et-ce-que-dit-la-science",
+    lang: 'fr',
+    title: "La respiration en carré : comment pratiquer la respiration 4-4-4-4 et ce que dit la science",
+    excerpt: "Découvrez la respiration en carré, son rythme 4-4-4-4, avec des étapes claires, des conseils de sécurité et un regard honnête sur ce que la recherche permet ou non d'établir aujourd'hui pour le stress quotidien.",
+    date: '2026-10-17',
+    displayDate: "17 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "box-breathing-science",
+  },
+  {
     slug: "calm-down-in-public-when-you-cant-leave",
     lang: 'en',
     title: "How to Calm Down in Public When You Can’t Leave: A Discreet Seated Grounding Routine",
