@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "physiological-sigh-fastest-technique",
+    lang: 'en',
+    title: "Physiological Sigh: A Stanford-Studied Way to Calm Down Fast",
+    excerpt: "Learn the physiological sigh, a simple double-inhale, long-exhale breathing exercise, and what a Stanford study found about its calming effects in daily stress",
+    date: '2026-10-19',
+    displayDate: "October 19, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "physiological-sigh-fastest-technique",
+  },
+  {
+    slug: "le-soupir-physiologique-une-technique-etudiee-a-stanford-pour-retrouver-rapidement-son-calme",
+    lang: 'fr',
+    title: "Le soupir physiologique : une technique étudiée à Stanford pour retrouver rapidement son calme",
+    excerpt: "Découvrez le soupir physiologique, un exercice respiratoire simple fondé sur une double inspiration et une longue expiration, ainsi que les résultats d’une étude de Stanford sur ses effets apaisants face au stress quotidien",
+    date: '2026-10-19',
+    displayDate: "19 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "physiological-sigh-fastest-technique",
+  },
+  {
     slug: "box-breathing-science",
     lang: 'en',
     title: "Box Breathing: How to Do 4-4-4-4 Breathing and What Science Says",

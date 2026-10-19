@@ -1138,7 +1138,11 @@
         "478-vs-box-vs-sigh"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "le-soupir-physiologique-une-technique-etudiee-a-stanford-pour-retrouver-rapidement-son-calme"
+      },
+      "generated_at": "2026-10-19 15:17:57"
     },
     {
       "slug": "does-54321-actually-work",
