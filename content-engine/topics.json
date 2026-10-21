@@ -1173,7 +1173,11 @@
         "box-breathing-science"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "la-technique-d-ancrage-5-4-3-2-1-est-elle-efficace-donnees-et-limites"
+      },
+      "generated_at": "2026-10-21 13:27:08"
     },
     {
       "slug": "shaking-stretching-release-tension",

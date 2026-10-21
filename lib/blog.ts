@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "does-54321-actually-work",
+    lang: 'en',
+    title: "Does the 5-4-3-2-1 Grounding Technique Work? Evidence and Limits",
+    excerpt: "Does the 5-4-3-2-1 grounding technique work? See what research and clinical practice support, what remains untested, and how to try it now when anxious.",
+    date: '2026-10-21',
+    displayDate: "October 21, 2026",
+    readTime: "6 min read",
+    category: "Science",
+    translationKey: "does-54321-actually-work",
+  },
+  {
+    slug: "la-technique-d-ancrage-5-4-3-2-1-est-elle-efficace-donnees-et-limites",
+    lang: 'fr',
+    title: "La technique d’ancrage 5-4-3-2-1 est-elle efficace ? Données et limites",
+    excerpt: "La technique d’ancrage 5-4-3-2-1 est-elle efficace ? Découvrez ce que soutiennent la recherche et la pratique clinique, ce qui reste à étudier et comment l’essayer dès maintenant en cas d’anxiété.",
+    date: '2026-10-21',
+    displayDate: "21 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Sciences",
+    translationKey: "does-54321-actually-work",
+  },
+  {
     slug: "physiological-sigh-fastest-technique",
     lang: 'en',
     title: "Physiological Sigh: A Stanford-Studied Way to Calm Down Fast",
