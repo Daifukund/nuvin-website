@@ -1209,7 +1209,11 @@
         "60-second-reset-between-tasks"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "se-secouer-pour-relacher-les-tensions-ce-que-cela-peut-aider-a-faire-et-ce-que-cela-ne-peut-pas-faire"
+      },
+      "generated_at": "2026-10-23 13:05:35"
     },
     {
       "slug": "478-vs-box-vs-sigh",

@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "shaking-stretching-release-tension",
+    lang: 'en',
+    title: "Shaking to Release Tension: What It Can Help With, and What It Can’t Do",
+    excerpt: "Learn a gentle shaking and stretching reset for everyday tension, what research supports, and why it is not a proven treatment for trauma or anxiety disorders.",
+    date: '2026-10-23',
+    displayDate: "October 23, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "shaking-stretching-release-tension",
+  },
+  {
+    slug: "se-secouer-pour-relacher-les-tensions-ce-que-cela-peut-aider-a-faire-et-ce-que-cela-ne-peut-pas-faire",
+    lang: 'fr',
+    title: "Se secouer pour relâcher les tensions : ce que cela peut aider à faire, et ce que cela ne peut pas faire",
+    excerpt: "Découvrez une courte séquence douce de mouvements et d’étirements pour relâcher les tensions du quotidien, ce que la recherche confirme et pourquoi cette pratique n’est pas un traitement éprouvé des traumatismes ou des troubles anxieux.",
+    date: '2026-10-23',
+    displayDate: "23 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "shaking-stretching-release-tension",
+  },
+  {
     slug: "does-54321-actually-work",
     lang: 'en',
     title: "Does the 5-4-3-2-1 Grounding Technique Work? Evidence and Limits",
