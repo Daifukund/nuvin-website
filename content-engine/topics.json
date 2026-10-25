@@ -1245,7 +1245,11 @@
         "physiological-sigh-fastest-technique"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "4-7-8-respiration-en-boite-ou-soupir-physiologique-laquelle-choisir-et-quand"
+      },
+      "generated_at": "2026-10-25 12:58:15"
     },
     {
       "slug": "what-happens-in-your-body-during-anxiety",

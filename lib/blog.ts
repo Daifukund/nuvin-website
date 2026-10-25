@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "478-vs-box-vs-sigh",
+    lang: 'en',
+    title: "4-7-8 vs. Box Breathing vs. Physiological Sigh: Which to Use When",
+    excerpt: "Compare 4-7-8, box breathing, and the physiological sigh to choose a calming breath for anxiety, sleep, daily practice, or a tense moment right now, today.",
+    date: '2026-10-25',
+    displayDate: "October 25, 2026",
+    readTime: "8 min read",
+    category: "Techniques",
+    translationKey: "478-vs-box-vs-sigh",
+  },
+  {
+    slug: "4-7-8-respiration-en-boite-ou-soupir-physiologique-laquelle-choisir-et-quand",
+    lang: 'fr',
+    title: "4-7-8, respiration en boîte ou soupir physiologique : laquelle choisir, et quand ?",
+    excerpt: "Comparez la respiration 4-7-8, la respiration en boîte et le soupir physiologique pour choisir une technique apaisante en cas d’anxiété, pour dormir, pratiquer au quotidien ou traverser un moment tendu, maintenant ou aujourd’hui.",
+    date: '2026-10-25',
+    displayDate: "25 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "478-vs-box-vs-sigh",
+  },
+  {
     slug: "shaking-stretching-release-tension",
     lang: 'en',
     title: "Shaking to Release Tension: What It Can Help With, and What It Can’t Do",
