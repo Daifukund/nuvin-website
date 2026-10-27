@@ -1280,7 +1280,11 @@
         "anxiety-chest-tightness-symptoms"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-et-reaction-de-lutte-ou-de-fuite-ce-qui-se-passe-dans-votre-corps"
+      },
+      "generated_at": "2026-10-27 13:58:59"
     },
     {
       "slug": "health-anxiety-googling-symptoms",

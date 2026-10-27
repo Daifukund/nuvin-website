@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "what-happens-in-your-body-during-anxiety",
+    lang: 'en',
+    title: "Fight-or-Flight Response Anxiety: What Happens in Your Body",
+    excerpt: "A plain-English guide to the fight-or-flight response in anxiety, why your heart, breathing, stomach, and muscles change, plus one calming step to try now.",
+    date: '2026-10-27',
+    displayDate: "October 27, 2026",
+    readTime: "7 min read",
+    category: "Understanding",
+    translationKey: "what-happens-in-your-body-during-anxiety",
+  },
+  {
+    slug: "anxiete-et-reaction-de-lutte-ou-de-fuite-ce-qui-se-passe-dans-votre-corps",
+    lang: 'fr',
+    title: "Anxiété et réaction de lutte ou de fuite : ce qui se passe dans votre corps",
+    excerpt: "Un guide simple sur la réaction de lutte ou de fuite liée à l’anxiété, les raisons pour lesquelles votre cœur, votre respiration, votre estomac et vos muscles changent, ainsi qu’une étape apaisante à essayer dès maintenant.",
+    date: '2026-10-27',
+    displayDate: "27 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "what-happens-in-your-body-during-anxiety",
+  },
+  {
     slug: "478-vs-box-vs-sigh",
     lang: 'en',
     title: "4-7-8 vs. Box Breathing vs. Physiological Sigh: Which to Use When",
