@@ -349,7 +349,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "peur-d-avoir-une-nouvelle-attaque-de-panique-sortir-du-cercle-vicieux-de-la-peur-de-paniquer"
+      },
+      "generated_at": "2026-10-29 14:57:36"
     },
     {
       "slug": "quiet-racing-thoughts-at-night",

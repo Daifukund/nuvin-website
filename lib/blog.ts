@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fear-of-having-another-panic-attack",
+    lang: 'en',
+    title: "Fear of Having Another Panic Attack: How to Break the Panic-About-Panic Cycle",
+    excerpt: "Learn why fear of another panic attack can fuel the cycle, then use an acceptance-based practice to respond and return to daily life with more flexibility.",
+    date: '2026-10-29',
+    displayDate: "October 29, 2026",
+    readTime: "8 min read",
+    category: "Panic",
+    translationKey: "fear-of-having-another-panic-attack",
+  },
+  {
+    slug: "peur-d-avoir-une-nouvelle-attaque-de-panique-sortir-du-cercle-vicieux-de-la-peur-de-paniquer",
+    lang: 'fr',
+    title: "Peur d’avoir une nouvelle attaque de panique : sortir du cercle vicieux de la peur de paniquer",
+    excerpt: "Comprenez pourquoi la peur d’une nouvelle attaque de panique peut entretenir le cercle vicieux, puis utilisez une pratique fondée sur l’acceptation pour y répondre et reprendre vos activités quotidiennes avec davantage de souplesse.",
+    date: '2026-10-29',
+    displayDate: "29 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Panique",
+    translationKey: "fear-of-having-another-panic-attack",
+  },
+  {
     slug: "what-happens-in-your-body-during-anxiety",
     lang: 'en',
     title: "Fight-or-Flight Response Anxiety: What Happens in Your Body",
