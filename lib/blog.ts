@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sunday-night-insomnia-anxiety",
+    lang: 'en',
+    title: "Sunday Night Insomnia: A 5-Minute Breathing Reset for Pre-Week Anxiety",
+    excerpt: "Sunday night insomnia can make Monday feel close already. Try a 5-minute breathing reset to lower pre-week arousal and give yourself a quieter path to rest.",
+    date: '2026-10-31',
+    displayDate: "October 31, 2026",
+    readTime: "6 min read",
+    category: "Situational",
+    translationKey: "sunday-night-insomnia-anxiety",
+  },
+  {
+    slug: "insomnie-du-dimanche-soir-5-minutes-de-respiration-pour-apaiser-l-anxiete-avant-la-semaine",
+    lang: 'fr',
+    title: "Insomnie du dimanche soir : 5 minutes de respiration pour apaiser l’anxiété avant la semaine",
+    excerpt: "L’insomnie du dimanche soir peut donner l’impression que le lundi est déjà là. Essayez 5 minutes de respiration pour réduire l’activation liée à la semaine à venir et vous offrir un chemin plus calme vers le repos.",
+    date: '2026-10-31',
+    displayDate: "31 octobre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnel",
+    translationKey: "sunday-night-insomnia-anxiety",
+  },
+  {
     slug: "fear-of-having-another-panic-attack",
     lang: 'en',
     title: "Fear of Having Another Panic Attack: How to Break the Panic-About-Panic Cycle",

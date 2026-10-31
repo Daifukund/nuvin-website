@@ -559,7 +559,11 @@
         "quiet-racing-thoughts-at-night"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "insomnie-du-dimanche-soir-5-minutes-de-respiration-pour-apaiser-l-anxiete-avant-la-semaine"
+      },
+      "generated_at": "2026-10-31 14:18:29"
     },
     {
       "slug": "calm-down-before-a-presentation",
