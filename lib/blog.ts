@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "burnout-vs-anxiety",
+    lang: 'en',
+    title: "Burnout vs. Anxiety: How to Tell What You’re Feeling",
+    excerpt: "Learn the differences between burnout and anxiety, why they overlap, and when persistent work stress or worry may call for professional support and care.",
+    date: '2026-11-02',
+    displayDate: "November 2, 2026",
+    readTime: "7 min read",
+    category: "Understanding",
+    translationKey: "burnout-vs-anxiety",
+  },
+  {
+    slug: "epuisement-professionnel-ou-anxiete-comment-comprendre-ce-que-vous-ressentez",
+    lang: 'fr',
+    title: "Épuisement professionnel ou anxiété : comment comprendre ce que vous ressentez",
+    excerpt: "Découvrez les différences entre l’épuisement professionnel et l’anxiété, les raisons pour lesquelles ils se recoupent et dans quels cas un stress professionnel ou des inquiétudes persistantes peuvent justifier un accompagnement professionnel.",
+    date: '2026-11-02',
+    displayDate: "2 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "burnout-vs-anxiety",
+  },
+  {
     slug: "sunday-night-insomnia-anxiety",
     lang: 'en',
     title: "Sunday Night Insomnia: A 5-Minute Breathing Reset for Pre-Week Anxiety",
