@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "anxiety-at-the-grocery-store",
+    lang: 'en',
+    title: "Anxiety in Crowded Places: A Quick Grocery Store Reset",
+    excerpt: "Use a discreet, in-aisle grounding reset for anxiety in crowded places, grocery store anxiety, and sensory overload, even when you need to keep shopping.",
+    date: '2026-11-04',
+    displayDate: "November 4, 2026",
+    readTime: "6 min read",
+    category: "Situational",
+    translationKey: "anxiety-at-the-grocery-store",
+  },
+  {
+    slug: "anxiete-dans-les-lieux-bondes-une-reinitialisation-rapide-au-supermarche",
+    lang: 'fr',
+    title: "Anxiété dans les lieux bondés : une réinitialisation rapide au supermarché",
+    excerpt: "Utilisez une technique discrète d’ancrage, directement dans le rayon, pour gérer l’anxiété dans les lieux bondés, l’anxiété au supermarché et la surcharge sensorielle, même lorsque vous devez continuer vos courses.",
+    date: '2026-11-04',
+    displayDate: "4 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "anxiety-at-the-grocery-store",
+  },
+  {
     slug: "burnout-vs-anxiety",
     lang: 'en',
     title: "Burnout vs. Anxiety: How to Tell What You’re Feeling",

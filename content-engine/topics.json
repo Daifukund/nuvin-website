@@ -1051,7 +1051,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-dans-les-lieux-bondes-une-reinitialisation-rapide-au-supermarche"
+      },
+      "generated_at": "2026-11-04 15:58:19"
     },
     {
       "slug": "fear-of-the-dentist-or-doctor",
