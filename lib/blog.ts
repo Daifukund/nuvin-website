@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fear-of-the-dentist-or-doctor",
+    lang: 'en',
+    title: "Dentist Anxiety: How to Calm Down in the Waiting Room",
+    excerpt: "Dentist anxiety can spike in the waiting room. Use a simple breathing reset, plan words for staff, and get through your medical appointment more calmly today.",
+    date: '2026-11-06',
+    displayDate: "November 6, 2026",
+    readTime: "6 min read",
+    category: "Situational",
+    translationKey: "fear-of-the-dentist-or-doctor",
+  },
+  {
+    slug: "anxiete-chez-le-dentiste-comment-se-calmer-en-salle-d-attente",
+    lang: 'fr',
+    title: "Anxiété chez le dentiste : comment se calmer en salle d’attente",
+    excerpt: "L’anxiété liée au dentiste peut s’intensifier en salle d’attente. Essayez un simple exercice respiratoire, préparez une phrase à dire au personnel et traversez votre rendez-vous médical plus sereinement dès aujourd’hui.",
+    date: '2026-11-06',
+    displayDate: "6 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Situationnelle",
+    translationKey: "fear-of-the-dentist-or-doctor",
+  },
+  {
     slug: "anxiety-at-the-grocery-store",
     lang: 'en',
     title: "Anxiety in Crowded Places: A Quick Grocery Store Reset",

@@ -1086,7 +1086,11 @@
         "physiological-sigh-fastest-technique"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-chez-le-dentiste-comment-se-calmer-en-salle-d-attente"
+      },
+      "generated_at": "2026-11-06 15:40:15"
     },
     {
       "slug": "box-breathing-science",
