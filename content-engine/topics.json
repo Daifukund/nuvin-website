@@ -1335,7 +1335,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "anxiete-liee-a-la-sante-et-recherche-de-symptomes-sur-google-sortir-du-cycle-de-la-reassurance"
+      },
+      "generated_at": "2026-11-08 14:46:46"
     },
     {
       "slug": "reassurance-seeking-trap",

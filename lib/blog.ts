@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "health-anxiety-googling-symptoms",
+    lang: 'en',
+    title: "Health Anxiety and Googling Symptoms: How to Break the Reassurance Loop",
+    excerpt: "Learn why health anxiety googling symptoms fuels reassurance seeking, and use a compassionate pause to step away from online checking today, right now.",
+    date: '2026-11-08',
+    displayDate: "November 8, 2026",
+    readTime: "9 min read",
+    category: "Understanding",
+    translationKey: "health-anxiety-googling-symptoms",
+  },
+  {
+    slug: "anxiete-liee-a-la-sante-et-recherche-de-symptomes-sur-google-sortir-du-cycle-de-la-reassurance",
+    lang: 'fr',
+    title: "Anxiété liée à la santé et recherche de symptômes sur Google : sortir du cycle de la réassurance",
+    excerpt: "Comprenez pourquoi rechercher des symptômes sur Google alimente la quête de réassurance liée à l’anxiété de santé, et utilisez une pause bienveillante pour vous éloigner des vérifications en ligne dès maintenant.",
+    date: '2026-11-08',
+    displayDate: "8 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "health-anxiety-googling-symptoms",
+  },
+  {
     slug: "fear-of-the-dentist-or-doctor",
     lang: 'en',
     title: "Dentist Anxiety: How to Calm Down in the Waiting Room",
