@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "reassurance-seeking-trap",
+    lang: 'en',
+    title: "Reassurance Seeking Anxiety: Why Checking Feeds the Cycle",
+    excerpt: "Learn how reassurance seeking and checking can maintain anxiety, then practice a brief uncertainty pause to step out of the cycle today with less checking.",
+    date: '2026-11-10',
+    displayDate: "November 10, 2026",
+    readTime: "7 min read",
+    category: "Understanding",
+    translationKey: "reassurance-seeking-trap",
+  },
+  {
+    slug: "anxiete-liee-a-la-recherche-de-reassurance-pourquoi-les-verifications-entretiennent-le-cycle",
+    lang: 'fr',
+    title: "Anxiété liée à la recherche de réassurance : pourquoi les vérifications entretiennent le cycle",
+    excerpt: "Découvrez comment la recherche de réassurance et les vérifications peuvent entretenir l’anxiété, puis pratiquez une brève pause face à l’incertitude pour sortir du cycle dès aujourd’hui en vérifiant moins.",
+    date: '2026-11-10',
+    displayDate: "10 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "reassurance-seeking-trap",
+  },
+  {
     slug: "health-anxiety-googling-symptoms",
     lang: 'en',
     title: "Health Anxiety and Googling Symptoms: How to Break the Reassurance Loop",
