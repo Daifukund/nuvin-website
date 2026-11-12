@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sit-with-uncertainty",
+    lang: 'en',
+    title: "How to Sit With Uncertainty When Anxiety Demands an Answer",
+    excerpt: "Learn how to sit with uncertainty with a brief acceptance practice to notice anxious urges, allow not knowing, and choose your next useful step today.",
+    date: '2026-11-12',
+    displayDate: "November 12, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "sit-with-uncertainty",
+  },
+  {
+    slug: "comment-faire-face-a-l-incertitude-quand-l-anxiete-exige-une-reponse",
+    lang: 'fr',
+    title: "Comment faire face à l’incertitude quand l’anxiété exige une réponse",
+    excerpt: "Découvrez comment faire face à l’incertitude grâce à une brève pratique d’acceptation pour repérer les impulsions anxieuses, tolérer le fait de ne pas savoir et choisir dès aujourd’hui la prochaine étape utile.",
+    date: '2026-11-12',
+    displayDate: "12 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "sit-with-uncertainty",
+  },
+  {
     slug: "reassurance-seeking-trap",
     lang: 'en',
     title: "Reassurance Seeking Anxiety: Why Checking Feeds the Cycle",
