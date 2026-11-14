@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "caffeine-and-anxiety",
+    lang: 'en',
+    title: "Caffeine and Anxiety: Why Coffee Can Trigger Jitters",
+    excerpt: "Learn how caffeine can intensify anxiety and jitters, why dose and timing matter, and a gentle plan to cut back without preaching or panic today.",
+    date: '2026-11-14',
+    displayDate: "November 14, 2026",
+    readTime: "9 min read",
+    category: "Understanding",
+    translationKey: "caffeine-and-anxiety",
+  },
+  {
+    slug: "cafeine-et-anxiete-pourquoi-le-cafe-peut-provoquer-des-tremblements",
+    lang: 'fr',
+    title: "Caféine et anxiété : pourquoi le café peut provoquer des tremblements",
+    excerpt: "Découvrez comment la caféine peut intensifier l’anxiété et les tremblements, pourquoi la dose et le moment de consommation comptent, et comment réduire progressivement votre consommation sans culpabiliser ni paniquer aujourd’hui.",
+    date: '2026-11-14',
+    displayDate: "14 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "caffeine-and-anxiety",
+  },
+  {
     slug: "sit-with-uncertainty",
     lang: 'en',
     title: "How to Sit With Uncertainty When Anxiety Demands an Answer",

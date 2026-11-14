@@ -1441,7 +1441,11 @@
         "anxiety-chest-tightness-symptoms"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "cafeine-et-anxiete-pourquoi-le-cafe-peut-provoquer-des-tremblements"
+      },
+      "generated_at": "2026-11-14 14:46:31"
     },
     {
       "slug": "how-to-calm-down-fast-ranked",
