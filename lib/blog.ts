@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-calm-down-fast-ranked",
+    lang: 'en',
+    title: "How to Calm Down Fast: Techniques Ranked by Speed",
+    excerpt: "Learn how to calm down fast with a speed-ranked guide led by physiological sighs, with evidence limits, safety notes, and practical next steps for anxiety.",
+    date: '2026-11-16',
+    displayDate: "November 16, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "how-to-calm-down-fast-ranked",
+  },
+  {
+    slug: "comment-se-calmer-rapidement-techniques-classees-par-vitesse",
+    lang: 'fr',
+    title: "Comment se calmer rapidement : techniques classées par vitesse",
+    excerpt: "Découvrez comment vous calmer rapidement grâce à un guide classé par vitesse, qui commence par les soupirs physiologiques, avec les limites des données, les précautions de sécurité et les prochaines étapes concrètes en cas d’anxiété.",
+    date: '2026-11-16',
+    displayDate: "16 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "how-to-calm-down-fast-ranked",
+  },
+  {
     slug: "caffeine-and-anxiety",
     lang: 'en',
     title: "Caffeine and Anxiety: Why Coffee Can Trigger Jitters",

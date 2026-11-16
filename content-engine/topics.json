@@ -1476,7 +1476,11 @@
         "cold-water-vagus-nerve"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "comment-se-calmer-rapidement-techniques-classees-par-vitesse"
+      },
+      "generated_at": "2026-11-16 17:58:01"
     },
     {
       "slug": "anxiety-chest-tightness-symptoms",
