@@ -1512,7 +1512,11 @@
         "when-to-see-a-professional"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "oppression-thoracique-et-symptomes-physiques-lies-a-l-anxiete-ce-qu-ils-peuvent-signifier"
+      },
+      "generated_at": "2026-11-18 16:57:33"
     },
     {
       "slug": "mood-logging-for-anxiety",

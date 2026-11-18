@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "anxiety-chest-tightness-symptoms",
+    lang: 'en',
+    title: "Anxiety Chest Tightness and Physical Symptoms: What They Can Mean",
+    excerpt: "Learn how anxiety can contribute to chest tightness and other physical symptoms, why medical causes must be ruled out, and what you can do safely now today.",
+    date: '2026-11-18',
+    displayDate: "November 18, 2026",
+    readTime: "7 min read",
+    category: "Understanding",
+    translationKey: "anxiety-chest-tightness-symptoms",
+  },
+  {
+    slug: "oppression-thoracique-et-symptomes-physiques-lies-a-l-anxiete-ce-qu-ils-peuvent-signifier",
+    lang: 'fr',
+    title: "Oppression thoracique et symptômes physiques liés à l’anxiété : ce qu’ils peuvent signifier",
+    excerpt: "Découvrez comment l’anxiété peut contribuer à une oppression thoracique et à d’autres symptômes physiques, pourquoi il faut écarter les causes médicales et ce que vous pouvez faire dès aujourd’hui en toute sécurité.",
+    date: '2026-11-18',
+    displayDate: "18 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "anxiety-chest-tightness-symptoms",
+  },
+  {
     slug: "how-to-calm-down-fast-ranked",
     lang: 'en',
     title: "How to Calm Down Fast: Techniques Ranked by Speed",
