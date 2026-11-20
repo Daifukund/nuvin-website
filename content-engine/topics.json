@@ -1547,7 +1547,11 @@
         "do-anxiety-apps-actually-work"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "suivre-son-humeur-face-a-l-anxiete-reperer-les-schemas-et-les-declencheurs-possibles"
+      },
+      "generated_at": "2026-11-20 16:43:04"
     },
     {
       "slug": "progressive-muscle-relaxation-routine",

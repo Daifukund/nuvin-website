@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "mood-logging-for-anxiety",
+    lang: 'en',
+    title: "Mood Tracking for Anxiety: How to Spot Patterns and Possible Triggers",
+    excerpt: "Learn mood tracking for anxiety with a quick, nonjudgmental log to notice patterns, identify possible triggers, and choose your next helpful step calmly.",
+    date: '2026-11-20',
+    displayDate: "November 20, 2026",
+    readTime: "8 min read",
+    category: "Understanding",
+    translationKey: "mood-logging-for-anxiety",
+  },
+  {
+    slug: "suivre-son-humeur-face-a-l-anxiete-reperer-les-schemas-et-les-declencheurs-possibles",
+    lang: 'fr',
+    title: "Suivre son humeur face à l’anxiété : repérer les schémas et les déclencheurs possibles",
+    excerpt: "Découvrez comment suivre votre humeur face à l’anxiété grâce à un relevé rapide et sans jugement, pour repérer les schémas, identifier les déclencheurs possibles et choisir calmement la prochaine étape qui peut vous aider.",
+    date: '2026-11-20',
+    displayDate: "20 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "mood-logging-for-anxiety",
+  },
+  {
     slug: "anxiety-chest-tightness-symptoms",
     lang: 'en',
     title: "Anxiety Chest Tightness and Physical Symptoms: What They Can Mean",
