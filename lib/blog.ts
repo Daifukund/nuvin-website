@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "progressive-muscle-relaxation-routine",
+    lang: 'en',
+    title: "Progressive Muscle Relaxation: A 5-Minute Tension-Release Routine",
+    excerpt: "Try progressive muscle relaxation with this gentle 5-minute routine. Learn how to tense, release, and notice body tension when anxiety feels high in the moment today.",
+    date: '2026-11-22',
+    displayDate: "November 22, 2026",
+    readTime: "6 min read",
+    category: "Techniques",
+    translationKey: "progressive-muscle-relaxation-routine",
+  },
+  {
+    slug: "relaxation-musculaire-progressive-une-routine-de-5-minutes-pour-relacher-les-tensions",
+    lang: 'fr',
+    title: "Relaxation musculaire progressive : une routine de 5 minutes pour relâcher les tensions",
+    excerpt: "Essayez la relaxation musculaire progressive avec cette routine douce de 5 minutes. Apprenez à contracter, relâcher et repérer les tensions corporelles lorsque l’anxiété est forte, ici et maintenant.",
+    date: '2026-11-22',
+    displayDate: "22 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "progressive-muscle-relaxation-routine",
+  },
+  {
     slug: "mood-logging-for-anxiety",
     lang: 'en',
     title: "Mood Tracking for Anxiety: How to Spot Patterns and Possible Triggers",
