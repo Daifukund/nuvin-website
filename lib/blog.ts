@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cold-water-vagus-nerve",
+    lang: 'en',
+    title: "Cold Water and the Vagus Nerve: Can Splashing Your Face Calm Anxiety?",
+    excerpt: "Learn how cold water on your face may activate the dive response, what it can and cannot do for anxiety, plus a safer, practical way to try it now when stressed.",
+    date: '2026-11-24',
+    displayDate: "November 24, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "cold-water-vagus-nerve",
+  },
+  {
+    slug: "eau-froide-et-nerf-vague-se-passer-de-l-eau-froide-sur-le-visage-peut-il-apaiser-l-anxiete",
+    lang: 'fr',
+    title: "Eau froide et nerf vague : se passer de l’eau froide sur le visage peut-il apaiser l’anxiété ?",
+    excerpt: "Découvrez comment l’eau froide sur le visage peut activer le réflexe de plongée, ce qu’elle peut faire ou non contre l’anxiété, ainsi qu’une façon pratique et plus sûre de l’essayer maintenant en cas de stress.",
+    date: '2026-11-24',
+    displayDate: "24 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "cold-water-vagus-nerve",
+  },
+  {
     slug: "progressive-muscle-relaxation-routine",
     lang: 'en',
     title: "Progressive Muscle Relaxation: A 5-Minute Tension-Release Routine",

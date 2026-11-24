@@ -1618,7 +1618,11 @@
         "physiological-sigh-fastest-technique"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "eau-froide-et-nerf-vague-se-passer-de-l-eau-froide-sur-le-visage-peut-il-apaiser-l-anxiete"
+      },
+      "generated_at": "2026-11-24 19:21:07"
     },
     {
       "slug": "alcohol-and-anxiety-hangxiety",
