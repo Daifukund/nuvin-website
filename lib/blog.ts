@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "alcohol-and-anxiety-hangxiety",
+    lang: 'en',
+    title: "Hangxiety: Why You Feel Anxious the Day After Drinking",
+    excerpt: "Hangxiety can make the morning after drinking feel alarmingly tense. Learn why it happens and use a gentle breathing reset for anxiety after drinking.",
+    date: '2026-11-26',
+    displayDate: "November 26, 2026",
+    readTime: "7 min read",
+    category: "Understanding",
+    translationKey: "alcohol-and-anxiety-hangxiety",
+  },
+  {
+    slug: "hangxiety-pourquoi-vous-etes-anxieux-le-lendemain-d-une-soiree-alcoolisee",
+    lang: 'fr',
+    title: "Hangxiety : pourquoi vous êtes anxieux le lendemain d’une soirée alcoolisée",
+    excerpt: "Le hangxiety peut rendre le lendemain d’une soirée alcoolisée particulièrement tendu. Découvrez pourquoi cela arrive et essayez un exercice de respiration douce pour apaiser l’anxiété après avoir bu.",
+    date: '2026-11-26',
+    displayDate: "26 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Comprendre",
+    translationKey: "alcohol-and-anxiety-hangxiety",
+  },
+  {
     slug: "cold-water-vagus-nerve",
     lang: 'en',
     title: "Cold Water and the Vagus Nerve: Can Splashing Your Face Calm Anxiety?",

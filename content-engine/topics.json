@@ -1654,7 +1654,11 @@
         "how-to-calm-down-fast-ranked"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "hangxiety-pourquoi-vous-etes-anxieux-le-lendemain-d-une-soiree-alcoolisee"
+      },
+      "generated_at": "2026-11-26 18:08:26"
     },
     {
       "slug": "exercise-for-anxiety-relief",
