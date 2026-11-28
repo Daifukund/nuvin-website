@@ -34,6 +34,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "exercise-for-anxiety-relief",
+    lang: 'en',
+    title: "Does Exercise Help Anxiety? What a Single 10-Minute Walk Can Do",
+    excerpt: "Does exercise help anxiety right now? Try a simple 10-minute walk, learn what research finds, and use a gentle plan when your body feels keyed up today.",
+    date: '2026-11-28',
+    displayDate: "November 28, 2026",
+    readTime: "7 min read",
+    category: "Techniques",
+    translationKey: "exercise-for-anxiety-relief",
+  },
+  {
+    slug: "l-exercice-aide-t-il-a-reduire-l-anxiete-ce-qu-une-simple-marche-de-10-minutes-peut-faire",
+    lang: 'fr',
+    title: "L’exercice aide-t-il à réduire l’anxiété ? Ce qu’une simple marche de 10 minutes peut faire",
+    excerpt: "L’exercice peut-il aider à réduire l’anxiété sur le moment ? Essayez une simple marche de 10 minutes, découvrez ce que montrent les recherches et adoptez un plan doux lorsque votre corps est en état d’alerte aujourd’hui.",
+    date: '2026-11-28',
+    displayDate: "28 novembre 2026",
+    readTime: "5 min de lecture",
+    category: "Techniques",
+    translationKey: "exercise-for-anxiety-relief",
+  },
+  {
     slug: "alcohol-and-anxiety-hangxiety",
     lang: 'en',
     title: "Hangxiety: Why You Feel Anxious the Day After Drinking",

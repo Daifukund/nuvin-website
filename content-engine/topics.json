@@ -1689,7 +1689,11 @@
         "progressive-muscle-relaxation-routine"
       ],
       "locale": "en",
-      "status": "pending"
+      "status": "publish",
+      "localized_slugs": {
+        "fr": "l-exercice-aide-t-il-a-reduire-l-anxiete-ce-qu-une-simple-marche-de-10-minutes-peut-faire"
+      },
+      "generated_at": "2026-11-28 16:38:41"
     },
     {
       "slug": "stress-vs-anxiety",
